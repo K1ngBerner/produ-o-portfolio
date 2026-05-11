@@ -12,11 +12,14 @@
   --accent-2: #ffd166;
   --accent-3: #4da5ff;
   --shadow: 0 20px 60px rgba(0, 0, 0, 0.32);
+  --shadow-soft: 0 18px 46px rgba(0, 0, 0, 0.24);
+  --shadow-lift: 0 28px 64px rgba(0, 0, 0, 0.3);
   --radius-lg: 28px;
   --radius-md: 18px;
   --radius-sm: 12px;
   --container: min(1160px, calc(100vw - 2.5rem));
   --header-height: 88px;
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 *,
@@ -38,8 +41,12 @@ body {
     radial-gradient(circle at top left, rgba(77, 165, 255, 0.18), transparent 30%),
     radial-gradient(circle at 80% 15%, rgba(255, 101, 54, 0.18), transparent 24%),
     linear-gradient(180deg, #090b10 0%, #0f121a 50%, #090b10 100%);
-  line-height: 1.6;
+  line-height: 1.68;
   overflow-x: hidden;
+}
+
+body.menu-open {
+  overflow: hidden;
 }
 
 body::before {
@@ -89,12 +96,14 @@ a {
 
 .section {
   position: relative;
-  padding: 5.5rem 0;
+  padding: 6rem 0;
 }
 
 .section-heading {
-  max-width: 680px;
-  margin-bottom: 2.25rem;
+  max-width: 760px;
+  margin-bottom: 2.75rem;
+  display: grid;
+  gap: 0.15rem;
 }
 
 .section-kicker {
@@ -114,6 +123,7 @@ h3,
   font-family: "Space Grotesk", sans-serif;
   line-height: 1.05;
   letter-spacing: -0.03em;
+  text-wrap: balance;
 }
 
 h1 {
@@ -126,12 +136,24 @@ h2 {
 }
 
 h3 {
-  font-size: 1.35rem;
+  font-size: 1.42rem;
+  line-height: 1.14;
 }
 
 p {
   margin: 0;
   color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.78;
+  text-wrap: pretty;
+}
+
+.section-intro {
+  margin-top: 1rem;
+  max-width: 60ch;
+  padding-left: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 1.03rem;
 }
 
 .site-header {
@@ -243,32 +265,38 @@ p {
 }
 
 .hero {
-  padding: 4rem 0 5rem;
+  padding: 4.75rem 0 5.9rem;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(340px, 0.9fr);
-  gap: 2.4rem;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.92fr);
+  gap: clamp(2rem, 4vw, 4rem);
   align-items: center;
 }
 
 .hero-copy {
   position: relative;
   z-index: 1;
+  max-width: 630px;
+}
+
+.hero-copy h1 + .hero-lead {
+  margin-top: 1.7rem;
 }
 
 .hero-lead {
-  max-width: 60ch;
+  max-width: 56ch;
   margin-top: 1.5rem;
-  font-size: 1.06rem;
+  font-size: 1.1rem;
+  line-height: 1.82;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.9rem;
-  margin-top: 2rem;
+  margin-top: 2.2rem;
 }
 
 .button {
@@ -281,8 +309,14 @@ p {
   border-radius: 999px;
   border: 1px solid transparent;
   font-weight: 700;
-  transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease, background 0.24s ease;
+  transition:
+    transform 0.32s var(--ease-premium),
+    box-shadow 0.32s var(--ease-premium),
+    border-color 0.32s var(--ease-premium),
+    background 0.32s var(--ease-premium),
+    color 0.32s var(--ease-premium);
   overflow: hidden;
+  will-change: transform;
 }
 
 .button::before {
@@ -291,7 +325,7 @@ p {
   inset: 0;
   background: linear-gradient(110deg, transparent 20%, rgba(255, 255, 255, 0.24), transparent 72%);
   transform: translateX(-120%);
-  transition: transform 0.45s ease;
+  transition: transform 0.55s var(--ease-premium);
 }
 
 .button:hover::before {
@@ -299,7 +333,7 @@ p {
 }
 
 .button:hover {
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.01);
 }
 
 .button-primary {
@@ -319,6 +353,20 @@ p {
   color: var(--accent-2);
 }
 
+.button-secondary:hover,
+.button-ghost:hover {
+  box-shadow: var(--shadow-soft);
+}
+
+.button:focus-visible,
+.site-nav a:focus-visible,
+.text-link:focus-visible,
+.contact-link:focus-visible,
+.project-logo-link:focus-visible {
+  outline: 2px solid rgba(255, 209, 102, 0.78);
+  outline-offset: 4px;
+}
+
 .button-full {
   width: 100%;
 }
@@ -328,7 +376,7 @@ p {
   flex-wrap: wrap;
   gap: 0.75rem;
   padding: 0;
-  margin: 2rem 0 0;
+  margin: 2.2rem 0 0;
   list-style: none;
 }
 
@@ -340,23 +388,39 @@ p {
   background: rgba(255, 255, 255, 0.045);
   color: var(--text);
   font-size: 0.92rem;
+  transition: transform 0.3s var(--ease-premium), border-color 0.3s var(--ease-premium), background 0.3s var(--ease-premium);
+}
+
+.hero-tags li:hover,
+.skills-chips span:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.07);
 }
 
 .hero-visual {
   position: relative;
+  z-index: 0;
+  width: min(100%, 560px);
+  margin-left: auto;
+  padding: 0.8rem 0.6rem 0;
+  overflow: visible;
 }
 
 .profile-stage {
   position: relative;
-  min-height: 620px;
-  padding: 1.1rem;
+  display: grid;
+  align-items: start;
+  min-height: 660px;
+  padding: 1.2rem;
   border-radius: calc(var(--radius-lg) + 10px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01)),
     rgba(10, 13, 20, 0.78);
   box-shadow: var(--shadow);
-  overflow: hidden;
+  overflow: visible;
+  isolation: isolate;
 }
 
 .profile-stage::before,
@@ -366,6 +430,7 @@ p {
   border-radius: 50%;
   filter: blur(18px);
   opacity: 0.6;
+  z-index: 0;
 }
 
 .profile-stage::before {
@@ -386,13 +451,15 @@ p {
 
 .profile-frame {
   position: relative;
-  height: 100%;
-  min-height: 100%;
-  padding: 0.95rem;
+  z-index: 1;
+  width: min(100%, 450px);
+  margin-left: auto;
+  padding: 1rem;
   border-radius: var(--radius-lg);
   border: 1px solid rgba(255, 255, 255, 0.08);
   background:
     linear-gradient(180deg, rgba(18, 22, 34, 0.96), rgba(10, 13, 19, 0.98));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 .frame-topbar {
@@ -422,14 +489,18 @@ p {
 
 .profile-photo-shell {
   position: relative;
-  border-radius: 24px;
-  min-height: 530px;
+  border-radius: 26px;
+  aspect-ratio: 4 / 5.12;
   overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   background:
     linear-gradient(145deg, rgba(255, 101, 54, 0.2), transparent 40%),
     linear-gradient(180deg, rgba(16, 20, 31, 0.32), rgba(6, 7, 11, 0.1)),
     #0f141f;
   isolation: isolate;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 28px 70px rgba(0, 0, 0, 0.34);
 }
 
 .profile-photo-shell::before {
@@ -437,8 +508,20 @@ p {
   position: absolute;
   inset: 1rem;
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   pointer-events: none;
+  z-index: 3;
+}
+
+.profile-photo-shell::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(6, 8, 12, 0.1) 0%, transparent 24%, transparent 68%, rgba(6, 8, 12, 0.38) 100%),
+    radial-gradient(circle at 50% 10%, rgba(255, 209, 102, 0.08), transparent 28%);
+  pointer-events: none;
+  z-index: 3;
 }
 
 .profile-image,
@@ -451,8 +534,10 @@ p {
 
 .profile-image {
   object-fit: cover;
-  object-position: center top;
+  object-position: center 14%;
   z-index: 2;
+  transform: scale(1.015);
+  filter: saturate(1.04) contrast(1.02);
 }
 
 .profile-fallback {
@@ -460,6 +545,7 @@ p {
   place-items: center;
   gap: 0.35rem;
   z-index: 1;
+  padding: 2rem;
   text-align: center;
   background:
     radial-gradient(circle at 50% 35%, rgba(255, 209, 102, 0.18), transparent 30%),
@@ -493,26 +579,40 @@ p {
   pointer-events: none;
 }
 
+.hero-overlays {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
 .floating-card {
   position: absolute;
-  min-width: 220px;
-  padding: 1rem 1.05rem;
+  width: min(248px, calc(100% - 2.4rem));
+  min-width: 0;
+  padding: 1.05rem 1.15rem;
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(8, 11, 18, 0.84);
-  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, rgba(11, 14, 22, 0.92), rgba(7, 10, 16, 0.86));
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.28);
   backdrop-filter: blur(16px);
   animation: float-card 6s ease-in-out infinite;
+  pointer-events: auto;
+  transition:
+    transform 0.35s var(--ease-premium),
+    border-color 0.35s var(--ease-premium),
+    box-shadow 0.35s var(--ease-premium);
 }
 
 .player-card {
-  right: -12px;
-  bottom: 120px;
+  right: 1rem;
+  bottom: 1.55rem;
 }
 
 .stats-card {
-  left: -18px;
-  bottom: 46px;
+  left: 1rem;
+  bottom: 1rem;
+  width: min(230px, calc(100% - 2.4rem));
   animation-delay: -2.4s;
 }
 
@@ -557,6 +657,12 @@ p {
   animation: timeline-run 5.8s ease-in-out infinite;
 }
 
+.floating-card strong {
+  display: block;
+  color: var(--text);
+  line-height: 1.38;
+}
+
 .stats-card {
   display: grid;
   gap: 0.9rem;
@@ -578,23 +684,32 @@ p {
 .two-column-layout {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: start;
 }
 
 .about-panel,
 .wide,
 .contact-card {
-  padding: 1.6rem;
+  padding: 1.9rem;
   border-radius: var(--radius-lg);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(180deg, rgba(20, 24, 38, 0.84), rgba(12, 15, 24, 0.76));
   box-shadow: var(--shadow);
 }
 
 .about-panel {
   display: grid;
-  gap: 1rem;
+  gap: 1.05rem;
+}
+
+.about-panel p {
+  font-size: 1.05rem;
+  line-height: 1.86;
+}
+
+.about-panel p + p {
+  padding-top: 0.15rem;
 }
 
 .card-grid,
@@ -602,7 +717,7 @@ p {
 .courses-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.2rem;
+  gap: 1.35rem;
 }
 
 .info-card,
@@ -612,13 +727,19 @@ p {
 .project-card,
 .timeline-content {
   position: relative;
-  padding: 1.45rem;
+  padding: 1.65rem;
   border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.09);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    linear-gradient(180deg, rgba(20, 24, 38, 0.9), rgba(12, 15, 24, 0.82));
   overflow: hidden;
-  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+  transition:
+    transform 0.34s var(--ease-premium),
+    border-color 0.34s var(--ease-premium),
+    box-shadow 0.34s var(--ease-premium),
+    background 0.34s var(--ease-premium);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
 }
 
 .info-card::before,
@@ -647,9 +768,9 @@ p {
 .project-card:hover,
 .timeline-content:hover,
 .contact-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
   border-color: rgba(255, 255, 255, 0.16);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.22);
+  box-shadow: var(--shadow-lift);
 }
 
 .info-card:hover::before,
@@ -678,19 +799,55 @@ p {
   font-weight: 700;
 }
 
+.info-card h3,
+.timeline-content h3 {
+  max-width: 20ch;
+}
+
 .info-card p,
 .resume-card p,
 .course-card p,
 .project-copy p,
 .contact-section p {
-  margin-top: 0.7rem;
+  margin-top: 0.85rem;
+}
+
+.info-card p,
+.timeline-content p:last-of-type {
+  line-height: 1.8;
+}
+
+.timeline-content strong {
+  display: block;
+  margin-top: 0.45rem;
+  color: var(--text);
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.timeline-content {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.timeline-content p:last-of-type {
+  max-width: 62ch;
+}
+
+.timeline-actions {
+  margin-top: 1rem;
+}
+
+.timeline-actions .button {
+  min-height: 3rem;
 }
 
 .timeline {
   position: relative;
   display: grid;
-  gap: 1.35rem;
-  padding-left: 1.75rem;
+  gap: 1.5rem;
+  padding-left: 1.9rem;
 }
 
 .timeline::before {
@@ -709,7 +866,7 @@ p {
 
 .timeline-marker {
   position: absolute;
-  left: -1.75rem;
+  left: -1.9rem;
   top: 1.8rem;
   width: 1rem;
   height: 1rem;
@@ -749,13 +906,18 @@ p {
   border-radius: 20px;
   border: 1px dashed rgba(255, 255, 255, 0.14);
   background: rgba(255, 255, 255, 0.02);
-  transition: transform 0.28s ease, border-color 0.28s ease, background 0.28s ease;
+  transition:
+    transform 0.32s var(--ease-premium),
+    border-color 0.32s var(--ease-premium),
+    background 0.32s var(--ease-premium),
+    box-shadow 0.32s var(--ease-premium);
 }
 
 .project-logo-link:hover {
   transform: scale(1.02);
   border-color: rgba(255, 209, 102, 0.32);
   background: rgba(255, 255, 255, 0.04);
+  box-shadow: var(--shadow-soft);
 }
 
 .project-logo-link img {
@@ -774,6 +936,11 @@ p {
   margin-top: 0.35rem;
   color: var(--accent-2);
   font-weight: 700;
+  transition: color 0.3s var(--ease-premium), transform 0.3s var(--ease-premium);
+}
+
+.text-link:hover {
+  transform: translateX(2px);
 }
 
 .resume-card {
@@ -846,12 +1013,18 @@ p {
   border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.03);
-  transition: transform 0.24s ease, border-color 0.24s ease;
+  transition:
+    transform 0.3s var(--ease-premium),
+    border-color 0.3s var(--ease-premium),
+    background 0.3s var(--ease-premium),
+    box-shadow 0.3s var(--ease-premium);
 }
 
 .contact-link:hover {
   transform: translateX(4px);
   border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: var(--shadow-soft);
 }
 
 .contact-link strong,
@@ -962,8 +1135,18 @@ p {
     grid-column: span 6;
   }
 
+  .hero-visual {
+    width: min(100%, 640px);
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+
   .profile-stage {
-    min-height: 560px;
+    min-height: 620px;
+  }
+
+  .profile-frame {
+    margin-inline: auto;
   }
 }
 
@@ -1012,7 +1195,7 @@ p {
   }
 
   .hero {
-    padding-top: 2.4rem;
+    padding: 2.8rem 0 4.6rem;
   }
 
   .card-grid,
@@ -1039,20 +1222,67 @@ p {
     width: 100%;
   }
 
-  .player-card {
-    right: 10px;
-    bottom: 26px;
+  .section-heading {
+    margin-bottom: 2.1rem;
   }
 
+  .hero-visual {
+    width: min(100%, 620px);
+    margin-inline: auto;
+    padding: 0;
+  }
+
+  .profile-stage {
+    min-height: auto;
+    padding: 0.95rem;
+    gap: 1rem;
+  }
+
+  .profile-frame {
+    width: 100%;
+    margin: 0;
+    padding: 0.9rem;
+  }
+
+  .profile-photo-shell {
+    aspect-ratio: 4 / 4.85;
+  }
+
+  .hero-overlays {
+    position: relative;
+    inset: auto;
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .floating-card {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    animation: none;
+  }
+
+  .player-card,
   .stats-card {
-    left: 10px;
-    bottom: 158px;
+    width: 100%;
+  }
+
+  .about-panel,
+  .wide,
+  .contact-card,
+  .info-card,
+  .resume-card,
+  .course-card,
+  .skills-panel,
+  .project-card,
+  .timeline-content {
+    padding: 1.45rem;
   }
 }
 
 @media (max-width: 640px) {
   .section {
-    padding: 4.5rem 0;
+    padding: 4rem 0;
   }
 
   h1 {
@@ -1071,30 +1301,78 @@ p {
     font-size: 0.75rem;
   }
 
+  .hero {
+    padding: 2.25rem 0 4rem;
+  }
+
+  .hero-grid {
+    gap: 2rem;
+  }
+
+  .hero-lead,
+  .section-intro,
+  .about-panel p {
+    font-size: 1rem;
+  }
+
+  .section-intro {
+    padding-left: 0.85rem;
+  }
+
+  .button {
+    min-height: 3.4rem;
+    padding: 1rem 1.1rem;
+  }
+
   .profile-stage {
-    min-height: 500px;
-    padding: 0.85rem;
+    padding: 0.8rem;
+  }
+
+  .profile-frame {
+    padding: 0.8rem;
   }
 
   .profile-photo-shell {
-    min-height: 440px;
+    aspect-ratio: 4 / 5;
+  }
+
+  .profile-image {
+    object-position: center 12%;
+    transform: scale(1);
   }
 
   .floating-card {
-    position: relative;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    margin-top: 0.9rem;
-    animation: none;
+    padding: 1rem;
+    border-radius: 18px;
+  }
+
+  .hero-tags li,
+  .skills-chips span {
+    padding: 0.68rem 0.92rem;
+    font-size: 0.88rem;
   }
 
   .timeline {
-    padding-left: 1.35rem;
+    padding-left: 1.25rem;
+    gap: 1.2rem;
   }
 
   .timeline-marker {
-    left: -1.35rem;
+    left: -1.25rem;
+    top: 1.55rem;
+  }
+
+  .about-panel,
+  .wide,
+  .contact-card,
+  .info-card,
+  .resume-card,
+  .course-card,
+  .skills-panel,
+  .project-card,
+  .timeline-content {
+    padding: 1.3rem;
+    border-radius: 20px;
   }
 
   .footer-inner {

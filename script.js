@@ -51,9 +51,14 @@ if (profileImage && profileShell) {
     profileShell.classList.add("image-missing");
   };
 
+  const handleLoadedProfile = () => {
+    profileShell.classList.remove("image-missing");
+  };
+
   if (!profileImage.getAttribute("src")) {
     handleMissingProfile();
   } else {
+    profileImage.addEventListener("load", handleLoadedProfile, { once: true });
     profileImage.addEventListener("error", handleMissingProfile, { once: true });
   }
 }
