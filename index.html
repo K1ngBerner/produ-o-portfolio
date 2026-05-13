@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reinhold Berner | Produção Multimídia & Audiovisual</title>
+  <title data-i18n="meta.title">Reinhold Berner | Produção Multimídia &amp; Audiovisual</title>
   <meta
     name="description"
     content="Portfólio de Reinhold Gustav Berner com foco em produção audiovisual, produção multimídia, comunicação digital e projetos criativos."
+    data-i18n-attr="content:meta.description"
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,30 +21,59 @@
   <div class="page-noise" aria-hidden="true"></div>
   <header class="site-header" data-header>
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Ir para o topo">
+      <a class="brand" href="#top" data-i18n-attr="aria-label:header.brandLabel">
         <span class="brand-name">Reinhold Berner</span>
-        <span class="brand-role">Produção Multimídia &amp; Audiovisual</span>
+        <span class="brand-role" data-i18n="header.brandRole">Produção Multimídia &amp; Audiovisual</span>
       </a>
 
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="site-nav"
-        aria-label="Abrir menu"
-        data-menu-toggle
-      >
-        <span></span>
-        <span></span>
-      </button>
-
       <nav class="site-nav" id="site-nav" data-nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#experiencias">Experiências</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#curriculos">Currículos</a>
-        <a href="#contato">Contato</a>
+        <a href="#sobre" data-i18n="header.nav.about">Sobre</a>
+        <a href="#experiencias" data-i18n="header.nav.experience">Experiências</a>
+        <a href="#projetos" data-i18n="header.nav.projects">Projetos</a>
+        <a href="#curriculos" data-i18n="header.nav.resumes">Currículos</a>
+        <a href="#contato" data-i18n="header.nav.contact">Contato</a>
       </nav>
+
+      <div class="header-actions">
+        <div
+          class="language-switch"
+          role="group"
+          aria-label="Seletor de idioma"
+          data-i18n-attr="aria-label:header.languageGroupLabel"
+        >
+          <button
+            class="language-option is-active"
+            type="button"
+            data-language-option="pt"
+            aria-pressed="true"
+            aria-label="Mudar idioma para português"
+          >
+            PT
+          </button>
+          <button
+            class="language-option"
+            type="button"
+            data-language-option="en"
+            aria-pressed="false"
+            aria-label="Mudar idioma para inglês"
+          >
+            EN
+          </button>
+        </div>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Abrir menu"
+          data-menu-toggle
+          data-i18n-attr="aria-label:header.menuLabel"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -51,27 +81,36 @@
     <section class="hero section">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <p class="section-kicker">produção criativa / audiovisual / digital</p>
-          <h1>Produção audiovisual, conteúdo digital e projetos criativos</h1>
-          <p class="hero-lead">
-            Atuo na criação, organização e desenvolvimento de projetos multimídia, conectando
-            frontend, comunicação, audiovisual, games e inteligência artificial aplicada à criação.
+          <p class="section-kicker" data-i18n="hero.kicker">produção criativa / audiovisual / digital</p>
+          <h1 data-i18n="hero.title">Produção audiovisual, conteúdo digital e projetos criativos</h1>
+          <p class="hero-lead" data-i18n="hero.lead">
+            Atuo na criação, organização e desenvolvimento de projetos multimídia, conectando frontend,
+            comunicação, audiovisual, games e inteligência artificial aplicada à criação.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#experiencias">Ver experiências</a>
-            <a class="button button-secondary" href="curriculo-producao.pdf" target="_blank" rel="noopener noreferrer">
+            <a class="button button-primary" href="#experiencias" data-i18n="hero.actions.experience">
+              Ver experiências
+            </a>
+            <a
+              class="button button-secondary"
+              href="curriculo-producao.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="hero.actions.resume"
+              data-resume-link="production"
+            >
               Baixar currículo
             </a>
-            <a class="button button-ghost" href="#contato">Entrar em contato</a>
+            <a class="button button-ghost" href="#contato" data-i18n="hero.actions.contact">Entrar em contato</a>
           </div>
 
-          <ul class="hero-tags" aria-label="Áreas de foco">
-            <li>Produção audiovisual</li>
-            <li>Conteúdo digital</li>
-            <li>Frontend &amp; UX</li>
-            <li>IA aplicada à criação</li>
-            <li>Projetos autorais</li>
+          <ul class="hero-tags" aria-label="Áreas de foco" data-i18n-attr="aria-label:hero.tagsLabel">
+            <li data-i18n="hero.tags.0">Produção audiovisual</li>
+            <li data-i18n="hero.tags.1">Conteúdo digital</li>
+            <li data-i18n="hero.tags.2">Frontend &amp; UX</li>
+            <li data-i18n="hero.tags.3">IA aplicada à criação</li>
+            <li data-i18n="hero.tags.4">Projetos autorais</li>
           </ul>
         </div>
 
@@ -89,6 +128,7 @@
                   src="profile.png"
                   alt="Retrato de Reinhold Berner"
                   data-profile-image
+                  data-i18n-attr="alt:hero.profileAlt"
                 >
                 <div class="profile-fallback" aria-hidden="true">
                   <span>RB</span>
@@ -101,9 +141,9 @@
               <div class="floating-card player-card">
                 <div class="card-label">
                   <span class="live-dot"></span>
-                  Em produção
+                  <span data-i18n="hero.overlay.status">Em produção</span>
                 </div>
-                <strong>Comunicação, audiovisual e projetos digitais</strong>
+                <strong data-i18n="hero.overlay.title">Comunicação, audiovisual e projetos digitais</strong>
                 <div class="timeline-bar">
                   <span></span>
                 </div>
@@ -111,12 +151,12 @@
 
               <div class="floating-card stats-card">
                 <div>
-                  <span>Foco</span>
-                  <strong>Produção multimídia</strong>
+                  <span data-i18n="hero.overlay.focusLabel">Foco</span>
+                  <strong data-i18n="hero.overlay.focusValue">Produção multimídia</strong>
                 </div>
                 <div>
-                  <span>Modo</span>
-                  <strong>Organização + criação</strong>
+                  <span data-i18n="hero.overlay.modeLabel">Modo</span>
+                  <strong data-i18n="hero.overlay.modeValue">Organização + criação</strong>
                 </div>
               </div>
             </div>
@@ -128,18 +168,18 @@
     <section class="section" id="sobre">
       <div class="container two-column-layout">
         <div class="section-heading reveal">
-          <p class="section-kicker">sobre</p>
-          <h2>Uma base criativa com visão de produção</h2>
+          <p class="section-kicker" data-i18n="about.kicker">sobre</p>
+          <h2 data-i18n="about.title">Uma base criativa com visão de produção</h2>
         </div>
 
         <div class="about-panel reveal reveal-delay">
-          <p>
-            Atuo na interseção entre produção audiovisual, experiências digitais, comunicação e
-            conteúdo multimídia. Minha prática reúne organização de projetos, documentação, criação
-            de materiais, apoio a eventos, desenvolvimento frontend e uso de inteligência artificial
-            para acelerar processos criativos com mais clareza e consistência.
+          <p data-i18n="about.paragraphs.0">
+            Atuo na interseção entre produção audiovisual, experiências digitais, comunicação e conteúdo
+            multimídia. Minha prática reúne organização de projetos, documentação, criação de materiais,
+            apoio a eventos, desenvolvimento frontend e uso de inteligência artificial para acelerar
+            processos criativos com mais clareza e consistência.
           </p>
-          <p>
+          <p data-i18n="about.paragraphs.1">
             Trabalho bem na ponte entre ideia e execução: estruturar etapas, alinhar prioridades,
             organizar materiais, acompanhar entregas e transformar conceitos em peças, interfaces e
             experiências que precisam funcionar tanto criativamente quanto tecnicamente.
@@ -151,9 +191,9 @@
     <section class="section" id="frentes">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="section-kicker">frentes de atuação</p>
-          <h2>Onde minha produção ganha forma</h2>
-          <p class="section-intro">
+          <p class="section-kicker" data-i18n="areas.kicker">frentes de atuação</p>
+          <h2 data-i18n="areas.title">Onde minha produção ganha forma</h2>
+          <p class="section-intro" data-i18n="areas.intro">
             Minha atuação combina organização, linguagem digital, sensibilidade criativa e atenção à
             experiência do usuário para apoiar projetos do planejamento à entrega final.
           </p>
@@ -162,8 +202,8 @@
         <div class="card-grid">
           <article class="info-card reveal">
             <span class="card-index">01</span>
-            <h3>Produção audiovisual</h3>
-            <p>
+            <h3 data-i18n="areas.cards.0.title">Produção audiovisual</h3>
+            <p data-i18n="areas.cards.0.description">
               Apoio no planejamento e na organização de materiais audiovisuais, pensando em narrativa,
               ritmo, formato, objetivo da peça e clareza da entrega.
             </p>
@@ -171,8 +211,8 @@
 
           <article class="info-card reveal">
             <span class="card-index">02</span>
-            <h3>Produção de conteúdo digital</h3>
-            <p>
+            <h3 data-i18n="areas.cards.1.title">Produção de conteúdo digital</h3>
+            <p data-i18n="areas.cards.1.description">
               Criação e estruturação de conteúdos para plataformas digitais, com atenção à linguagem da
               internet, consistência visual, calendário, público e adaptação de formatos.
             </p>
@@ -180,8 +220,8 @@
 
           <article class="info-card reveal">
             <span class="card-index">03</span>
-            <h3>Organização de projetos criativos</h3>
-            <p>
+            <h3 data-i18n="areas.cards.2.title">Organização de projetos criativos</h3>
+            <p data-i18n="areas.cards.2.description">
               Documentação, divisão de etapas, acompanhamento de tarefas e suporte para que ideias
               criativas saiam do conceito e avancem para entregas concretas.
             </p>
@@ -189,8 +229,8 @@
 
           <article class="info-card reveal">
             <span class="card-index">04</span>
-            <h3>Comunicação e mídias digitais</h3>
-            <p>
+            <h3 data-i18n="areas.cards.3.title">Comunicação e mídias digitais</h3>
+            <p data-i18n="areas.cards.3.description">
               Apoio na construção de mensagens, presença digital e materiais de comunicação, conectando
               conteúdo, público, tom de voz e objetivo do projeto.
             </p>
@@ -198,8 +238,8 @@
 
           <article class="info-card reveal">
             <span class="card-index">05</span>
-            <h3>IA aplicada à criação</h3>
-            <p>
+            <h3 data-i18n="areas.cards.4.title">IA aplicada à criação</h3>
+            <p data-i18n="areas.cards.4.description">
               Uso de ferramentas de inteligência artificial como apoio para pesquisa, ideação,
               organização de referências, otimização de processos e desenvolvimento de materiais criativos.
             </p>
@@ -207,8 +247,8 @@
 
           <article class="info-card reveal">
             <span class="card-index">06</span>
-            <h3>Design de games e experiências interativas</h3>
-            <p>
+            <h3 data-i18n="areas.cards.5.title">Design de games e experiências interativas</h3>
+            <p data-i18n="areas.cards.5.description">
               Base em design de games para pensar narrativa, interação, experiência do usuário,
               documentação e construção de projetos digitais com lógica e propósito.
             </p>
@@ -220,9 +260,9 @@
     <section class="section" id="experiencias">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="section-kicker">experiências</p>
-          <h2>Experiências em produção, operação e projetos criativos</h2>
-          <p class="section-intro">
+          <p class="section-kicker" data-i18n="experience.kicker">experiências</p>
+          <h2 data-i18n="experience.title">Experiências em produção, operação e projetos criativos</h2>
+          <p class="section-intro" data-i18n="experience.intro">
             Contextos que fortaleceram minha atuação em organização, comunicação, acompanhamento de
             equipes e construção de projetos com ritmo de entrega.
           </p>
@@ -232,10 +272,10 @@
           <article class="timeline-item reveal">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-content">
-              <p class="timeline-tag">2Doods</p>
-              <h3>Produção Multimídia e Projetos Digitais</h3>
-              <strong>Co-fundador / Produção Criativa</strong>
-              <p>
+              <p class="timeline-tag" data-i18n="experience.items.0.tag">2Doods</p>
+              <h3 data-i18n="experience.items.0.title">Produção Multimídia e Projetos Digitais</h3>
+              <strong data-i18n="experience.items.0.subtitle">Co-fundador / Produção Criativa</strong>
+              <p data-i18n="experience.items.0.description">
                 Projeto autoral de produção digital e experimentação multimídia, com atuação em conteúdo,
                 roteiro, planejamento editorial, organização de processos e desenvolvimento de materiais
                 para mídias digitais. É um espaço em que conecto linguagem de internet, direção criativa
@@ -247,14 +287,14 @@
           <article class="timeline-item reveal">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-content">
-              <p class="timeline-tag">Frontend / UX</p>
-              <h3>Portfólio Frontend e Experiências Digitais</h3>
-              <strong>Desenvolvimento autoral em HTML, CSS e JavaScript</strong>
-              <p>
-                Projeto pessoal desenvolvido para consolidar minha atuação em frontend, UX e
-                experiências digitais. O site reúne projetos web, interfaces responsivas, organização
-                visual e aplicações interativas, funcionando também como demonstração prática da minha
-                evolução técnica em HTML, CSS, JavaScript e design de interface.
+              <p class="timeline-tag" data-i18n="experience.items.1.tag">Frontend / UX</p>
+              <h3 data-i18n="experience.items.1.title">Portfólio Frontend e Experiências Digitais</h3>
+              <strong data-i18n="experience.items.1.subtitle">Desenvolvimento autoral em HTML, CSS e JavaScript</strong>
+              <p data-i18n="experience.items.1.description">
+                Projeto pessoal desenvolvido para consolidar minha atuação em frontend, UX e experiências
+                digitais. O site reúne projetos web, interfaces responsivas, organização visual e
+                aplicações interativas, funcionando também como demonstração prática da minha evolução
+                técnica em HTML, CSS, JavaScript e design de interface.
               </p>
               <div class="timeline-actions">
                 <a
@@ -262,6 +302,7 @@
                   href="https://k1ngberner.github.io/portfolio-reine/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-i18n="experience.items.1.button"
                 >
                   Ver projeto frontend
                 </a>
@@ -272,14 +313,14 @@
           <article class="timeline-item reveal">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-content">
-              <p class="timeline-tag">Game Jam ECDD 2023</p>
-              <h3>Staff de Organização</h3>
-              <strong>Suporte logístico e operacional</strong>
-              <p>
+              <p class="timeline-tag" data-i18n="experience.items.2.tag">Game Jam ECDD 2023</p>
+              <h3 data-i18n="experience.items.2.title">Staff de Organização</h3>
+              <strong data-i18n="experience.items.2.subtitle">Suporte logístico e operacional</strong>
+              <p data-i18n="experience.items.2.description">
                 Atuação em suporte logístico, operacional e de comunicação com participantes em um
                 ambiente criativo de prazo curto. A experiência fortaleceu minha capacidade de
-                organização, acompanhamento de equipes, leitura de contexto e resposta rápida para
-                manter a operação e a experiência do evento funcionando com fluidez.
+                organização, acompanhamento de equipes, leitura de contexto e resposta rápida para manter
+                a operação e a experiência do evento funcionando com fluidez.
               </p>
             </div>
           </article>
@@ -287,10 +328,10 @@
           <article class="timeline-item reveal">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-content">
-              <p class="timeline-tag">Santander Open Academy</p>
-              <h3>Organização e Programas Educacionais</h3>
-              <strong>Apoio em atividades e formação profissional</strong>
-              <p>
+              <p class="timeline-tag" data-i18n="experience.items.3.tag">Santander Open Academy</p>
+              <h3 data-i18n="experience.items.3.title">Organização e Programas Educacionais</h3>
+              <strong data-i18n="experience.items.3.subtitle">Apoio em atividades e formação profissional</strong>
+              <p data-i18n="experience.items.3.description">
                 Apoio à organização de atividades, comunicação com participantes e acompanhamento de
                 rotinas ligadas a programas educacionais. Somada à formação complementar em comunicação,
                 inteligência artificial e produção, essa vivência ampliou meu repertório para projetos
@@ -305,8 +346,8 @@
     <section class="section" id="projetos">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="section-kicker">projetos &amp; links autorais</p>
-          <h2>Presença criativa em diferentes formatos</h2>
+          <p class="section-kicker" data-i18n="projects.kicker">projetos &amp; links autorais</p>
+          <h2 data-i18n="projects.title">Presença criativa em diferentes formatos</h2>
         </div>
 
         <div class="projects-grid">
@@ -317,13 +358,20 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Abrir canal da 2Doods em nova aba"
+              data-i18n-attr="aria-label:projects.twoDoods.linkLabel"
             >
-              <img src="logo-2doods.png" alt="Logo da 2Doods">
+              <img src="logo-2doods.png" alt="Logo da 2Doods" data-i18n-attr="alt:projects.twoDoods.logoAlt">
             </a>
             <div class="project-copy">
-              <h3>2Doods</h3>
-              <p>Projeto autoral de conteúdo e produção digital.</p>
-              <a class="text-link" href="https://www.youtube.com/@TwoDoods2/videos" target="_blank" rel="noopener noreferrer">
+              <h3 data-i18n="projects.twoDoods.title">2Doods</h3>
+              <p data-i18n="projects.twoDoods.description">Projeto autoral de conteúdo e produção digital.</p>
+              <a
+                class="text-link"
+                href="https://www.youtube.com/@TwoDoods2/videos"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="projects.twoDoods.action"
+              >
                 Abrir canal
               </a>
             </div>
@@ -336,13 +384,22 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Abrir Substack em nova aba"
+              data-i18n-attr="aria-label:projects.substack.linkLabel"
             >
-              <img src="logo-substack.png" alt="Logo do Substack">
+              <img src="logo-substack.png" alt="Logo do Substack" data-i18n-attr="alt:projects.substack.logoAlt">
             </a>
             <div class="project-copy">
-              <h3>Substack</h3>
-              <p>Espaço de escrita, análise e reflexão sobre cultura, mídia, jogos e audiovisual.</p>
-              <a class="text-link" href="https://reinholdberner.substack.com" target="_blank" rel="noopener noreferrer">
+              <h3 data-i18n="projects.substack.title">Substack</h3>
+              <p data-i18n="projects.substack.description">
+                Espaço de escrita, análise e reflexão sobre cultura, mídia, jogos e audiovisual.
+              </p>
+              <a
+                class="text-link"
+                href="https://reinholdberner.substack.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="projects.substack.action"
+              >
                 Ler publicações
               </a>
             </div>
@@ -350,9 +407,9 @@
 
           <article class="project-card wide reveal">
             <div class="project-copy">
-              <p class="section-kicker">portfólio geral</p>
-              <h3>Uma visão mais ampla das minhas entregas</h3>
-              <p>
+              <p class="section-kicker" data-i18n="projects.general.kicker">portfólio geral</p>
+              <h3 data-i18n="projects.general.title">Uma visão mais ampla das minhas entregas</h3>
+              <p data-i18n="projects.general.description">
                 Para ver também minha frente em web, UX, design e experiências digitais, o portfólio geral
                 reúne projetos complementares à minha atuação em produção.
               </p>
@@ -361,6 +418,7 @@
                 href="https://reinholdgberner.wixsite.com/reinholdbernerport-1"
                 target="_blank"
                 rel="noopener noreferrer"
+                data-i18n="projects.general.action"
               >
                 Abrir portfólio geral
               </a>
@@ -373,33 +431,56 @@
     <section class="section" id="curriculos">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="section-kicker">currículos</p>
-          <h2>Versões preparadas para contextos diferentes</h2>
+          <p class="section-kicker" data-i18n="resumes.kicker">currículos</p>
+          <h2 data-i18n="resumes.title">Versões preparadas para contextos diferentes</h2>
         </div>
 
         <div class="resume-grid">
           <article class="resume-card reveal">
-            <p class="resume-label">Currículo Produção / Audiovisual</p>
-            <p>
+            <p class="resume-label" data-i18n="resumes.cards.production.label">Currículo Produção / Audiovisual</p>
+            <p data-i18n="resumes.cards.production.description">
               Versão focada em produção multimídia, audiovisual, comunicação digital, eventos e projetos criativos.
             </p>
-            <a class="button button-secondary" href="curriculo-producao.pdf" target="_blank" rel="noopener noreferrer">
+            <a
+              class="button button-secondary"
+              href="curriculo-producao.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="resumes.cards.production.button"
+              data-resume-link="production"
+            >
               Abrir / baixar currículo
             </a>
           </article>
 
           <article class="resume-card reveal">
-            <p class="resume-label">Currículo Dev / Frontend</p>
-            <p>Versão focada em frontend, UX, experiências digitais e projetos web.</p>
-            <a class="button button-secondary" href="curriculo-dev.pdf" target="_blank" rel="noopener noreferrer">
+            <p class="resume-label" data-i18n="resumes.cards.frontend.label">Currículo Dev / Frontend</p>
+            <p data-i18n="resumes.cards.frontend.description">
+              Versão focada em frontend, UX, experiências digitais e projetos web.
+            </p>
+            <a
+              class="button button-secondary"
+              href="curriculo-dev.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="resumes.cards.frontend.button"
+              data-resume-link="frontend"
+            >
               Baixar currículo dev
             </a>
           </article>
 
           <article class="resume-card reveal">
-            <p class="resume-label">Currículo Generalista</p>
-            <p>Versão mais generalista do currículo.</p>
-            <a class="button button-secondary" href="Curriculo Geral.pdf" target="_blank" rel="noopener noreferrer">
+            <p class="resume-label" data-i18n="resumes.cards.general.label">Currículo Generalista</p>
+            <p data-i18n="resumes.cards.general.description">Versão mais generalista do currículo.</p>
+            <a
+              class="button button-secondary"
+              href="Curriculo Geral.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="resumes.cards.general.button"
+              data-resume-link="general"
+            >
               Abrir / baixar currículo
             </a>
           </article>
@@ -410,30 +491,30 @@
     <section class="section" id="cursos">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="section-kicker">cursos &amp; certificações</p>
-          <h2>Formação complementar conectada ao digital</h2>
+          <p class="section-kicker" data-i18n="courses.kicker">cursos &amp; certificações</p>
+          <h2 data-i18n="courses.title">Formação complementar conectada ao digital</h2>
         </div>
 
         <div class="courses-grid">
           <article class="course-card reveal">
             <span class="course-source">EBAC</span>
-            <h3>Inteligência Artificial</h3>
+            <h3 data-i18n="courses.items.0">Inteligência Artificial</h3>
           </article>
           <article class="course-card reveal">
             <span class="course-source">EBAC</span>
-            <h3>Direção de Conteúdo para TV e Mídias Digitais</h3>
+            <h3 data-i18n="courses.items.1">Direção de Conteúdo para TV e Mídias Digitais</h3>
           </article>
           <article class="course-card reveal">
             <span class="course-source">Santander Open Academy</span>
-            <h3>Comunicação Efetiva</h3>
+            <h3 data-i18n="courses.items.2">Comunicação Efetiva</h3>
           </article>
           <article class="course-card reveal">
             <span class="course-source">Santander Open Academy</span>
-            <h3>Produção com Inteligência Artificial Otimizada</h3>
+            <h3 data-i18n="courses.items.3">Produção com Inteligência Artificial Otimizada</h3>
           </article>
           <article class="course-card reveal">
             <span class="course-source">Santander Open Academy</span>
-            <h3>Introdução à Inteligência Artificial Generativa</h3>
+            <h3 data-i18n="courses.items.4">Introdução à Inteligência Artificial Generativa</h3>
           </article>
         </div>
       </div>
@@ -442,31 +523,31 @@
     <section class="section" id="competencias">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="section-kicker">idiomas &amp; competências</p>
-          <h2>Ferramentas humanas e criativas para tocar projetos</h2>
+          <p class="section-kicker" data-i18n="skills.kicker">idiomas &amp; competências</p>
+          <h2 data-i18n="skills.title">Ferramentas humanas e criativas para tocar projetos</h2>
         </div>
 
         <div class="skills-layout">
           <article class="skills-panel reveal">
-            <h3>Idiomas</h3>
+            <h3 data-i18n="skills.languagesTitle">Idiomas</h3>
             <ul class="clean-list">
-              <li>Português nativo</li>
-              <li>Inglês avançado</li>
-              <li>Alemão intermediário</li>
+              <li data-i18n="skills.languages.0">Português nativo</li>
+              <li data-i18n="skills.languages.1">Inglês avançado</li>
+              <li data-i18n="skills.languages.2">Alemão intermediário</li>
             </ul>
           </article>
 
           <article class="skills-panel reveal reveal-delay">
-            <h3>Competências</h3>
+            <h3 data-i18n="skills.competenciesTitle">Competências</h3>
             <div class="skills-chips">
-              <span>Produção audiovisual</span>
-              <span>Organização de eventos</span>
-              <span>Produção de conteúdo digital</span>
-              <span>Inteligência artificial aplicada à criação</span>
-              <span>Comunicação e mídias digitais</span>
-              <span>Planejamento de projetos criativos</span>
-              <span>Trabalho em equipe</span>
-              <span>Adaptabilidade e aprendizado rápido</span>
+              <span data-i18n="skills.competencies.0">Produção audiovisual</span>
+              <span data-i18n="skills.competencies.1">Organização de eventos</span>
+              <span data-i18n="skills.competencies.2">Produção de conteúdo digital</span>
+              <span data-i18n="skills.competencies.3">Inteligência artificial aplicada à criação</span>
+              <span data-i18n="skills.competencies.4">Comunicação e mídias digitais</span>
+              <span data-i18n="skills.competencies.5">Planejamento de projetos criativos</span>
+              <span data-i18n="skills.competencies.6">Trabalho em equipe</span>
+              <span data-i18n="skills.competencies.7">Adaptabilidade e aprendizado rápido</span>
             </div>
           </article>
         </div>
@@ -476,9 +557,9 @@
     <section class="section contact-section" id="contato">
       <div class="container contact-grid">
         <div class="section-heading reveal">
-          <p class="section-kicker">contato</p>
-          <h2>Vamos conversar sobre produção, frontend e experiências digitais</h2>
-          <p>
+          <p class="section-kicker" data-i18n="contact.kicker">contato</p>
+          <h2 data-i18n="contact.title">Vamos conversar sobre produção, frontend e experiências digitais</h2>
+          <p data-i18n="contact.description">
             Disponível para oportunidades de estágio, freelas, colaboração criativa e projetos em que
             organização, conteúdo, audiovisual e construção digital precisem caminhar juntos.
           </p>
@@ -492,7 +573,7 @@
               </svg>
             </span>
             <div>
-              <strong>E-mail</strong>
+              <strong data-i18n="contact.emailLabel">E-mail</strong>
               <span>reinholdgberner@gmail.com</span>
             </div>
           </a>
@@ -504,7 +585,7 @@
               </svg>
             </span>
             <div>
-              <strong>LinkedIn</strong>
+              <strong data-i18n="contact.linkedinLabel">LinkedIn</strong>
               <span>linkedin.com/in/reineberner</span>
             </div>
           </a>
@@ -514,6 +595,8 @@
             href="https://mail.google.com/mail/?view=cm&fs=1&to=reinholdgberner@gmail.com&su=Contato%20via%20portf%C3%B3lio%20de%20produ%C3%A7%C3%A3o"
             target="_blank"
             rel="noopener noreferrer"
+            data-i18n="contact.gmailButton"
+            data-i18n-attr="href:contact.gmailHref"
           >
             Abrir e-mail no Gmail
           </a>
@@ -525,7 +608,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>Reinhold Gustav Berner · <span data-current-year></span></p>
-      <p>Produção multimídia, audiovisual, comunicação digital e projetos criativos.</p>
+      <p data-i18n="footer.tagline">Produção multimídia, audiovisual, comunicação digital e projetos criativos.</p>
     </div>
   </footer>
 
