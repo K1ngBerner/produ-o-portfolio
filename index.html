@@ -346,11 +346,152 @@
     <section class="section" id="projetos">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="section-kicker" data-i18n="projects.kicker">projetos &amp; links autorais</p>
-          <h2 data-i18n="projects.title">Presença criativa em diferentes formatos</h2>
+          <p class="section-kicker" data-i18n="projects.kicker">cases criativos</p>
+          <h2 data-i18n="projects.title">Projetos em destaque com direção visual, UX e produto digital</h2>
+          <p class="section-intro" data-i18n="projects.intro">
+            Um case profissional desenvolvido para uma cliente real, combinando branding, experiência
+            comercial e frontend responsivo para transformar presença digital em ferramenta de venda.
+          </p>
         </div>
 
-        <div class="projects-grid">
+        <article class="case-showcase reveal">
+          <div class="case-overview">
+            <div class="case-copy">
+              <p class="case-eyebrow" data-i18n="projects.featured.eyebrow">case profissional</p>
+              <h3 data-i18n="projects.featured.title">Tempero da Sandra</h3>
+              <p class="case-subtitle" data-i18n="projects.featured.subtitle">
+                Branding + Flyer + Cardápio Digital + UX Comercial
+              </p>
+              <p data-i18n="projects.featured.description.0">
+                Projeto desenvolvido para uma cliente real do segmento de alimentação caseira em São
+                Bento, Caxias.
+              </p>
+              <p data-i18n="projects.featured.description.1">
+                A proposta foi criar uma identidade visual acolhedora e funcional, combinando branding
+                artesanal, cardápio semanal e um site responsivo integrado ao WhatsApp para automatizar
+                pedidos.
+              </p>
+              <p data-i18n="projects.featured.description.2">
+                O projeto envolveu criação de identidade visual, desenvolvimento da logo, definição de
+                paleta de cores, estruturação do flyer semanal, UX focado em facilidade de pedido,
+                desenvolvimento do site responsivo, integração com WhatsApp e uma lógica automática para
+                identificar o prato do próximo sábado.
+              </p>
+            </div>
+
+            <div class="case-badges" aria-label="Especialidades aplicadas no case" data-i18n-attr="aria-label:projects.featured.badgesLabel">
+              <span data-i18n="projects.featured.badges.0">Frontend</span>
+              <span data-i18n="projects.featured.badges.1">UX</span>
+              <span data-i18n="projects.featured.badges.2">Branding</span>
+              <span data-i18n="projects.featured.badges.3">Design</span>
+              <span data-i18n="projects.featured.badges.4">WhatsApp Automation</span>
+            </div>
+
+            <div class="case-actions">
+              <a
+                class="button button-primary"
+                href="https://tempero-da-sandra.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="projects.featured.actions.site"
+              >
+                Ver site
+              </a>
+              <button
+                class="button button-secondary"
+                type="button"
+                data-open-identity-panel
+                data-i18n="projects.featured.actions.identity"
+              >
+                Visualizar identidade visual
+              </button>
+            </div>
+          </div>
+
+          <div class="case-visuals">
+            <article class="case-visual-card browser-card">
+              <div class="browser-bar" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="browser-surface">
+                <div class="browser-label">
+                  <span data-i18n="projects.featured.previewLabel">preview do site</span>
+                  <strong>tempero-da-sandra.netlify.app</strong>
+                </div>
+                <iframe
+                  class="case-preview-frame"
+                  src="https://tempero-da-sandra.netlify.app"
+                  title="Prévia do site Tempero da Sandra"
+                  loading="lazy"
+                  data-i18n-attr="title:projects.featured.previewTitle"
+                ></iframe>
+              </div>
+            </article>
+
+            <article class="case-visual-card flyer-card">
+              <div class="flyer-card-copy">
+                <p class="case-eyebrow" data-i18n="projects.featured.flyerEyebrow">mockup do flyer</p>
+                <h4 data-i18n="projects.featured.flyerTitle">Comunicação pensada para funcionar no WhatsApp e no Instagram</h4>
+              </div>
+              <div class="flyer-showcase">
+                <img
+                  src="Finalizado.png"
+                  alt="Flyer final do projeto Tempero da Sandra"
+                  data-i18n-attr="alt:projects.featured.flyerAlt"
+                >
+              </div>
+            </article>
+          </div>
+        </article>
+
+        <div class="case-detail-grid">
+          <article class="case-detail-card reveal">
+            <p class="case-detail-label" data-i18n="projects.details.branding.label">Branding</p>
+            <h3 data-i18n="projects.details.branding.title">Identidade acolhedora, funcional e memorável</h3>
+            <p data-i18n="projects.details.branding.description">
+              A identidade visual foi pensada para transmitir comida caseira, acolhimento, simplicidade,
+              sabor brasileiro e proximidade familiar. A paleta utiliza tons creme, terracota e dourado
+              suave para gerar conforto visual e apetite.
+            </p>
+          </article>
+
+          <article class="case-detail-card reveal reveal-delay">
+            <p class="case-detail-label" data-i18n="projects.details.flyer.label">Flyer</p>
+            <h3 data-i18n="projects.details.flyer.title">Estrutura semanal com leitura rápida e comercial</h3>
+            <p data-i18n="projects.details.flyer.description">
+              O flyer semanal foi estruturado para facilitar leitura rápida, destacar o prato da semana,
+              organizar preços de forma intuitiva e funcionar bem tanto no WhatsApp quanto no Instagram.
+            </p>
+          </article>
+
+          <article class="case-detail-card reveal">
+            <p class="case-detail-label" data-i18n="projects.details.site.label">Site</p>
+            <h3 data-i18n="projects.details.site.title">UX comercial orientada para conversão</h3>
+            <p data-i18n="projects.details.site.description">
+              O site foi desenvolvido para simplificar pedidos, automatizar o contato via WhatsApp,
+              identificar automaticamente o próximo sábado do mês, destacar o prato vigente e facilitar a
+              navegação no mobile.
+            </p>
+          </article>
+        </div>
+
+        <article class="case-result-card reveal">
+          <p class="case-detail-label" data-i18n="projects.result.label">Resultado do projeto</p>
+          <h3 data-i18n="projects.result.title">Entrega validada com entusiasmo e uso imediato</h3>
+          <p data-i18n="projects.result.description">
+            A cliente recebeu o projeto com entusiasmo e aprovação imediata, validando tanto a identidade
+            visual quanto a praticidade do sistema digital criado para os pedidos semanais.
+          </p>
+        </article>
+
+        <div class="author-projects-head reveal">
+          <p class="section-kicker" data-i18n="projects.linksKicker">projetos autorais &amp; links</p>
+          <h3 data-i18n="projects.linksTitle">Outras frentes criativas e editoriais</h3>
+        </div>
+
+        <div class="projects-grid author-projects-grid">
           <article class="project-card featured reveal">
             <a
               class="project-logo-link"
@@ -605,10 +746,88 @@
     </section>
   </main>
 
+  <div class="identity-panel" data-identity-panel hidden>
+    <button class="identity-panel-backdrop" type="button" aria-hidden="true" data-close-identity-panel></button>
+    <aside
+      class="identity-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="identity-panel-title"
+      tabindex="-1"
+      data-identity-drawer
+    >
+      <button
+        class="identity-close"
+        type="button"
+        data-close-identity-panel
+        aria-label="Fechar identidade visual"
+        data-i18n-attr="aria-label:projects.identityPanel.closeLabel"
+      >
+        <span aria-hidden="true">×</span>
+      </button>
+
+      <div class="identity-drawer-content">
+        <div class="identity-drawer-head">
+          <p class="section-kicker" data-i18n="projects.identityPanel.kicker">identidade visual</p>
+          <h2 id="identity-panel-title" data-i18n="projects.identityPanel.title">Tempero da Sandra</h2>
+          <p data-i18n="projects.identityPanel.intro">
+            Uma apresentação concentrada dos elementos visuais que estruturaram a marca e a comunicação
+            comercial do projeto.
+          </p>
+        </div>
+
+        <div class="identity-drawer-grid">
+          <article class="identity-asset-card">
+            <div class="identity-asset-head">
+              <p class="case-detail-label" data-i18n="projects.identityPanel.flyerLabel">Flyer final</p>
+              <h3 data-i18n="projects.identityPanel.flyerTitle">Peça principal para divulgação semanal</h3>
+            </div>
+            <div class="identity-art-frame flyer-frame">
+              <img
+                src="Finalizado.png"
+                alt="Flyer final do projeto Tempero da Sandra"
+                data-i18n-attr="alt:projects.identityPanel.flyerAlt"
+              >
+            </div>
+          </article>
+
+          <article class="identity-asset-card">
+            <div class="identity-asset-head">
+              <p class="case-detail-label" data-i18n="projects.identityPanel.logoLabel">Logo da marca</p>
+              <h3 data-i18n="projects.identityPanel.logoTitle">Símbolo pensado para proximidade e sabor caseiro</h3>
+            </div>
+            <div class="identity-art-frame logo-frame">
+              <img
+                src="logo-sandra.png"
+                alt="Logo da marca Tempero da Sandra"
+                data-i18n-attr="alt:projects.identityPanel.logoAlt"
+              >
+            </div>
+            <p data-i18n="projects.identityPanel.logoDescription">
+              A identidade visual foi desenvolvida para transmitir acolhimento, comida caseira e simplicidade.
+            </p>
+          </article>
+        </div>
+      </div>
+    </aside>
+  </div>
+
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Reinhold Gustav Berner · <span data-current-year></span></p>
-      <p data-i18n="footer.tagline">Produção multimídia, audiovisual, comunicação digital e projetos criativos.</p>
+      <div class="footer-signature">
+        <div class="footer-logo-shell">
+          <img
+            src="rb-logo.jpg"
+            alt="Logo RB de Reinhold Berner"
+            class="footer-logo"
+            data-i18n-attr="alt:footer.logoAlt"
+          >
+        </div>
+        <div class="footer-copy">
+          <p>Reinhold Gustav Berner · <span data-current-year></span></p>
+          <p data-i18n="footer.tagline">Produção multimídia, audiovisual, comunicação digital e projetos criativos.</p>
+        </div>
+      </div>
     </div>
   </footer>
 

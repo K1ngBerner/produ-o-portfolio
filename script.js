@@ -131,8 +131,74 @@ const translations = {
       ]
     },
     projects: {
-      kicker: "projetos & links autorais",
-      title: "Presença criativa em diferentes formatos",
+      kicker: "cases criativos",
+      title: "Projetos em destaque com direção visual, UX e produto digital",
+      intro:
+        "Um case profissional desenvolvido para uma cliente real, combinando branding, experiência comercial e frontend responsivo para transformar presença digital em ferramenta de venda.",
+      featured: {
+        eyebrow: "case profissional",
+        title: "Tempero da Sandra",
+        subtitle: "Branding + Flyer + Cardápio Digital + UX Comercial",
+        description: [
+          "Projeto desenvolvido para uma cliente real do segmento de alimentação caseira em São Bento, Caxias.",
+          "A proposta foi criar uma identidade visual acolhedora e funcional, combinando branding artesanal, cardápio semanal e um site responsivo integrado ao WhatsApp para automatizar pedidos.",
+          "O projeto envolveu criação de identidade visual, desenvolvimento da logo, definição de paleta de cores, estruturação do flyer semanal, UX focado em facilidade de pedido, desenvolvimento do site responsivo, integração com WhatsApp e uma lógica automática para identificar o prato do próximo sábado."
+        ],
+        badgesLabel: "Especialidades aplicadas no case",
+        badges: ["Frontend", "UX", "Branding", "Design", "WhatsApp Automation"],
+        actions: {
+          site: "Ver site",
+          identity: "Visualizar identidade visual"
+        },
+        previewLabel: "preview do site",
+        previewTitle: "Prévia do site Tempero da Sandra",
+        flyerEyebrow: "mockup do flyer",
+        flyerTitle: "Comunicação pensada para funcionar no WhatsApp e no Instagram",
+        flyerAlt: "Flyer final do projeto Tempero da Sandra"
+      },
+      details: {
+        branding: {
+          label: "Branding",
+          title: "Identidade acolhedora, funcional e memorável",
+          description:
+            "A identidade visual foi pensada para transmitir comida caseira, acolhimento, simplicidade, sabor brasileiro e proximidade familiar. A paleta utiliza tons creme, terracota e dourado suave para gerar conforto visual e apetite."
+        },
+        flyer: {
+          label: "Flyer",
+          title: "Estrutura semanal com leitura rápida e comercial",
+          description:
+            "O flyer semanal foi estruturado para facilitar leitura rápida, destacar o prato da semana, organizar preços de forma intuitiva e funcionar bem tanto no WhatsApp quanto no Instagram."
+        },
+        site: {
+          label: "Site",
+          title: "UX comercial orientada para conversão",
+          description:
+            "O site foi desenvolvido para simplificar pedidos, automatizar o contato via WhatsApp, identificar automaticamente o próximo sábado do mês, destacar o prato vigente e facilitar a navegação no mobile."
+        }
+      },
+      result: {
+        label: "Resultado do projeto",
+        title: "Entrega validada com entusiasmo e uso imediato",
+        description:
+          "A cliente recebeu o projeto com entusiasmo e aprovação imediata, validando tanto a identidade visual quanto a praticidade do sistema digital criado para os pedidos semanais."
+      },
+      linksKicker: "projetos autorais & links",
+      linksTitle: "Outras frentes criativas e editoriais",
+      identityPanel: {
+        closeLabel: "Fechar identidade visual",
+        kicker: "identidade visual",
+        title: "Tempero da Sandra",
+        intro:
+          "Uma apresentação concentrada dos elementos visuais que estruturaram a marca e a comunicação comercial do projeto.",
+        flyerLabel: "Flyer final",
+        flyerTitle: "Peça principal para divulgação semanal",
+        flyerAlt: "Flyer final do projeto Tempero da Sandra",
+        logoLabel: "Logo da marca",
+        logoTitle: "Símbolo pensado para proximidade e sabor caseiro",
+        logoAlt: "Logo da marca Tempero da Sandra",
+        logoDescription:
+          "A identidade visual foi desenvolvida para transmitir acolhimento, comida caseira e simplicidade."
+      },
       twoDoods: {
         title: "2Doods",
         description: "Projeto autoral de conteúdo e produção digital.",
@@ -222,6 +288,7 @@ const translations = {
         "https://mail.google.com/mail/?view=cm&fs=1&to=reinholdgberner@gmail.com&su=Contato%20via%20portf%C3%B3lio%20de%20produ%C3%A7%C3%A3o"
     },
     footer: {
+      logoAlt: "Logo RB de Reinhold Berner",
       tagline: "Produção multimídia, audiovisual, comunicação digital e projetos criativos."
     }
   },
@@ -357,8 +424,74 @@ const translations = {
       ]
     },
     projects: {
-      kicker: "projects & author links",
-      title: "Creative presence across different formats",
+      kicker: "creative cases",
+      title: "Featured work in visual direction, UX and digital product thinking",
+      intro:
+        "A professional case created for a real client, combining branding, commercial UX and responsive frontend to turn digital presence into a sales tool.",
+      featured: {
+        eyebrow: "professional case",
+        title: "Tempero da Sandra",
+        subtitle: "Branding + Flyer + Digital Menu + Commercial UX",
+        description: [
+          "A project created for a real client in the homemade food sector in Sao Bento, Caxias.",
+          "The goal was to build a warm and functional visual identity, combining handcrafted branding, a weekly menu and a responsive website integrated with WhatsApp to streamline orders.",
+          "The project involved visual identity creation, logo design, color palette definition, weekly flyer structure, UX focused on easier ordering, responsive website development, WhatsApp integration and an automated logic to identify the next Saturday dish."
+        ],
+        badgesLabel: "Skills highlighted in this case",
+        badges: ["Frontend", "UX", "Branding", "Design", "WhatsApp Automation"],
+        actions: {
+          site: "View live site",
+          identity: "View brand identity"
+        },
+        previewLabel: "live site preview",
+        previewTitle: "Tempero da Sandra website preview",
+        flyerEyebrow: "flyer mockup",
+        flyerTitle: "Communication designed to work on WhatsApp and Instagram",
+        flyerAlt: "Final flyer for the Tempero da Sandra project"
+      },
+      details: {
+        branding: {
+          label: "Branding",
+          title: "A warm, functional and memorable identity",
+          description:
+            "The visual identity was designed to communicate homemade food, warmth, simplicity, Brazilian flavor and a sense of family closeness. The palette uses cream, terracotta and soft gold tones to create comfort and appetite."
+        },
+        flyer: {
+          label: "Flyer",
+          title: "Weekly structure with quick, commercial readability",
+          description:
+            "The weekly flyer was structured to enable fast reading, highlight the featured dish, organize prices intuitively and perform well on both WhatsApp and Instagram."
+        },
+        site: {
+          label: "Website",
+          title: "Commercial UX designed for conversion",
+          description:
+            "The website was built to simplify orders, automate contact through WhatsApp, automatically identify the next Saturday of the month, highlight the current dish and make mobile navigation effortless."
+        }
+      },
+      result: {
+        label: "Project outcome",
+        title: "Delivered with immediate approval and real-world value",
+        description:
+          "The client received the project with enthusiasm and immediate approval, validating both the visual identity and the practicality of the digital ordering system created for weekly sales."
+      },
+      linksKicker: "author projects & links",
+      linksTitle: "Other creative and editorial directions",
+      identityPanel: {
+        closeLabel: "Close brand identity drawer",
+        kicker: "brand identity",
+        title: "Tempero da Sandra",
+        intro:
+          "A focused presentation of the visual elements that shaped the brand and the project's commercial communication.",
+        flyerLabel: "Final flyer",
+        flyerTitle: "Main asset for weekly promotion",
+        flyerAlt: "Final flyer for the Tempero da Sandra project",
+        logoLabel: "Brand logo",
+        logoTitle: "A mark designed for warmth and homemade flavor",
+        logoAlt: "Tempero da Sandra brand logo",
+        logoDescription:
+          "The visual identity was designed to convey warmth, homemade food and simplicity."
+      },
       twoDoods: {
         title: "2Doods",
         description: "Author-led digital content and production project.",
@@ -438,7 +571,7 @@ const translations = {
     },
     contact: {
       kicker: "contact",
-      title: "Let’s talk about production, frontend and digital experiences",
+      title: "Let's talk about production, frontend and digital experiences",
       description:
         "Available for internships, freelance work, creative collaborations and projects where organization, content, audiovisual work and digital execution need to move together.",
       emailLabel: "Email",
@@ -448,6 +581,7 @@ const translations = {
         "https://mail.google.com/mail/?view=cm&fs=1&to=reinholdgberner@gmail.com&su=Contact%20via%20multimedia%20portfolio"
     },
     footer: {
+      logoAlt: "RB logo for Reinhold Berner",
       tagline: "Multimedia production, audiovisual work, digital communication and creative projects."
     }
   }
@@ -480,6 +614,8 @@ const languageButtonLabels = {
 
 const languageStorageKey = "portfolioLanguage";
 let languageTransitionTimeout;
+let identityPanelCloseTimeout;
+let lastFocusedElement = null;
 
 const header = document.querySelector("[data-header]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
@@ -493,6 +629,10 @@ const i18nTextNodes = document.querySelectorAll("[data-i18n]");
 const i18nAttributeNodes = document.querySelectorAll("[data-i18n-attr]");
 const languageOptions = document.querySelectorAll("[data-language-option]");
 const resumeLinks = document.querySelectorAll("[data-resume-link]");
+const identityPanel = document.querySelector("[data-identity-panel]");
+const identityDrawer = document.querySelector("[data-identity-drawer]");
+const openIdentityButtons = document.querySelectorAll("[data-open-identity-panel]");
+const closeIdentityButtons = document.querySelectorAll("[data-close-identity-panel]");
 
 const getStoredLanguage = () => {
   try {
@@ -588,6 +728,44 @@ const closeMenu = () => {
   document.body.classList.remove("menu-open");
 };
 
+const isIdentityPanelOpen = () => Boolean(identityPanel && !identityPanel.hidden);
+
+const openIdentityPanel = () => {
+  if (!identityPanel || !identityDrawer) {
+    return;
+  }
+
+  closeMenu();
+  window.clearTimeout(identityPanelCloseTimeout);
+  lastFocusedElement = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+
+  identityPanel.hidden = false;
+  document.body.classList.add("has-panel-open");
+
+  window.requestAnimationFrame(() => {
+    identityPanel.classList.add("is-open");
+    identityDrawer.focus({ preventScroll: true });
+  });
+};
+
+const closeIdentityPanel = ({ restoreFocus = true } = {}) => {
+  if (!identityPanel || identityPanel.hidden) {
+    return;
+  }
+
+  identityPanel.classList.remove("is-open");
+  document.body.classList.remove("has-panel-open");
+
+  window.clearTimeout(identityPanelCloseTimeout);
+  identityPanelCloseTimeout = window.setTimeout(() => {
+    identityPanel.hidden = true;
+
+    if (restoreFocus && lastFocusedElement?.focus) {
+      lastFocusedElement.focus({ preventScroll: true });
+    }
+  }, 320);
+};
+
 if (menuToggle && nav) {
   menuToggle.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("is-open");
@@ -614,6 +792,22 @@ languageOptions.forEach((button) => {
   });
 });
 
+openIdentityButtons.forEach((button) => {
+  button.addEventListener("click", openIdentityPanel);
+});
+
+closeIdentityButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    closeIdentityPanel();
+  });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && isIdentityPanelOpen()) {
+    closeIdentityPanel();
+  }
+});
+
 if (header) {
   const updateHeaderState = () => {
     header.classList.toggle("is-scrolled", window.scrollY > 24);
@@ -634,6 +828,10 @@ if (profileImage && profileShell) {
 
   if (!profileImage.getAttribute("src")) {
     handleMissingProfile();
+  } else if (profileImage.complete && profileImage.naturalWidth > 0) {
+    handleLoadedProfile();
+  } else if (profileImage.complete && profileImage.naturalWidth === 0) {
+    handleMissingProfile();
   } else {
     profileImage.addEventListener("load", handleLoadedProfile, { once: true });
     profileImage.addEventListener("error", handleMissingProfile, { once: true });
@@ -650,6 +848,7 @@ const sectionMap = navLinks
     if (!id || !id.startsWith("#")) {
       return null;
     }
+
     return {
       link,
       section: document.querySelector(id)
