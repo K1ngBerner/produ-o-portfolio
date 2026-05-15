@@ -8,6 +8,7 @@ const translations = {
     },
     header: {
       brandLabel: "Ir para o topo",
+      logoAlt: "Logo RB de Reinhold Berner",
       brandRole: "Produção Multimídia & Audiovisual",
       menuLabel: "Abrir menu",
       languageGroupLabel: "Seletor de idioma",
@@ -301,6 +302,7 @@ const translations = {
     },
     header: {
       brandLabel: "Back to top",
+      logoAlt: "RB logo for Reinhold Berner",
       brandRole: "Multimedia Production & Audiovisual",
       menuLabel: "Open menu",
       languageGroupLabel: "Language selector",

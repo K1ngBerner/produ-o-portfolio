@@ -180,16 +180,43 @@ p {
   position: sticky;
   top: 0;
   z-index: 40;
+  isolation: isolate;
   backdrop-filter: blur(18px);
-  background: rgba(8, 10, 15, 0.68);
-  border-bottom: 1px solid transparent;
+  background:
+    linear-gradient(180deg, rgba(9, 11, 17, 0.84), rgba(8, 10, 15, 0.7)),
+    rgba(8, 10, 15, 0.68);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
   transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
 }
 
+.site-header::before,
+.site-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.site-header::before {
+  background:
+    radial-gradient(circle at 12% 50%, rgba(255, 209, 102, 0.09), transparent 26%),
+    radial-gradient(circle at 82% 20%, rgba(77, 165, 255, 0.08), transparent 24%);
+  opacity: 0.72;
+  z-index: -1;
+}
+
+.site-header::after {
+  inset: auto 0 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+}
+
 .site-header.is-scrolled {
-  background: rgba(8, 10, 15, 0.9);
+  background:
+    linear-gradient(180deg, rgba(9, 11, 17, 0.96), rgba(8, 10, 15, 0.9)),
+    rgba(8, 10, 15, 0.9);
   border-color: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
 }
 
 .header-inner {
@@ -198,23 +225,79 @@ p {
   align-items: center;
   justify-content: flex-start;
   gap: 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .brand {
   display: inline-flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  min-width: 0;
+  transition: transform 0.32s var(--ease-premium);
+}
+
+.brand:hover {
+  transform: translateY(-1px);
+}
+
+.brand-mark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
+    rgba(12, 15, 22, 0.88);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 14px 28px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+}
+
+.brand-mark::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(255, 209, 102, 0.16), transparent 48%);
+  pointer-events: none;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  object-fit: cover;
+  transition: transform 0.32s var(--ease-premium), filter 0.32s var(--ease-premium);
+}
+
+.brand:hover .brand-logo {
+  transform: scale(1.03);
+  filter: saturate(1.04);
+}
+
+.brand-copy {
+  display: grid;
   gap: 0.25rem;
   min-width: 0;
 }
 
 .brand-name {
   font-size: 1.15rem;
+  color: var(--text);
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.24);
 }
 
 .brand-role {
   color: var(--text-muted);
   font-size: 0.85rem;
   letter-spacing: 0.04em;
+  line-height: 1.32;
   text-transform: uppercase;
 }
 
@@ -419,8 +502,12 @@ p {
 }
 
 .button-secondary {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: var(--line);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.085), rgba(255, 255, 255, 0.045));
+  border-color: rgba(255, 255, 255, 0.16);
+  color: #f8f5ef;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 12px 30px rgba(0, 0, 0, 0.18);
 }
 
 .button-ghost {
@@ -429,7 +516,15 @@ p {
   color: var(--accent-2);
 }
 
-.button-secondary:hover,
+.button-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.24);
+  color: #fffaf2;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 18px 40px rgba(0, 0, 0, 0.24);
+}
+
 .button-ghost:hover {
   box-shadow: var(--shadow-soft);
 }
@@ -1549,17 +1644,19 @@ p {
 
 .site-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(7, 8, 13, 0.9);
+  background:
+    radial-gradient(circle at 18% 0%, rgba(255, 209, 102, 0.08), transparent 20%),
+    linear-gradient(180deg, rgba(9, 11, 17, 0.96), rgba(7, 8, 13, 0.92));
 }
 
 .footer-inner {
-  padding: 1.5rem 0 2rem;
+  padding: 1.7rem 0 2.15rem;
 }
 
 .footer-signature {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.15rem;
   flex-wrap: wrap;
 }
 
@@ -1567,24 +1664,56 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 72px;
-  height: 72px;
+  width: 78px;
+  height: 78px;
   border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
-  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
+    rgba(12, 15, 22, 0.9);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    var(--shadow-soft);
+  transition:
+    transform 0.32s var(--ease-premium),
+    border-color 0.32s var(--ease-premium),
+    box-shadow 0.32s var(--ease-premium);
+  overflow: hidden;
 }
 
 .footer-logo {
-  width: 56px;
-  height: 56px;
+  width: 60px;
+  height: 60px;
   border-radius: 18px;
   object-fit: cover;
+  transition: transform 0.32s var(--ease-premium), filter 0.32s var(--ease-premium);
+}
+
+.footer-logo-shell:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 22px 44px rgba(0, 0, 0, 0.24);
+}
+
+.footer-logo-shell:hover .footer-logo {
+  transform: scale(1.04);
+  filter: saturate(1.04);
 }
 
 .footer-copy {
   display: grid;
-  gap: 0.3rem;
+  gap: 0.36rem;
+}
+
+.footer-copy p:first-child {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.footer-copy p:last-child {
+  max-width: 58ch;
 }
 
 .reveal {
@@ -1723,6 +1852,23 @@ p {
     position: relative;
   }
 
+  .brand {
+    gap: 0.75rem;
+    max-width: calc(100% - 170px);
+  }
+
+  .brand-mark {
+    width: 46px;
+    height: 46px;
+    border-radius: 16px;
+  }
+
+  .brand-logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+  }
+
   .header-actions {
     margin-left: auto;
     gap: 0.6rem;
@@ -1854,11 +2000,29 @@ p {
   }
 
   .brand {
-    max-width: calc(100% - 64px);
+    max-width: calc(100% - 126px);
+    gap: 0.68rem;
+  }
+
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+  }
+
+  .brand-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+  }
+
+  .brand-name {
+    font-size: 1.03rem;
   }
 
   .brand-role {
-    font-size: 0.75rem;
+    font-size: 0.73rem;
+    letter-spacing: 0.03em;
   }
 
   .header-actions {
@@ -1991,6 +2155,16 @@ p {
 
   .footer-signature {
     align-items: flex-start;
+  }
+
+  .footer-logo-shell {
+    width: 72px;
+    height: 72px;
+  }
+
+  .footer-logo {
+    width: 56px;
+    height: 56px;
   }
 
   .footer-inner {
