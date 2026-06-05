@@ -135,7 +135,7 @@ const translations = {
       kicker: "cases criativos",
       title: "Projetos em destaque com direção visual, UX e produto digital",
       intro:
-        "Um estudo de caso profissional sobre branding, posicionamento, UX, arquitetura da informação e frontend aplicados a uma presença digital institucional.",
+        "Estudos de caso profissionais combinando branding, posicionamento, UX, arquitetura da informação, comunicação visual e frontend para clientes reais.",
       featured: {
         eyebrow: "case profissional",
         title: "Patrícia Conti",
@@ -229,6 +229,91 @@ const translations = {
         title: "Mais do que um website: uma presença digital coerente",
         description:
           "O resultado transformou uma trajetória profissional de mais de 25 anos em uma plataforma digital capaz de comunicar confiança, experiência e profissionalismo, com projeto desenvolvido integralmente por Reinhold Berner."
+      },
+      sandra: {
+        kicker: "case profissional",
+        title: "Tempero da Sandra",
+        eyebrow: "branding + ux comercial",
+        heading: "Tempero da Sandra",
+        subtitle: "Branding + Flyer + Cardápio Digital + UX Comercial",
+        description: [
+          "Projeto desenvolvido para uma cliente real do segmento de alimentação caseira em São Bento, Caxias.",
+          "A proposta foi criar uma identidade visual acolhedora e funcional, combinando branding artesanal, cardápio semanal e um site responsivo integrado ao WhatsApp para automatizar pedidos.",
+          "O projeto envolveu criação de identidade visual, desenvolvimento da logo, definição de paleta de cores, estruturação do flyer semanal, UX focado em facilidade de pedido, desenvolvimento do site responsivo, integração com WhatsApp e uma lógica automática para identificar o prato do próximo sábado."
+        ],
+        badgesLabel: "Especialidades aplicadas no case Tempero da Sandra",
+        badges: ["Frontend", "UX", "Branding", "Design", "WhatsApp Automation"],
+        actions: {
+          site: "Ver site"
+        },
+        previewLabel: "preview do site",
+        previewTitle: "Prévia do site Tempero da Sandra",
+        flyerEyebrow: "mockup do flyer",
+        flyerTitle: "Comunicação pensada para funcionar no WhatsApp e no Instagram",
+        flyerAlt: "Flyer final do projeto Tempero da Sandra",
+        details: {
+          branding: {
+            label: "Branding",
+            title: "Identidade acolhedora, funcional e memorável",
+            description:
+              "A identidade visual foi pensada para transmitir comida caseira, acolhimento, simplicidade, sabor brasileiro e proximidade familiar. A paleta utiliza tons creme, terracota e dourado suave para gerar conforto visual e apetite."
+          },
+          flyer: {
+            label: "Flyer",
+            title: "Estrutura semanal com leitura rápida e comercial",
+            description:
+              "O flyer semanal foi estruturado para facilitar leitura rápida, destacar o prato da semana, organizar preços de forma intuitiva e funcionar bem tanto no WhatsApp quanto no Instagram."
+          },
+          site: {
+            label: "Site",
+            title: "UX comercial orientada para conversão",
+            description:
+              "O site foi desenvolvido para simplificar pedidos, automatizar o contato via WhatsApp, identificar automaticamente o próximo sábado do mês, destacar o prato vigente e facilitar a navegação no mobile."
+          }
+        },
+        result: {
+          label: "Resultado do projeto",
+          title: "Entrega validada com entusiasmo e uso imediato",
+          description:
+            "A cliente recebeu o projeto com entusiasmo e aprovação imediata, validando tanto a identidade visual quanto a praticidade do sistema digital criado para os pedidos semanais."
+        }
+      },
+      carousel: {
+        kicker: "vitrine em movimento",
+        title: "Um panorama dos projetos, marcas e frentes criativas",
+        label: "Carrossel animado de projetos",
+        items: [
+          {
+            title: "Patrícia Conti",
+            type: "Branding + Frontend",
+            alt: "Logo Patrícia Conti"
+          },
+          {
+            title: "Tempero da Sandra",
+            type: "Branding + UX Comercial",
+            alt: "Logo Tempero da Sandra"
+          },
+          {
+            title: "2Doods",
+            type: "Conteúdo Digital",
+            alt: "Logo da 2Doods"
+          },
+          {
+            title: "Substack",
+            type: "Escrita + Cultura Digital",
+            alt: "Logo do Substack"
+          },
+          {
+            title: "Portfólio Frontend",
+            type: "Frontend + UX",
+            alt: "Logo RB de Reinhold Berner"
+          },
+          {
+            title: "Entregas Criativas",
+            type: "Portfolio Geral",
+            alt: "Retrato de Reinhold Berner"
+          }
+        ]
       },
       linksKicker: "projetos autorais & links",
       linksTitle: "Outras frentes criativas e editoriais",
@@ -478,7 +563,7 @@ const translations = {
       kicker: "creative cases",
       title: "Featured work in visual direction, UX and digital product thinking",
       intro:
-        "A professional case study about branding, positioning, UX, information architecture and frontend applied to an institutional digital presence.",
+        "Professional case studies combining branding, positioning, UX, information architecture, visual communication and frontend for real clients.",
       featured: {
         eyebrow: "professional case",
         title: "Patricia Conti",
@@ -572,6 +657,91 @@ const translations = {
         title: "More than a website: a coherent digital presence",
         description:
           "The final result turned more than 25 years of professional experience into a digital platform capable of communicating trust, experience and professionalism, with the project developed end to end by Reinhold Berner."
+      },
+      sandra: {
+        kicker: "professional case",
+        title: "Tempero da Sandra",
+        eyebrow: "branding + commercial ux",
+        heading: "Tempero da Sandra",
+        subtitle: "Branding + Flyer + Digital Menu + Commercial UX",
+        description: [
+          "A project created for a real client in the homemade food sector in Sao Bento, Caxias.",
+          "The goal was to build a warm and functional visual identity, combining handcrafted branding, a weekly menu and a responsive website integrated with WhatsApp to streamline orders.",
+          "The project involved visual identity creation, logo design, color palette definition, weekly flyer structure, UX focused on easier ordering, responsive website development, WhatsApp integration and an automated logic to identify the next Saturday dish."
+        ],
+        badgesLabel: "Skills highlighted in the Tempero da Sandra case",
+        badges: ["Frontend", "UX", "Branding", "Design", "WhatsApp Automation"],
+        actions: {
+          site: "View live site"
+        },
+        previewLabel: "live site preview",
+        previewTitle: "Tempero da Sandra website preview",
+        flyerEyebrow: "flyer mockup",
+        flyerTitle: "Communication designed to work on WhatsApp and Instagram",
+        flyerAlt: "Final flyer for the Tempero da Sandra project",
+        details: {
+          branding: {
+            label: "Branding",
+            title: "A warm, functional and memorable identity",
+            description:
+              "The visual identity was designed to communicate homemade food, warmth, simplicity, Brazilian flavor and a sense of family closeness. The palette uses cream, terracotta and soft gold tones to create comfort and appetite."
+          },
+          flyer: {
+            label: "Flyer",
+            title: "Weekly structure with quick, commercial readability",
+            description:
+              "The weekly flyer was structured to enable fast reading, highlight the featured dish, organize prices intuitively and perform well on both WhatsApp and Instagram."
+          },
+          site: {
+            label: "Website",
+            title: "Commercial UX designed for conversion",
+            description:
+              "The website was built to simplify orders, automate contact through WhatsApp, automatically identify the next Saturday of the month, highlight the current dish and make mobile navigation effortless."
+          }
+        },
+        result: {
+          label: "Project outcome",
+          title: "Delivered with immediate approval and real-world value",
+          description:
+            "The client received the project with enthusiasm and immediate approval, validating both the visual identity and the practicality of the digital ordering system created for weekly sales."
+        }
+      },
+      carousel: {
+        kicker: "moving showcase",
+        title: "A panoramic view of projects, brands and creative directions",
+        label: "Animated project carousel",
+        items: [
+          {
+            title: "Patricia Conti",
+            type: "Branding + Frontend",
+            alt: "Patricia Conti logo"
+          },
+          {
+            title: "Tempero da Sandra",
+            type: "Branding + Commercial UX",
+            alt: "Tempero da Sandra logo"
+          },
+          {
+            title: "2Doods",
+            type: "Digital Content",
+            alt: "2Doods logo"
+          },
+          {
+            title: "Substack",
+            type: "Writing + Digital Culture",
+            alt: "Substack logo"
+          },
+          {
+            title: "Frontend Portfolio",
+            type: "Frontend + UX",
+            alt: "RB logo for Reinhold Berner"
+          },
+          {
+            title: "Creative Deliveries",
+            type: "General Portfolio",
+            alt: "Portrait of Reinhold Berner"
+          }
+        ]
       },
       linksKicker: "author projects & links",
       linksTitle: "Other creative and editorial directions",

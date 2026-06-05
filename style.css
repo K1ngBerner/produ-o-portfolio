@@ -1407,6 +1407,132 @@ p {
   margin-bottom: 1.2rem;
 }
 
+.case-secondary-head {
+  max-width: 720px;
+  margin: 3.25rem 0 1.5rem;
+}
+
+.projects-carousel-section {
+  display: grid;
+  gap: 1.2rem;
+  margin: 3.25rem 0 2.5rem;
+}
+
+.projects-carousel-head {
+  max-width: 760px;
+}
+
+.projects-carousel-head h3 {
+  max-width: 22ch;
+}
+
+.projects-carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: calc(var(--radius-lg) + 4px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(180deg, rgba(20, 24, 38, 0.76), rgba(12, 15, 24, 0.66));
+  box-shadow: var(--shadow-soft);
+}
+
+.projects-carousel::before,
+.projects-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: min(18vw, 140px);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.projects-carousel::before {
+  left: 0;
+  background: linear-gradient(90deg, rgba(10, 12, 18, 0.96), transparent);
+}
+
+.projects-carousel::after {
+  right: 0;
+  background: linear-gradient(270deg, rgba(10, 12, 18, 0.96), transparent);
+}
+
+.projects-carousel-track {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  padding: 1rem;
+  animation: projects-marquee 34s linear infinite;
+  will-change: transform;
+}
+
+.projects-carousel:hover .projects-carousel-track,
+.projects-carousel:focus-within .projects-carousel-track {
+  animation-play-state: paused;
+}
+
+.carousel-project-card {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr);
+  align-items: center;
+  gap: 0.95rem;
+  width: clamp(250px, 28vw, 340px);
+  min-height: 112px;
+  padding: 0.9rem;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.035)),
+    rgba(9, 11, 17, 0.52);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition:
+    transform 0.3s var(--ease-premium),
+    border-color 0.3s var(--ease-premium),
+    background 0.3s var(--ease-premium),
+    box-shadow 0.3s var(--ease-premium);
+}
+
+.carousel-project-card:hover,
+.carousel-project-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(255, 209, 102, 0.32);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow-soft);
+}
+
+.carousel-project-card:focus-visible {
+  outline: 2px solid rgba(255, 209, 102, 0.78);
+  outline-offset: 4px;
+}
+
+.carousel-project-card img {
+  width: 82px;
+  height: 82px;
+  border-radius: 18px;
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.carousel-project-card span {
+  display: block;
+  color: var(--accent-2);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.carousel-project-card strong {
+  display: block;
+  margin-top: 0.32rem;
+  color: var(--text);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.12rem;
+  line-height: 1.16;
+}
+
 .author-projects-head {
   max-width: 720px;
   margin: 0 0 1.5rem;
@@ -1884,6 +2010,15 @@ p {
   }
 }
 
+@keyframes projects-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
+
 @media (max-width: 1060px) {
   .hero-grid,
   .two-column-layout,
@@ -2026,6 +2161,10 @@ p {
   .case-actions .button {
     width: 100%;
     min-width: 0;
+  }
+
+  .carousel-project-card {
+    width: min(78vw, 320px);
   }
 
   .identity-drawer {
@@ -2213,6 +2352,33 @@ p {
 
   .case-preview-frame {
     min-height: 300px;
+  }
+
+  .projects-carousel-track {
+    gap: 0.85rem;
+    padding: 0.85rem;
+    animation-duration: 40s;
+  }
+
+  .carousel-project-card {
+    grid-template-columns: 68px minmax(0, 1fr);
+    min-height: 98px;
+    padding: 0.78rem;
+    border-radius: 18px;
+  }
+
+  .carousel-project-card img {
+    width: 68px;
+    height: 68px;
+    border-radius: 15px;
+  }
+
+  .carousel-project-card span {
+    font-size: 0.68rem;
+  }
+
+  .carousel-project-card strong {
+    font-size: 1rem;
   }
 
   .flyer-card-copy h4,
