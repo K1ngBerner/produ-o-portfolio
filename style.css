@@ -1429,6 +1429,7 @@ p {
 .projects-carousel {
   position: relative;
   overflow: hidden;
+  min-height: 0;
   border-radius: calc(var(--radius-lg) + 4px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   background:
@@ -1442,8 +1443,8 @@ p {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: min(18vw, 140px);
-  z-index: 2;
+  width: min(18vw, 150px);
+  z-index: 3;
   pointer-events: none;
 }
 
@@ -1460,9 +1461,9 @@ p {
 .projects-carousel-track {
   display: flex;
   width: max-content;
-  gap: 1rem;
-  padding: 1rem;
-  animation: projects-marquee 34s linear infinite;
+  gap: 1.1rem;
+  padding: 1.15rem;
+  animation: projects-marquee 32s linear infinite;
   will-change: transform;
 }
 
@@ -1473,12 +1474,12 @@ p {
 
 .carousel-project-card {
   display: grid;
-  grid-template-columns: 82px minmax(0, 1fr);
+  grid-template-columns: 96px minmax(0, 1fr);
   align-items: center;
-  gap: 0.95rem;
-  width: clamp(250px, 28vw, 340px);
-  min-height: 112px;
-  padding: 0.9rem;
+  gap: 1rem;
+  width: clamp(300px, 34vw, 410px);
+  min-height: 128px;
+  padding: 1rem;
   border-radius: 22px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background:
@@ -1506,8 +1507,8 @@ p {
 }
 
 .carousel-project-card img {
-  width: 82px;
-  height: 82px;
+  width: 96px;
+  height: 96px;
   border-radius: 18px;
   object-fit: cover;
   background: rgba(255, 255, 255, 0.06);
@@ -2015,7 +2016,7 @@ p {
     transform: translateX(0);
   }
   to {
-    transform: translateX(calc(-50% - 0.5rem));
+    transform: translateX(calc(-50% - 0.55rem));
   }
 }
 
@@ -2355,13 +2356,14 @@ p {
   }
 
   .projects-carousel-track {
-    gap: 0.85rem;
-    padding: 0.85rem;
-    animation-duration: 40s;
+    gap: 0.9rem;
+    padding: 0.9rem;
+    animation-duration: 38s;
   }
 
   .carousel-project-card {
     grid-template-columns: 68px minmax(0, 1fr);
+    width: min(78vw, 300px);
     min-height: 98px;
     padding: 0.78rem;
     border-radius: 18px;
@@ -2474,5 +2476,9 @@ p {
   .reveal {
     opacity: 1 !important;
     transform: none !important;
+  }
+
+  .projects-carousel-track {
+    animation: projects-marquee 32s linear infinite !important;
   }
 }
