@@ -1249,6 +1249,29 @@ p {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
+.case-strategy-frame {
+  display: grid;
+  align-content: center;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  background:
+    linear-gradient(135deg, rgba(77, 165, 255, 0.12), rgba(255, 209, 102, 0.1)),
+    rgba(255, 255, 255, 0.035);
+}
+
+.case-strategy-frame span {
+  display: flex;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(9, 11, 17, 0.42);
+  color: var(--text);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
 .flyer-card-copy {
   display: grid;
   gap: 0.45rem;
@@ -1287,11 +1310,80 @@ p {
   box-shadow: 0 34px 80px rgba(0, 0, 0, 0.34);
 }
 
+.brand-assets-showcase {
+  gap: 1rem;
+  min-height: 360px;
+  align-content: center;
+  background:
+    radial-gradient(circle at 18% 8%, rgba(255, 209, 102, 0.18), transparent 30%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+}
+
+.patricia-logo-preview,
+.patricia-card-preview {
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.26);
+  transition: transform 0.38s var(--ease-premium), box-shadow 0.38s var(--ease-premium);
+}
+
+.patricia-logo-preview {
+  width: min(100%, 330px);
+  aspect-ratio: 1 / 1;
+}
+
+.patricia-card-preview {
+  width: min(100%, 360px);
+  aspect-ratio: 1.5 / 1;
+}
+
+.brand-assets-showcase:hover .patricia-logo-preview,
+.brand-assets-showcase:hover .patricia-card-preview {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.32);
+}
+
+.brand-system-showcase {
+  align-content: center;
+  gap: 0.9rem;
+  min-height: 260px;
+}
+
+.brand-swatch {
+  display: flex;
+  align-items: center;
+  min-height: 4.25rem;
+  width: min(100%, 340px);
+  padding: 0.9rem 1rem;
+  border-radius: 18px;
+  color: #fffaf2;
+  font-weight: 800;
+  line-height: 1.35;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+.brand-swatch.navy {
+  background: linear-gradient(135deg, #111b32, #16294f);
+}
+
+.brand-swatch.gold {
+  background: linear-gradient(135deg, #9e7730, #d7ae57);
+  color: #17120a;
+}
+
+.brand-swatch.slate {
+  background: linear-gradient(135deg, #222936, #3c4657);
+}
+
 .case-detail-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.2rem;
   margin: 1.2rem 0;
+}
+
+.case-highlight-badges {
+  margin: 1.5rem 0;
 }
 
 .case-detail-card {
@@ -1309,6 +1401,10 @@ p {
   display: grid;
   gap: 0.75rem;
   margin-bottom: 2rem;
+}
+
+.case-role-card {
+  margin-bottom: 1.2rem;
 }
 
 .author-projects-head {
@@ -1640,6 +1736,29 @@ p {
 .logo-frame img {
   width: min(100%, 300px);
   object-fit: contain;
+}
+
+.patricia-card-frame {
+  background:
+    radial-gradient(circle at top, rgba(255, 209, 102, 0.16), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+}
+
+.patricia-card-frame img {
+  width: min(100%, 680px);
+  border-radius: 18px;
+  box-shadow: 0 26px 58px rgba(0, 0, 0, 0.26);
+}
+
+.patricia-logo-frame {
+  background: linear-gradient(180deg, #f5f0e8, #e7dfd4);
+}
+
+.patricia-logo-frame img {
+  width: min(100%, 460px);
+  border-radius: 16px;
+  object-fit: contain;
+  box-shadow: 0 24px 54px rgba(0, 0, 0, 0.18);
 }
 
 .site-footer {

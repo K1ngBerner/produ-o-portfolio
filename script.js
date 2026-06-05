@@ -135,70 +135,119 @@ const translations = {
       kicker: "cases criativos",
       title: "Projetos em destaque com direção visual, UX e produto digital",
       intro:
-        "Um case profissional desenvolvido para uma cliente real, combinando branding, experiência comercial e frontend responsivo para transformar presença digital em ferramenta de venda.",
+        "Um estudo de caso profissional sobre branding, posicionamento, UX, arquitetura da informação e frontend aplicados a uma presença digital institucional.",
       featured: {
         eyebrow: "case profissional",
-        title: "Tempero da Sandra",
-        subtitle: "Branding + Flyer + Cardápio Digital + UX Comercial",
+        title: "Patrícia Conti",
+        subtitle: "Branding + Posicionamento Digital + UX + Frontend",
         description: [
-          "Projeto desenvolvido para uma cliente real do segmento de alimentação caseira em São Bento, Caxias.",
-          "A proposta foi criar uma identidade visual acolhedora e funcional, combinando branding artesanal, cardápio semanal e um site responsivo integrado ao WhatsApp para automatizar pedidos.",
-          "O projeto envolveu criação de identidade visual, desenvolvimento da logo, definição de paleta de cores, estruturação do flyer semanal, UX focado em facilidade de pedido, desenvolvimento do site responsivo, integração com WhatsApp e uma lógica automática para identificar o prato do próximo sábado."
+          "Patrícia Conti é uma profissional com mais de 25 anos de experiência em legalização e regularização empresarial.",
+          "O desafio era transformar uma trajetória profissional consolidada em uma presença digital capaz de transmitir credibilidade, organização e confiança para novos clientes.",
+          "Minha atuação envolveu branding, posicionamento, direção de conteúdo, UX, arquitetura da informação e desenvolvimento frontend, partindo da compreensão da profissional antes de qualquer decisão de interface."
         ],
         badgesLabel: "Especialidades aplicadas no case",
-        badges: ["Frontend", "UX", "Branding", "Design", "WhatsApp Automation"],
+        badges: ["Frontend", "UX", "Branding", "Arquitetura da Informação", "Conteúdo", "E-mail"],
         actions: {
           site: "Ver site",
-          identity: "Visualizar identidade visual"
+          identity: "Ver direções do projeto"
         },
         previewLabel: "preview do site",
-        previewTitle: "Prévia do site Tempero da Sandra",
-        flyerEyebrow: "mockup do flyer",
-        flyerTitle: "Comunicação pensada para funcionar no WhatsApp e no Instagram",
-        flyerAlt: "Flyer final do projeto Tempero da Sandra"
+        previewDomain: "patriciacontilegalizacao.netlify.app",
+        previewTitle: "Prévia do site Patrícia Conti",
+        strategy: [
+          "Diagnóstico da comunicação",
+          "Posicionamento profissional",
+          "Hierarquia de conteúdo",
+          "UX mobile first",
+          "Frontend responsivo",
+          "Contato direto por e-mail"
+        ],
+        flyerEyebrow: "branding e posicionamento",
+        flyerTitle:
+          "Logo, cartão de posicionamento e QR Code conectados ao site para uma presença moderna e profissional",
+        logoAlt: "Logo Patrícia Conti idealizada e construída para o projeto",
+        flyerAlt: "Cartão de posicionamento Patrícia Conti com QR Code integrado ao site",
+        visual: ["Azul marinho / confiança", "Dourado / experiência", "Linguagem executiva"]
       },
       details: {
+        challenge: {
+          label: "O desafio",
+          title: "Transformar experiência em autoridade digital",
+          description:
+            "O projeto partiu da ausência de uma presença digital estruturada e da necessidade de comunicar experiência, confiança e clareza em serviços ligados a documentação empresarial."
+        },
+        positioning: {
+          label: "Posicionamento",
+          title: "Uma comunicação específica, segura e profissional",
+          description:
+            "A estratégia posicionou Patrícia como uma profissional experiente, organizada e confiável para empresários que precisam lidar com burocracias, órgãos públicos e regularização. O cartão de posicionamento também atua como peça comercial e conecta o público ao site por QR Code."
+        },
         branding: {
           label: "Branding",
-          title: "Identidade acolhedora, funcional e memorável",
+          title: "Credibilidade visual sem informalidade excessiva",
           description:
-            "A identidade visual foi pensada para transmitir comida caseira, acolhimento, simplicidade, sabor brasileiro e proximidade familiar. A paleta utiliza tons creme, terracota e dourado suave para gerar conforto visual e apetite."
+            "A direção visual utilizou azul marinho para transmitir confiança e estabilidade, dourado para reforçar experiência e sofisticação, e uma aparência institucional alinhada a uma profissional experiente. A logo foi idealizada e construída para sustentar essa presença moderna sem perder a sobriedade do segmento."
         },
-        flyer: {
-          label: "Flyer",
-          title: "Estrutura semanal com leitura rápida e comercial",
+        content: {
+          label: "Conteúdo",
+          title: "Comunicação organizada para responder rápido",
           description:
-            "O flyer semanal foi estruturado para facilitar leitura rápida, destacar o prato da semana, organizar preços de forma intuitiva e funcionar bem tanto no WhatsApp quanto no Instagram."
+            "Estruturei a hierarquia da informação, a ordem das seções, o tom de voz, a apresentação dos serviços e os elementos de autoridade para deixar claro quem é Patrícia, o que faz, sua experiência e como entrar em contato."
         },
-        site: {
-          label: "Site",
-          title: "UX comercial orientada para conversão",
+        ux: {
+          label: "UX",
+          title: "Fluxo simples para usuários pouco técnicos",
           description:
-            "O site foi desenvolvido para simplificar pedidos, automatizar o contato via WhatsApp, identificar automaticamente o próximo sábado do mês, destacar o prato vigente e facilitar a navegação no mobile."
+            "A experiência foi pensada com navegação direta, leitura facilitada, foco mobile first e acesso rápido aos serviços, à trajetória profissional, aos valores de referência e ao contato."
+        },
+        frontend: {
+          label: "Frontend",
+          title: "Interface responsiva com contato sem atrito",
+          description:
+            "Desenvolvi o frontend responsivo, a organização semântica, a timeline profissional, a integração do currículo digital e o contato por e-mail via mailto para facilitar a conversa direta entre visitante e cliente."
         }
+      },
+      highlightsLabel: "Destaques do projeto",
+      highlights: [
+        "Branding",
+        "Posicionamento Digital",
+        "Direção de Conteúdo",
+        "UX Design",
+        "Frontend Development",
+        "Integração por E-mail",
+        "Timeline Profissional",
+        "Arquitetura da Informação"
+      ],
+      role: {
+        label: "Minha atuação",
+        title: "Atuação multidisciplinar do posicionamento ao frontend",
+        description:
+          "Neste projeto atuei desde a construção da identidade e do posicionamento até o desenvolvimento frontend da solução final, conectando branding, UX Design, arquitetura da informação, direção de conteúdo, comunicação visual e posicionamento digital."
       },
       result: {
         label: "Resultado do projeto",
-        title: "Entrega validada com entusiasmo e uso imediato",
+        title: "Mais do que um website: uma presença digital coerente",
         description:
-          "A cliente recebeu o projeto com entusiasmo e aprovação imediata, validando tanto a identidade visual quanto a praticidade do sistema digital criado para os pedidos semanais."
+          "O resultado transformou uma trajetória profissional de mais de 25 anos em uma plataforma digital capaz de comunicar confiança, experiência e profissionalismo, com projeto desenvolvido integralmente por Reinhold Berner."
       },
       linksKicker: "projetos autorais & links",
       linksTitle: "Outras frentes criativas e editoriais",
       identityPanel: {
-        closeLabel: "Fechar identidade visual",
-        kicker: "identidade visual",
-        title: "Tempero da Sandra",
+        closeLabel: "Fechar direções do projeto",
+        kicker: "direções do projeto",
+        title: "Patrícia Conti",
         intro:
-          "Uma apresentação concentrada dos elementos visuais que estruturaram a marca e a comunicação comercial do projeto.",
-        flyerLabel: "Flyer final",
-        flyerTitle: "Peça principal para divulgação semanal",
-        flyerAlt: "Flyer final do projeto Tempero da Sandra",
-        logoLabel: "Logo da marca",
-        logoTitle: "Símbolo pensado para proximidade e sabor caseiro",
-        logoAlt: "Logo da marca Tempero da Sandra",
+          "Uma síntese das decisões de marca, conteúdo, UX e frontend que estruturaram a presença digital da cliente.",
+        flyerLabel: "Cartão de posicionamento",
+        flyerTitle: "Peça comercial com QR Code integrado ao site",
+        flyerAlt: "Cartão de posicionamento Patrícia Conti com QR Code integrado ao site",
+        strategy: ["Confiança", "Experiência", "Segurança", "Clareza", "Profissionalismo"],
+        logoLabel: "Logo",
+        logoTitle: "Marca idealizada para transmitir autoridade e sofisticação",
+        logoAlt: "Logo Patrícia Conti idealizada e construída para o projeto",
+        visual: ["Azul marinho", "Dourado", "Base institucional"],
         logoDescription:
-          "A identidade visual foi desenvolvida para transmitir acolhimento, comida caseira e simplicidade."
+          "O objetivo visual não era parecer uma startup ou uma marca excessivamente informal, mas comunicar tradição, organização, estabilidade e credibilidade para o mercado moderno."
       },
       twoDoods: {
         title: "2Doods",
@@ -429,70 +478,119 @@ const translations = {
       kicker: "creative cases",
       title: "Featured work in visual direction, UX and digital product thinking",
       intro:
-        "A professional case created for a real client, combining branding, commercial UX and responsive frontend to turn digital presence into a sales tool.",
+        "A professional case study about branding, positioning, UX, information architecture and frontend applied to an institutional digital presence.",
       featured: {
         eyebrow: "professional case",
-        title: "Tempero da Sandra",
-        subtitle: "Branding + Flyer + Digital Menu + Commercial UX",
+        title: "Patricia Conti",
+        subtitle: "Branding + Digital Positioning + UX + Frontend",
         description: [
-          "A project created for a real client in the homemade food sector in Sao Bento, Caxias.",
-          "The goal was to build a warm and functional visual identity, combining handcrafted branding, a weekly menu and a responsive website integrated with WhatsApp to streamline orders.",
-          "The project involved visual identity creation, logo design, color palette definition, weekly flyer structure, UX focused on easier ordering, responsive website development, WhatsApp integration and an automated logic to identify the next Saturday dish."
+          "Patricia Conti is a professional with more than 25 years of experience in business legalization and regularization.",
+          "The challenge was to turn an established professional trajectory into a digital presence capable of communicating credibility, organization and trust to new clients.",
+          "My work involved branding, positioning, content direction, UX, information architecture and frontend development, starting with an understanding of the professional before any interface decision."
         ],
         badgesLabel: "Skills highlighted in this case",
-        badges: ["Frontend", "UX", "Branding", "Design", "WhatsApp Automation"],
+        badges: ["Frontend", "UX", "Branding", "Information Architecture", "Content", "Email"],
         actions: {
-          site: "View live site",
-          identity: "View brand identity"
+          site: "View website",
+          identity: "View project directions"
         },
-        previewLabel: "live site preview",
-        previewTitle: "Tempero da Sandra website preview",
-        flyerEyebrow: "flyer mockup",
-        flyerTitle: "Communication designed to work on WhatsApp and Instagram",
-        flyerAlt: "Final flyer for the Tempero da Sandra project"
+        previewLabel: "website preview",
+        previewDomain: "patriciacontilegalizacao.netlify.app",
+        previewTitle: "Patricia Conti website preview",
+        strategy: [
+          "Communication diagnosis",
+          "Professional positioning",
+          "Content hierarchy",
+          "Mobile-first UX",
+          "Responsive frontend",
+          "Direct email contact"
+        ],
+        flyerEyebrow: "branding and positioning",
+        flyerTitle:
+          "Logo, positioning card and QR Code connected to the website for a modern and professional presence",
+        logoAlt: "Patricia Conti logo conceived and built for the project",
+        flyerAlt: "Patricia Conti positioning card with QR Code integrated with the website",
+        visual: ["Navy blue / trust", "Gold / experience", "Executive language"]
       },
       details: {
+        challenge: {
+          label: "Challenge",
+          title: "Turning experience into digital authority",
+          description:
+            "The project started from the absence of a structured digital presence and the need to communicate experience, trust and clarity around business documentation services."
+        },
+        positioning: {
+          label: "Positioning",
+          title: "Specific, secure and professional communication",
+          description:
+            "The strategy positioned Patricia as an experienced, organized and reliable professional for business owners who need to deal with bureaucracy, public agencies and regularization processes. The positioning card also works as a commercial asset and connects the audience to the website through a QR Code."
+        },
         branding: {
           label: "Branding",
-          title: "A warm, functional and memorable identity",
+          title: "Visual credibility without excessive informality",
           description:
-            "The visual identity was designed to communicate homemade food, warmth, simplicity, Brazilian flavor and a sense of family closeness. The palette uses cream, terracotta and soft gold tones to create comfort and appetite."
+            "The visual direction used navy blue to convey trust and stability, gold to reinforce experience and sophistication, and an institutional look aligned with an experienced professional. The logo was conceived and built to support this modern presence without losing the sobriety of the segment."
         },
-        flyer: {
-          label: "Flyer",
-          title: "Weekly structure with quick, commercial readability",
+        content: {
+          label: "Content",
+          title: "Communication organized for fast understanding",
           description:
-            "The weekly flyer was structured to enable fast reading, highlight the featured dish, organize prices intuitively and perform well on both WhatsApp and Instagram."
+            "I structured the information hierarchy, section order, tone of voice, service presentation and authority signals so visitors could quickly understand who Patricia is, what she does, her experience and how to contact her."
         },
-        site: {
-          label: "Website",
-          title: "Commercial UX designed for conversion",
+        ux: {
+          label: "UX",
+          title: "A simple flow for less technical users",
           description:
-            "The website was built to simplify orders, automate contact through WhatsApp, automatically identify the next Saturday of the month, highlight the current dish and make mobile navigation effortless."
+            "The experience was designed with direct navigation, easy reading, a mobile-first approach and quick access to services, professional background, reference values and contact."
+        },
+        frontend: {
+          label: "Frontend",
+          title: "Responsive interface with low-friction contact",
+          description:
+            "I developed the responsive frontend, semantic structure, professional timeline, digital resume integration and email contact through mailto to make direct communication between visitor and client easier."
         }
+      },
+      highlightsLabel: "Project highlights",
+      highlights: [
+        "Branding",
+        "Digital Positioning",
+        "Content Direction",
+        "UX Design",
+        "Frontend Development",
+        "Email Integration",
+        "Professional Timeline",
+        "Information Architecture"
+      ],
+      role: {
+        label: "My role",
+        title: "Multidisciplinary work from positioning to frontend",
+        description:
+          "In this project I worked from identity and positioning through to frontend development of the final solution, connecting branding, UX Design, information architecture, content direction, visual communication and digital positioning."
       },
       result: {
         label: "Project outcome",
-        title: "Delivered with immediate approval and real-world value",
+        title: "More than a website: a coherent digital presence",
         description:
-          "The client received the project with enthusiasm and immediate approval, validating both the visual identity and the practicality of the digital ordering system created for weekly sales."
+          "The final result turned more than 25 years of professional experience into a digital platform capable of communicating trust, experience and professionalism, with the project developed end to end by Reinhold Berner."
       },
       linksKicker: "author projects & links",
       linksTitle: "Other creative and editorial directions",
       identityPanel: {
-        closeLabel: "Close brand identity drawer",
-        kicker: "brand identity",
-        title: "Tempero da Sandra",
+        closeLabel: "Close project directions",
+        kicker: "project directions",
+        title: "Patricia Conti",
         intro:
-          "A focused presentation of the visual elements that shaped the brand and the project's commercial communication.",
-        flyerLabel: "Final flyer",
-        flyerTitle: "Main asset for weekly promotion",
-        flyerAlt: "Final flyer for the Tempero da Sandra project",
-        logoLabel: "Brand logo",
-        logoTitle: "A mark designed for warmth and homemade flavor",
-        logoAlt: "Tempero da Sandra brand logo",
+          "A synthesis of the brand, content, UX and frontend decisions that structured the client's digital presence.",
+        flyerLabel: "Positioning card",
+        flyerTitle: "Commercial asset with QR Code integrated with the website",
+        flyerAlt: "Patricia Conti positioning card with QR Code integrated with the website",
+        strategy: ["Trust", "Experience", "Security", "Clarity", "Professionalism"],
+        logoLabel: "Logo",
+        logoTitle: "A brand conceived to communicate authority and sophistication",
+        logoAlt: "Patricia Conti logo conceived and built for the project",
+        visual: ["Navy blue", "Gold", "Institutional base"],
         logoDescription:
-          "The visual identity was designed to convey warmth, homemade food and simplicity."
+          "The visual goal was not to look like a startup or an overly informal brand, but to communicate tradition, organization, stability and credibility for the modern market."
       },
       twoDoods: {
         title: "2Doods",
