@@ -1412,6 +1412,156 @@ p {
   margin: 3.25rem 0 1.5rem;
 }
 
+.author-cases-head {
+  max-width: 860px;
+  margin: 4.5rem 0 1.6rem;
+}
+
+.author-cases-head h3 {
+  max-width: 18ch;
+  font-size: clamp(1.8rem, 3vw, 2.65rem);
+}
+
+.author-case-showcase {
+  margin-top: 1.1rem;
+}
+
+.author-case-grid .case-detail-card h3 {
+  max-width: 24ch;
+}
+
+.case-tech-card {
+  border-color: rgba(255, 209, 102, 0.14);
+  background:
+    linear-gradient(135deg, rgba(255, 209, 102, 0.09), rgba(77, 165, 255, 0.08)),
+    linear-gradient(180deg, rgba(20, 24, 38, 0.92), rgba(12, 15, 24, 0.86));
+}
+
+.case-tech-card h3 {
+  max-width: 28ch;
+}
+
+.project-art-card {
+  min-height: 360px;
+}
+
+.project-art-showcase {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 340px;
+  padding: 1.25rem;
+  border-radius: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(77, 165, 255, 0.1), rgba(255, 209, 102, 0.08)),
+    rgba(255, 255, 255, 0.035);
+}
+
+.project-art-showcase::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 42px 42px;
+  opacity: 0.36;
+  pointer-events: none;
+}
+
+.project-art-showcase img {
+  position: relative;
+  z-index: 1;
+}
+
+.project-art-logo,
+.project-art-cover,
+.project-art-symbol,
+.project-art-mascot {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.26);
+  transition: transform 0.38s var(--ease-premium), box-shadow 0.38s var(--ease-premium);
+}
+
+.project-art-showcase:hover .project-art-logo,
+.project-art-showcase:hover .project-art-cover,
+.project-art-showcase:hover .project-art-symbol,
+.project-art-showcase:hover .project-art-mascot {
+  transform: translateY(-4px) scale(1.015);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.34);
+}
+
+.sussurros-art {
+  grid-template-columns: minmax(0, 1fr) minmax(100px, 0.45fr);
+  gap: 1rem;
+  background:
+    linear-gradient(135deg, rgba(255, 209, 102, 0.1), rgba(77, 165, 255, 0.08)),
+    rgba(255, 255, 255, 0.035);
+}
+
+.sussurros-art .project-art-logo {
+  width: min(100%, 320px);
+  border-radius: 22px;
+  object-fit: contain;
+  background: rgba(8, 10, 15, 0.42);
+}
+
+.sussurros-art .project-art-symbol {
+  width: min(100%, 132px);
+  align-self: start;
+  border-radius: 50%;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.sussurros-art .project-art-cover {
+  grid-column: 1 / -1;
+  width: min(100%, 260px);
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.doodverse-art {
+  grid-template-columns: 0.8fr 1fr;
+  gap: 1rem;
+  background:
+    linear-gradient(135deg, rgba(255, 101, 54, 0.12), rgba(77, 165, 255, 0.1)),
+    rgba(255, 255, 255, 0.035);
+}
+
+.doodverse-art .project-art-logo {
+  width: min(100%, 165px);
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.doodverse-art .project-art-mascot {
+  width: min(100%, 180px);
+  border-radius: 24px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.article-cover-stack {
+  position: relative;
+  z-index: 1;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+  width: 100%;
+}
+
+.article-cover-stack img {
+  width: 100%;
+  min-width: 0;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
+}
+
 .projects-carousel-section {
   display: grid;
   gap: 1.2rem;
@@ -1463,7 +1613,7 @@ p {
   width: max-content;
   gap: 1.1rem;
   padding: 1.15rem;
-  animation: projects-marquee 32s linear infinite;
+  animation: projects-marquee 42s linear infinite;
   will-change: transform;
 }
 
@@ -2164,6 +2314,21 @@ p {
     min-width: 0;
   }
 
+  .author-cases-head {
+    margin-top: 3.5rem;
+  }
+
+  .project-art-showcase,
+  .sussurros-art,
+  .doodverse-art {
+    grid-template-columns: 1fr;
+  }
+
+  .sussurros-art .project-art-cover,
+  .article-cover-stack {
+    grid-column: auto;
+  }
+
   .carousel-project-card {
     width: min(78vw, 320px);
   }
@@ -2355,10 +2520,32 @@ p {
     min-height: 300px;
   }
 
+  .project-art-showcase {
+    min-height: auto;
+    padding: 1rem;
+  }
+
+  .sussurros-art .project-art-logo {
+    width: min(100%, 260px);
+  }
+
+  .sussurros-art .project-art-cover {
+    width: min(100%, 220px);
+  }
+
+  .doodverse-art .project-art-logo,
+  .doodverse-art .project-art-mascot {
+    width: min(100%, 150px);
+  }
+
+  .article-cover-stack {
+    grid-template-columns: 1fr;
+  }
+
   .projects-carousel-track {
     gap: 0.9rem;
     padding: 0.9rem;
-    animation-duration: 38s;
+    animation-duration: 48s;
   }
 
   .carousel-project-card {
@@ -2479,6 +2666,7 @@ p {
   }
 
   .projects-carousel-track {
-    animation: projects-marquee 32s linear infinite !important;
+    animation: none !important;
+    transform: none !important;
   }
 }

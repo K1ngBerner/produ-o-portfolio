@@ -135,7 +135,7 @@ const translations = {
       kicker: "cases criativos",
       title: "Projetos em destaque com direção visual, UX e produto digital",
       intro:
-        "Estudos de caso profissionais combinando branding, posicionamento, UX, arquitetura da informação, comunicação visual e frontend para clientes reais.",
+        "Projetos que combinam direção de conteúdo, branding, UX, arquitetura da informação, produção multimídia e desenvolvimento digital para clientes reais e iniciativas autorais.",
       featured: {
         eyebrow: "case profissional",
         title: "Patrícia Conti",
@@ -278,6 +278,195 @@ const translations = {
             "A cliente recebeu o projeto com entusiasmo e aprovação imediata, validando tanto a identidade visual quanto a praticidade do sistema digital criado para os pedidos semanais."
         }
       },
+      authorCases: {
+        kicker: "projetos autorais em destaque",
+        title: "Experiências digitais com conteúdo, pesquisa e interação",
+        intro:
+          "Experiências em que conteúdo, pesquisa, identidade, interação e tecnologia funcionam como partes do mesmo produto digital.",
+        sussurros: {
+          eyebrow: "projeto acadêmico e experiência digital",
+          title: "Sussurros do Folclore",
+          subtitle: "Direção de Conteúdo + UX + Documentação Interativa + Frontend",
+          description: [
+            "Sussurros do Folclore é um projeto acadêmico de Design de Games sobre narrativa ambiental, semiótica visual e folclore brasileiro. Para apresentá-lo além da entrega universitária, desenvolvi uma experiência web bilíngue que reúne pesquisa, processo criativo, direção de arte, áudio, documentação, pitch e acesso à versão jogável.",
+            "O desafio foi transformar um TCC extenso e conceitualmente complexo em uma narrativa digital clara, explorável e visualmente conectada à atmosfera do jogo, sem reduzir o rigor da pesquisa."
+          ],
+          badgesLabel: "Atuação em Sussurros do Folclore",
+          badges: [
+            "Pré-produção",
+            "Direção de Conteúdo",
+            "Documentação",
+            "TCC",
+            "Pitch",
+            "UX",
+            "Arquitetura da Informação",
+            "Frontend",
+            "Produção Multimídia",
+            "Apresentação Bilíngue"
+          ],
+          actions: {
+            site: "Explorar projeto"
+          },
+          previewLabel: "preview do site",
+          previewTitle: "Prévia do site Sussurros do Folclore",
+          visualEyebrow: "atmosfera e documentação",
+          visualTitle: "Pesquisa, mito, vento e interface como uma mesma narrativa",
+          logoAlt: "Logo do projeto Sussurros do Folclore",
+          whirlAlt: "Símbolo de redemoinho inspirado no Saci",
+          coverAlt: "Imagem de apresentação do projeto Sussurros do Folclore",
+          cards: {
+            challenge: {
+              label: "O desafio",
+              title: "Transformar pesquisa acadêmica em uma experiência compreensível",
+              description:
+                "O projeto reunia pesquisa teórica, narrativa ambiental, semiótica, folclore brasileiro, direção de arte, game design, documentação e produção em equipe. O desafio foi organizar esses materiais para públicos com diferentes níveis de conhecimento."
+            },
+            content: {
+              label: "Direção de Conteúdo",
+              title: "Uma jornada progressiva pelo projeto",
+              description:
+                "Estruturei o conteúdo como uma jornada: atmosfera, pitch, conceito, problema, narrativa ambiental, experiência do jogador, processo, direção de arte, áudio, documentos, Miro, itch.io, equipe e créditos."
+            },
+            experience: {
+              label: "Conteúdo como experiência",
+              title: "O site também conta a história do projeto",
+              description:
+                "Vento, redemoinho, contraste entre luz quente e sombras frias, texturas envelhecidas e animações discretas prolongam a atmosfera do jogo sem depender de reprodução automática invasiva."
+            },
+            ux: {
+              label: "UX e informação",
+              title: "Leitura rápida ou exploração profunda",
+              description:
+                "A experiência combina navegação por âncoras, hierarquia clara, versão PT/EN, preferência de idioma local, controles explícitos de áudio, vídeo carregado após interação, documentos e fallbacks para integrações externas."
+            },
+            docs: {
+              label: "Documentação",
+              title: "Documentação transformada em apresentação profissional",
+              description:
+                "O site centraliza TCC, GDD, pitch, Miro, créditos, direção de arte, processo e acesso ao jogo, fazendo a documentação funcionar como demonstração de método, organização e comunicação."
+            },
+            credits: {
+              label: "Créditos claros",
+              title: "Atuação própria sem apagar o trabalho coletivo",
+              description:
+                "O case diferencia minha atuação em pré-produção, TCC, documentação, conteúdo e website da produção do jogo realizada pela equipe, preservando créditos de modelagem, animação, texturização, Unity, C# e interface do jogo."
+            }
+          },
+          tech: {
+            label: "Implementação Técnica",
+            title: "Frontend como suporte à narrativa e à documentação",
+            description:
+              "A experiência foi desenvolvida com React 19, TypeScript, Vite, CSS responsivo, Context API para áudio, hooks personalizados, LocalStorage, metadados dinâmicos, Open Graph, Twitter Cards, canonical URL, integrações com YouTube, Miro, itch.io, visualização de PDFs e deploy estático no Netlify."
+          },
+          result: {
+            label: "Resultado",
+            title: "De entrega acadêmica a case público e interativo",
+            description:
+              "O resultado foi uma plataforma bilíngue que organiza a pesquisa, documenta o processo e permite que o projeto continue acessível além da banca acadêmica, funcionando como apresentação do jogo, arquivo de produção e case profissional."
+          }
+        },
+        doodverse: {
+          eyebrow: "produto autoral e ecossistema de conteúdo gamer",
+          title: "2Doods — Doodverse",
+          subtitle: "Direção de Conteúdo + Produto Digital + UX Gamificada + Frontend",
+          description: [
+            "A 2Doods é um projeto autoral de comunicação digital e cultura gamer. O Doodverse amplia a marca para além das redes sociais, reunindo vídeos, artigos, curiosidades, gamificação, áudio, comunidade e experiências interativas em um produto digital próprio.",
+            "Mais do que criar uma vitrine para o canal, desenvolvi um ecossistema em que conteúdo e interação compartilham a mesma identidade: o visitante explora portais, acumula pontos, desbloqueia conquistas, lê artigos e participa de um minigame."
+          ],
+          badgesLabel: "Atuação na 2Doods",
+          badges: [
+            "Projeto Autoral",
+            "Direção Criativa",
+            "Direção de Conteúdo",
+            "Planejamento Editorial",
+            "Branding",
+            "UX",
+            "Arquitetura da Informação",
+            "Frontend",
+            "Game Design",
+            "Produto Digital"
+          ],
+          actions: {
+            site: "Entrar no Doodverse",
+            youtube: "Assistir no YouTube"
+          },
+          previewLabel: "preview do site",
+          previewTitle: "Prévia do site 2Doods Doodverse",
+          visualEyebrow: "marca, editorial e gamificação",
+          visualTitle: "Um universo gamer com mascote, artigos, portais e progressão",
+          logoAlt: "Logo do projeto 2Doods",
+          mascotAlt: "Mascote sorrindo da 2Doods",
+          articleStackLabel: "Capas editoriais da Doodex",
+          cards: {
+            challenge: {
+              label: "O desafio",
+              title: "Transformar um canal em uma experiência digital própria",
+              description:
+                "O projeto precisava superar uma página de links. O desafio foi construir um ambiente proprietário, reconhecível e expansível, capaz de centralizar conteúdo, fortalecer a marca e criar motivos para o público permanecer e retornar."
+            },
+            positioning: {
+              label: "Posicionamento",
+              title: "Um checkpoint para quem gosta de games",
+              description:
+                "O posicionamento equilibra profundidade e diversão: cultura gamer, curiosidades, análises, game design, humor e experiências interativas com linguagem acessível. A frase guia é: “Seu novo checkpoint no mundo dos games.”"
+            },
+            content: {
+              label: "Direção de Conteúdo",
+              title: "Conteúdo estruturado como ecossistema",
+              description:
+                "A arquitetura conecta hero, hub interativo, vídeos, Doodex, Arcade, missões, conquistas, portais sociais e apresentação do projeto em um circuito de descoberta."
+            },
+            doodex: {
+              label: "Doodex",
+              title: "Artigos pensados como produto editorial",
+              description:
+                "A Doodex reúne artigos completos, categorias, capas próprias, slugs, tempo de leitura, barra de progresso, busca, filtros, fontes, relacionados, compartilhamento, comentários do mascote e integração com conquistas."
+            },
+            brand: {
+              label: "Branding narrativo",
+              title: "A identidade da marca dentro da interface",
+              description:
+                "O mascote apresenta o universo, orienta ações, comenta conteúdos e participa da experiência. Checkpoints, portais, missões, conquistas, níveis, temas alternativos e trilhas transformam identidade gamer em comportamento de produto."
+            },
+            gamification: {
+              label: "UX gamificada",
+              title: "Gamificação a serviço da descoberta",
+              description:
+                "Dood Points, níveis, conquistas, missão semanal, recompensas por exploração, progresso local, toast de conquistas, easter egg de tema e interações sem cadastro estimulam descoberta e retorno."
+            },
+            dooddraft: {
+              label: "DoodDraft",
+              title: "Conteúdo convertido em interação",
+              description:
+                "O minigame transforma repertório gamer em sistema: seis rodadas, Dood Coins, rerolls, análise de tipos, sinergia defensiva, funções, ataque, defesa, velocidade, eficiência de orçamento, nota final, classificação e comentário do mascote."
+            },
+            ux: {
+              label: "UX e acessibilidade",
+              title: "Uma experiência expansível e responsiva",
+              description:
+                "O produto usa rotas, navegação responsiva, feedback visual, modais, estados de carregamento, 404 personalizada, áudio após interação, controles de música e efeitos, volumes, pausa em aba oculta, preferências persistidas e suporte a movimento reduzido."
+            },
+            role: {
+              label: "Minha atuação",
+              title: "Estratégia e execução no mesmo produto",
+              description:
+                "Atuo no posicionamento, direção criativa, planejamento editorial, produção de conteúdo, branding, UX, arquitetura da informação, frontend, game design e evolução do produto digital."
+            }
+          },
+          tech: {
+            label: "Implementação Técnica",
+            title: "Base técnica para produto, conteúdo e gamificação",
+            description:
+              "O Doodverse foi construído com React 19, TypeScript, Vite, React Router, Framer Motion, Lucide React, CSS com variáveis, componentes reutilizáveis, hooks personalizados, LocalStorage, SPA, redirects do Netlify, SEO, sitemap, robots.txt, sistema de áudio, conquistas, pontuação própria e dados editoriais estruturados."
+          },
+          result: {
+            label: "Resultado",
+            title: "De canal de conteúdo a universo digital próprio",
+            description:
+              "O Doodverse transformou a 2Doods em uma experiência proprietária e expansível, conectando conteúdo editorial, audiovisual, branding, gamificação e desenvolvimento web em uma plataforma com identidade própria."
+          }
+        }
+      },
       carousel: {
         kicker: "vitrine em movimento",
         title: "Um panorama dos projetos, marcas e frentes criativas",
@@ -312,6 +501,16 @@ const translations = {
             title: "Entregas Criativas",
             type: "Portfolio Geral",
             alt: "Retrato de Reinhold Berner"
+          },
+          {
+            title: "Sussurros do Folclore",
+            type: "Pesquisa + UX + Frontend",
+            alt: "Imagem do projeto Sussurros do Folclore"
+          },
+          {
+            title: "2Doods — Doodverse",
+            type: "Produto Digital + Game UX",
+            alt: "Logo do projeto 2Doods Doodverse"
           }
         ]
       },
@@ -563,7 +762,7 @@ const translations = {
       kicker: "creative cases",
       title: "Featured work in visual direction, UX and digital product thinking",
       intro:
-        "Professional case studies combining branding, positioning, UX, information architecture, visual communication and frontend for real clients.",
+        "Projects combining content direction, branding, UX, information architecture, multimedia production and digital development for real clients and author-led initiatives.",
       featured: {
         eyebrow: "professional case",
         title: "Patricia Conti",
@@ -706,6 +905,195 @@ const translations = {
             "The client received the project with enthusiasm and immediate approval, validating both the visual identity and the practicality of the digital ordering system created for weekly sales."
         }
       },
+      authorCases: {
+        kicker: "featured author-led projects",
+        title: "Digital experiences built from content, research and interaction",
+        intro:
+          "Experiences where content, research, identity, interaction and technology work as parts of the same digital product.",
+        sussurros: {
+          eyebrow: "academic project and digital experience",
+          title: "Sussurros do Folclore",
+          subtitle: "Content Direction + UX + Interactive Documentation + Frontend",
+          description: [
+            "Sussurros do Folclore is an academic Game Design project about environmental storytelling, visual semiotics and Brazilian folklore. To present it beyond the university deliverable, I developed a bilingual web experience that brings together research, creative process, art direction, audio, documentation, pitch material and access to the playable build.",
+            "The challenge was to turn a long and conceptually dense thesis project into a clear, explorable digital narrative connected to the atmosphere of the game without reducing the rigor of the research."
+          ],
+          badgesLabel: "Work areas in Sussurros do Folclore",
+          badges: [
+            "Pre-production",
+            "Content Direction",
+            "Documentation",
+            "Thesis",
+            "Pitch",
+            "UX",
+            "Information Architecture",
+            "Frontend",
+            "Multimedia Production",
+            "Bilingual Presentation"
+          ],
+          actions: {
+            site: "Explore project"
+          },
+          previewLabel: "website preview",
+          previewTitle: "Sussurros do Folclore website preview",
+          visualEyebrow: "atmosphere and documentation",
+          visualTitle: "Research, myth, wind and interface as one narrative",
+          logoAlt: "Sussurros do Folclore project logo",
+          whirlAlt: "Whirlwind symbol inspired by Saci",
+          coverAlt: "Presentation image for the Sussurros do Folclore project",
+          cards: {
+            challenge: {
+              label: "Challenge",
+              title: "Turning academic research into a readable experience",
+              description:
+                "The project brought together theory, environmental storytelling, semiotics, Brazilian folklore, art direction, game design, documentation and team production. The challenge was to organize those materials for audiences with different levels of context."
+            },
+            content: {
+              label: "Content Direction",
+              title: "A progressive journey through the project",
+              description:
+                "I structured the content as a journey: atmosphere, pitch, concept, problem, environmental storytelling, player experience, process, art direction, audio, documents, Miro, itch.io, team and credits."
+            },
+            experience: {
+              label: "Content as experience",
+              title: "The website also tells the story of the project",
+              description:
+                "Wind, whirlwind motion, contrast between warm light and cold shadows, aged textures and subtle animations extend the game's atmosphere without relying on intrusive autoplay."
+            },
+            ux: {
+              label: "UX and information",
+              title: "Quick reading or deeper exploration",
+              description:
+                "The experience combines anchor navigation, clear hierarchy, PT/EN versions, local language preference, explicit audio controls, video loaded after interaction, documents and fallbacks for external integrations."
+            },
+            docs: {
+              label: "Documentation",
+              title: "Documentation turned into professional presentation",
+              description:
+                "The site centralizes thesis material, GDD, pitch, Miro, credits, art direction, process and game access, making documentation work as a demonstration of method, organization and communication."
+            },
+            credits: {
+              label: "Clear credits",
+              title: "My role without erasing the collective work",
+              description:
+                "The case separates my work in pre-production, thesis, documentation, content and website from the game production carried out by the team, preserving credits for modeling, animation, texturing, Unity, C# and in-game interface work."
+            }
+          },
+          tech: {
+            label: "Technical Implementation",
+            title: "Frontend supporting narrative and documentation",
+            description:
+              "The experience was developed with React 19, TypeScript, Vite, responsive CSS, Context API for audio, custom hooks, LocalStorage, dynamic metadata, Open Graph, Twitter Cards, canonical URL, YouTube, Miro and itch.io integrations, PDF viewing and static deployment on Netlify."
+          },
+          result: {
+            label: "Outcome",
+            title: "From academic deliverable to public interactive case",
+            description:
+              "The result is a bilingual platform that organizes the research, documents the process and keeps the project accessible beyond the academic evaluation, working as a game presentation, production archive and professional case."
+          }
+        },
+        doodverse: {
+          eyebrow: "author-led product and gamer content ecosystem",
+          title: "2Doods — Doodverse",
+          subtitle: "Content Direction + Digital Product + Gamified UX + Frontend",
+          description: [
+            "2Doods is an author-led digital communication and gamer culture project. Doodverse expands the brand beyond social platforms, bringing together videos, articles, curiosities, gamification, audio, community and interactive experiences in its own digital product.",
+            "More than a showcase for the channel, I developed an ecosystem where content and interaction share the same identity: visitors explore portals, collect points, unlock achievements, read articles and take part in a minigame."
+          ],
+          badgesLabel: "Work areas in 2Doods",
+          badges: [
+            "Author-led Project",
+            "Creative Direction",
+            "Content Direction",
+            "Editorial Planning",
+            "Branding",
+            "UX",
+            "Information Architecture",
+            "Frontend",
+            "Game Design",
+            "Digital Product"
+          ],
+          actions: {
+            site: "Enter the Doodverse",
+            youtube: "Watch on YouTube"
+          },
+          previewLabel: "website preview",
+          previewTitle: "2Doods Doodverse website preview",
+          visualEyebrow: "brand, editorial and gamification",
+          visualTitle: "A gamer universe with mascot, articles, portals and progression",
+          logoAlt: "2Doods project logo",
+          mascotAlt: "Smiling 2Doods mascot",
+          articleStackLabel: "Doodex editorial covers",
+          cards: {
+            challenge: {
+              label: "Challenge",
+              title: "Turning a channel into its own digital experience",
+              description:
+                "The project needed to move beyond a page of links. The challenge was to build a proprietary, recognizable and expandable environment capable of centralizing content, strengthening the brand and creating reasons for the audience to stay and return."
+            },
+            positioning: {
+              label: "Positioning",
+              title: "A checkpoint for people who love games",
+              description:
+                "The positioning balances depth and fun: gamer culture, curiosities, analysis, game design, humor and interactive experiences with accessible language. The guiding line is: “Your new checkpoint in the world of games.”"
+            },
+            content: {
+              label: "Content Direction",
+              title: "Content structured as an ecosystem",
+              description:
+                "The architecture connects hero, interactive hub, videos, Doodex, Arcade, missions, achievements, social portals and project presentation into a discovery loop."
+            },
+            doodex: {
+              label: "Doodex",
+              title: "Articles designed as an editorial product",
+              description:
+                "Doodex brings together full articles, categories, original covers, slugs, reading time, progress bar, search, filters, sources, related content, sharing, mascot comments and achievement integration."
+            },
+            brand: {
+              label: "Narrative branding",
+              title: "The brand identity inside the interface",
+              description:
+                "The mascot presents the universe, guides actions, comments on content and participates in the experience. Checkpoints, portals, missions, achievements, levels, alternate themes and soundtracks turn gamer identity into product behavior."
+            },
+            gamification: {
+              label: "Gamified UX",
+              title: "Gamification in service of discovery",
+              description:
+                "Dood Points, levels, achievements, weekly mission, exploration rewards, local progress, achievement toasts, a theme easter egg and interactions without mandatory signup encourage discovery and return visits."
+            },
+            dooddraft: {
+              label: "DoodDraft",
+              title: "Content converted into interaction",
+              description:
+                "The minigame turns gamer knowledge into a system: six rounds, Dood Coins, rerolls, type analysis, defensive synergy, roles, attack, defense, speed, budget efficiency, final score, classification and mascot commentary."
+            },
+            ux: {
+              label: "UX and accessibility",
+              title: "An expandable and responsive experience",
+              description:
+                "The product uses routes, responsive navigation, visual feedback, modals, loading states, custom 404, audio after interaction, music and effects controls, volume sliders, pause on hidden tab, persisted preferences and reduced-motion support."
+            },
+            role: {
+              label: "My role",
+              title: "Strategy and execution in the same product",
+              description:
+                "I work on positioning, creative direction, editorial planning, content production, branding, UX, information architecture, frontend, game design and ongoing evolution of the digital product."
+            }
+          },
+          tech: {
+            label: "Technical Implementation",
+            title: "Technical base for product, content and gamification",
+            description:
+              "Doodverse was built with React 19, TypeScript, Vite, React Router, Framer Motion, Lucide React, CSS variables, reusable components, custom hooks, LocalStorage, SPA routing, Netlify redirects, SEO, sitemap, robots.txt, audio system, achievements, custom scoring and structured editorial data."
+          },
+          result: {
+            label: "Outcome",
+            title: "From content channel to its own digital universe",
+            description:
+              "Doodverse turned 2Doods into a proprietary and expandable experience, connecting editorial content, audiovisual production, branding, gamification and web development in a platform with its own identity."
+          }
+        }
+      },
       carousel: {
         kicker: "moving showcase",
         title: "A panoramic view of projects, brands and creative directions",
@@ -740,6 +1128,16 @@ const translations = {
             title: "Creative Deliveries",
             type: "General Portfolio",
             alt: "Portrait of Reinhold Berner"
+          },
+          {
+            title: "Sussurros do Folclore",
+            type: "Research + UX + Frontend",
+            alt: "Sussurros do Folclore project image"
+          },
+          {
+            title: "2Doods — Doodverse",
+            type: "Digital Product + Game UX",
+            alt: "2Doods Doodverse project logo"
           }
         ]
       },
