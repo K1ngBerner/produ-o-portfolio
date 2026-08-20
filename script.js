@@ -135,403 +135,70 @@ const translations = {
       kicker: "cases criativos",
       title: "Projetos em destaque com direção visual, UX e produto digital",
       intro:
-        "Projetos que combinam direção de conteúdo, branding, UX, arquitetura da informação, produção multimídia e desenvolvimento digital para clientes reais e iniciativas autorais.",
+        "Um case profissional desenvolvido para uma cliente real, combinando branding, experiência comercial e frontend responsivo para transformar presença digital em ferramenta de venda.",
       featured: {
         eyebrow: "case profissional",
-        title: "Patrícia Conti",
-        subtitle: "Branding + Posicionamento Digital + UX + Frontend",
-        description: [
-          "Patrícia Conti é uma profissional com mais de 25 anos de experiência em legalização e regularização empresarial.",
-          "O desafio era transformar uma trajetória profissional consolidada em uma presença digital capaz de transmitir credibilidade, organização e confiança para novos clientes.",
-          "Minha atuação envolveu branding, posicionamento, direção de conteúdo, UX, arquitetura da informação e desenvolvimento frontend, partindo da compreensão da profissional antes de qualquer decisão de interface."
-        ],
-        badgesLabel: "Especialidades aplicadas no case",
-        badges: ["Frontend", "UX", "Branding", "Arquitetura da Informação", "Conteúdo", "E-mail"],
-        actions: {
-          site: "Ver site",
-          identity: "Ver direções do projeto"
-        },
-        previewLabel: "preview do site",
-        previewDomain: "patriciacontilegalizacao.netlify.app",
-        previewTitle: "Prévia do site Patrícia Conti",
-        strategy: [
-          "Diagnóstico da comunicação",
-          "Posicionamento profissional",
-          "Hierarquia de conteúdo",
-          "UX mobile first",
-          "Frontend responsivo",
-          "Contato direto por e-mail"
-        ],
-        flyerEyebrow: "branding e posicionamento",
-        flyerTitle:
-          "Logo, cartão de posicionamento e QR Code conectados ao site para uma presença moderna e profissional",
-        logoAlt: "Logo Patrícia Conti idealizada e construída para o projeto",
-        flyerAlt: "Cartão de posicionamento Patrícia Conti com QR Code integrado ao site",
-        visual: ["Azul marinho / confiança", "Dourado / experiência", "Linguagem executiva"]
-      },
-      details: {
-        challenge: {
-          label: "O desafio",
-          title: "Transformar experiência em autoridade digital",
-          description:
-            "O projeto partiu da ausência de uma presença digital estruturada e da necessidade de comunicar experiência, confiança e clareza em serviços ligados a documentação empresarial."
-        },
-        positioning: {
-          label: "Posicionamento",
-          title: "Uma comunicação específica, segura e profissional",
-          description:
-            "A estratégia posicionou Patrícia como uma profissional experiente, organizada e confiável para empresários que precisam lidar com burocracias, órgãos públicos e regularização. O cartão de posicionamento também atua como peça comercial e conecta o público ao site por QR Code."
-        },
-        branding: {
-          label: "Branding",
-          title: "Credibilidade visual sem informalidade excessiva",
-          description:
-            "A direção visual utilizou azul marinho para transmitir confiança e estabilidade, dourado para reforçar experiência e sofisticação, e uma aparência institucional alinhada a uma profissional experiente. A logo foi idealizada e construída para sustentar essa presença moderna sem perder a sobriedade do segmento."
-        },
-        content: {
-          label: "Conteúdo",
-          title: "Comunicação organizada para responder rápido",
-          description:
-            "Estruturei a hierarquia da informação, a ordem das seções, o tom de voz, a apresentação dos serviços e os elementos de autoridade para deixar claro quem é Patrícia, o que faz, sua experiência e como entrar em contato."
-        },
-        ux: {
-          label: "UX",
-          title: "Fluxo simples para usuários pouco técnicos",
-          description:
-            "A experiência foi pensada com navegação direta, leitura facilitada, foco mobile first e acesso rápido aos serviços, à trajetória profissional, aos valores de referência e ao contato."
-        },
-        frontend: {
-          label: "Frontend",
-          title: "Interface responsiva com contato sem atrito",
-          description:
-            "Desenvolvi o frontend responsivo, a organização semântica, a timeline profissional, a integração do currículo digital e o contato por e-mail via mailto para facilitar a conversa direta entre visitante e cliente."
-        }
-      },
-      highlightsLabel: "Destaques do projeto",
-      highlights: [
-        "Branding",
-        "Posicionamento Digital",
-        "Direção de Conteúdo",
-        "UX Design",
-        "Frontend Development",
-        "Integração por E-mail",
-        "Timeline Profissional",
-        "Arquitetura da Informação"
-      ],
-      role: {
-        label: "Minha atuação",
-        title: "Atuação multidisciplinar do posicionamento ao frontend",
-        description:
-          "Neste projeto atuei desde a construção da identidade e do posicionamento até o desenvolvimento frontend da solução final, conectando branding, UX Design, arquitetura da informação, direção de conteúdo, comunicação visual e posicionamento digital."
-      },
-      result: {
-        label: "Resultado do projeto",
-        title: "Mais do que um website: uma presença digital coerente",
-        description:
-          "O resultado transformou uma trajetória profissional de mais de 25 anos em uma plataforma digital capaz de comunicar confiança, experiência e profissionalismo, com projeto desenvolvido integralmente por Reinhold Berner."
-      },
-      sandra: {
-        kicker: "case profissional",
         title: "Tempero da Sandra",
-        eyebrow: "branding + ux comercial",
-        heading: "Tempero da Sandra",
         subtitle: "Branding + Flyer + Cardápio Digital + UX Comercial",
         description: [
           "Projeto desenvolvido para uma cliente real do segmento de alimentação caseira em São Bento, Caxias.",
           "A proposta foi criar uma identidade visual acolhedora e funcional, combinando branding artesanal, cardápio semanal e um site responsivo integrado ao WhatsApp para automatizar pedidos.",
           "O projeto envolveu criação de identidade visual, desenvolvimento da logo, definição de paleta de cores, estruturação do flyer semanal, UX focado em facilidade de pedido, desenvolvimento do site responsivo, integração com WhatsApp e uma lógica automática para identificar o prato do próximo sábado."
         ],
-        badgesLabel: "Especialidades aplicadas no case Tempero da Sandra",
+        badgesLabel: "Especialidades aplicadas no case",
         badges: ["Frontend", "UX", "Branding", "Design", "WhatsApp Automation"],
         actions: {
-          site: "Ver site"
+          site: "Ver site",
+          identity: "Visualizar identidade visual"
         },
         previewLabel: "preview do site",
         previewTitle: "Prévia do site Tempero da Sandra",
         flyerEyebrow: "mockup do flyer",
         flyerTitle: "Comunicação pensada para funcionar no WhatsApp e no Instagram",
-        flyerAlt: "Flyer final do projeto Tempero da Sandra",
-        details: {
-          branding: {
-            label: "Branding",
-            title: "Identidade acolhedora, funcional e memorável",
-            description:
-              "A identidade visual foi pensada para transmitir comida caseira, acolhimento, simplicidade, sabor brasileiro e proximidade familiar. A paleta utiliza tons creme, terracota e dourado suave para gerar conforto visual e apetite."
-          },
-          flyer: {
-            label: "Flyer",
-            title: "Estrutura semanal com leitura rápida e comercial",
-            description:
-              "O flyer semanal foi estruturado para facilitar leitura rápida, destacar o prato da semana, organizar preços de forma intuitiva e funcionar bem tanto no WhatsApp quanto no Instagram."
-          },
-          site: {
-            label: "Site",
-            title: "UX comercial orientada para conversão",
-            description:
-              "O site foi desenvolvido para simplificar pedidos, automatizar o contato via WhatsApp, identificar automaticamente o próximo sábado do mês, destacar o prato vigente e facilitar a navegação no mobile."
-          }
-        },
-        result: {
-          label: "Resultado do projeto",
-          title: "Entrega validada com entusiasmo e uso imediato",
+        flyerAlt: "Flyer final do projeto Tempero da Sandra"
+      },
+      details: {
+        branding: {
+          label: "Branding",
+          title: "Identidade acolhedora, funcional e memorável",
           description:
-            "A cliente recebeu o projeto com entusiasmo e aprovação imediata, validando tanto a identidade visual quanto a praticidade do sistema digital criado para os pedidos semanais."
-        }
-      },
-      authorCases: {
-        kicker: "projetos autorais em destaque",
-        title: "Experiências digitais com conteúdo, pesquisa e interação",
-        intro:
-          "Experiências em que conteúdo, pesquisa, identidade, interação e tecnologia funcionam como partes do mesmo produto digital.",
-        sussurros: {
-          eyebrow: "projeto acadêmico e experiência digital",
-          title: "Sussurros do Folclore",
-          subtitle: "Direção de Conteúdo + UX + Documentação Interativa + Frontend",
-          description: [
-            "Sussurros do Folclore é um projeto acadêmico de Design de Games sobre narrativa ambiental, semiótica visual e folclore brasileiro. Para apresentá-lo além da entrega universitária, desenvolvi uma experiência web bilíngue que reúne pesquisa, processo criativo, direção de arte, áudio, documentação, pitch e acesso à versão jogável.",
-            "O desafio foi transformar um TCC extenso e conceitualmente complexo em uma narrativa digital clara, explorável e visualmente conectada à atmosfera do jogo, sem reduzir o rigor da pesquisa."
-          ],
-          badgesLabel: "Atuação em Sussurros do Folclore",
-          badges: [
-            "Pré-produção",
-            "Direção de Conteúdo",
-            "Documentação",
-            "TCC",
-            "Pitch",
-            "UX",
-            "Arquitetura da Informação",
-            "Frontend",
-            "Produção Multimídia",
-            "Apresentação Bilíngue"
-          ],
-          actions: {
-            site: "Explorar projeto"
-          },
-          previewLabel: "preview do site",
-          previewTitle: "Prévia do site Sussurros do Folclore",
-          visualEyebrow: "atmosfera e documentação",
-          visualTitle: "Pesquisa, mito, vento e interface como uma mesma narrativa",
-          logoAlt: "Logo do projeto Sussurros do Folclore",
-          whirlAlt: "Símbolo de redemoinho inspirado no Saci",
-          coverAlt: "Imagem de apresentação do projeto Sussurros do Folclore",
-          cards: {
-            challenge: {
-              label: "O desafio",
-              title: "Transformar pesquisa acadêmica em uma experiência compreensível",
-              description:
-                "O projeto reunia pesquisa teórica, narrativa ambiental, semiótica, folclore brasileiro, direção de arte, game design, documentação e produção em equipe. O desafio foi organizar esses materiais para públicos com diferentes níveis de conhecimento."
-            },
-            content: {
-              label: "Direção de Conteúdo",
-              title: "Uma jornada progressiva pelo projeto",
-              description:
-                "Estruturei o conteúdo como uma jornada: atmosfera, pitch, conceito, problema, narrativa ambiental, experiência do jogador, processo, direção de arte, áudio, documentos, Miro, itch.io, equipe e créditos."
-            },
-            experience: {
-              label: "Conteúdo como experiência",
-              title: "O site também conta a história do projeto",
-              description:
-                "Vento, redemoinho, contraste entre luz quente e sombras frias, texturas envelhecidas e animações discretas prolongam a atmosfera do jogo sem depender de reprodução automática invasiva."
-            },
-            ux: {
-              label: "UX e informação",
-              title: "Leitura rápida ou exploração profunda",
-              description:
-                "A experiência combina navegação por âncoras, hierarquia clara, versão PT/EN, preferência de idioma local, controles explícitos de áudio, vídeo carregado após interação, documentos e fallbacks para integrações externas."
-            },
-            docs: {
-              label: "Documentação",
-              title: "Documentação transformada em apresentação profissional",
-              description:
-                "O site centraliza TCC, GDD, pitch, Miro, créditos, direção de arte, processo e acesso ao jogo, fazendo a documentação funcionar como demonstração de método, organização e comunicação."
-            },
-            credits: {
-              label: "Créditos claros",
-              title: "Atuação própria sem apagar o trabalho coletivo",
-              description:
-                "O case diferencia minha atuação em pré-produção, TCC, documentação, conteúdo e website da produção do jogo realizada pela equipe, preservando créditos de modelagem, animação, texturização, Unity, C# e interface do jogo."
-            }
-          },
-          tech: {
-            label: "Implementação Técnica",
-            title: "Frontend como suporte à narrativa e à documentação",
-            description:
-              "A experiência foi desenvolvida com React 19, TypeScript, Vite, CSS responsivo, Context API para áudio, hooks personalizados, LocalStorage, metadados dinâmicos, Open Graph, Twitter Cards, canonical URL, integrações com YouTube, Miro, itch.io, visualização de PDFs e deploy estático no Netlify."
-          },
-          result: {
-            label: "Resultado",
-            title: "De entrega acadêmica a case público e interativo",
-            description:
-              "O resultado foi uma plataforma bilíngue que organiza a pesquisa, documenta o processo e permite que o projeto continue acessível além da banca acadêmica, funcionando como apresentação do jogo, arquivo de produção e case profissional."
-          }
+            "A identidade visual foi pensada para transmitir comida caseira, acolhimento, simplicidade, sabor brasileiro e proximidade familiar. A paleta utiliza tons creme, terracota e dourado suave para gerar conforto visual e apetite."
         },
-        doodverse: {
-          eyebrow: "produto autoral e ecossistema de conteúdo gamer",
-          title: "2Doods — Doodverse",
-          subtitle: "Direção de Conteúdo + Produto Digital + UX Gamificada + Frontend",
-          description: [
-            "A 2Doods é um projeto autoral de comunicação digital e cultura gamer. O Doodverse amplia a marca para além das redes sociais, reunindo vídeos, artigos, curiosidades, gamificação, áudio, comunidade e experiências interativas em um produto digital próprio.",
-            "Mais do que criar uma vitrine para o canal, desenvolvi um ecossistema em que conteúdo e interação compartilham a mesma identidade: o visitante explora portais, acumula pontos, desbloqueia conquistas, lê artigos e participa de um minigame."
-          ],
-          badgesLabel: "Atuação na 2Doods",
-          badges: [
-            "Projeto Autoral",
-            "Direção Criativa",
-            "Direção de Conteúdo",
-            "Planejamento Editorial",
-            "Branding",
-            "UX",
-            "Arquitetura da Informação",
-            "Frontend",
-            "Game Design",
-            "Produto Digital"
-          ],
-          actions: {
-            site: "Entrar no Doodverse",
-            youtube: "Assistir no YouTube"
-          },
-          previewLabel: "preview do site",
-          previewTitle: "Prévia do site 2Doods Doodverse",
-          visualEyebrow: "marca, editorial e gamificação",
-          visualTitle: "Um universo gamer com mascote, artigos, portais e progressão",
-          logoAlt: "Logo do projeto 2Doods",
-          mascotAlt: "Mascote sorrindo da 2Doods",
-          articleStackLabel: "Capas editoriais da Doodex",
-          cards: {
-            challenge: {
-              label: "O desafio",
-              title: "Transformar um canal em uma experiência digital própria",
-              description:
-                "O projeto precisava superar uma página de links. O desafio foi construir um ambiente proprietário, reconhecível e expansível, capaz de centralizar conteúdo, fortalecer a marca e criar motivos para o público permanecer e retornar."
-            },
-            positioning: {
-              label: "Posicionamento",
-              title: "Um checkpoint para quem gosta de games",
-              description:
-                "O posicionamento equilibra profundidade e diversão: cultura gamer, curiosidades, análises, game design, humor e experiências interativas com linguagem acessível. A frase guia é: “Seu novo checkpoint no mundo dos games.”"
-            },
-            content: {
-              label: "Direção de Conteúdo",
-              title: "Conteúdo estruturado como ecossistema",
-              description:
-                "A arquitetura conecta hero, hub interativo, vídeos, Doodex, Arcade, missões, conquistas, portais sociais e apresentação do projeto em um circuito de descoberta."
-            },
-            doodex: {
-              label: "Doodex",
-              title: "Artigos pensados como produto editorial",
-              description:
-                "A Doodex reúne artigos completos, categorias, capas próprias, slugs, tempo de leitura, barra de progresso, busca, filtros, fontes, relacionados, compartilhamento, comentários do mascote e integração com conquistas."
-            },
-            brand: {
-              label: "Branding narrativo",
-              title: "A identidade da marca dentro da interface",
-              description:
-                "O mascote apresenta o universo, orienta ações, comenta conteúdos e participa da experiência. Checkpoints, portais, missões, conquistas, níveis, temas alternativos e trilhas transformam identidade gamer em comportamento de produto."
-            },
-            gamification: {
-              label: "UX gamificada",
-              title: "Gamificação a serviço da descoberta",
-              description:
-                "Dood Points, níveis, conquistas, missão semanal, recompensas por exploração, progresso local, toast de conquistas, easter egg de tema e interações sem cadastro estimulam descoberta e retorno."
-            },
-            dooddraft: {
-              label: "DoodDraft",
-              title: "Conteúdo convertido em interação",
-              description:
-                "O minigame transforma repertório gamer em sistema: seis rodadas, Dood Coins, rerolls, análise de tipos, sinergia defensiva, funções, ataque, defesa, velocidade, eficiência de orçamento, nota final, classificação e comentário do mascote."
-            },
-            ux: {
-              label: "UX e acessibilidade",
-              title: "Uma experiência expansível e responsiva",
-              description:
-                "O produto usa rotas, navegação responsiva, feedback visual, modais, estados de carregamento, 404 personalizada, áudio após interação, controles de música e efeitos, volumes, pausa em aba oculta, preferências persistidas e suporte a movimento reduzido."
-            },
-            role: {
-              label: "Minha atuação",
-              title: "Estratégia e execução no mesmo produto",
-              description:
-                "Atuo no posicionamento, direção criativa, planejamento editorial, produção de conteúdo, branding, UX, arquitetura da informação, frontend, game design e evolução do produto digital."
-            }
-          },
-          tech: {
-            label: "Implementação Técnica",
-            title: "Base técnica para produto, conteúdo e gamificação",
-            description:
-              "O Doodverse foi construído com React 19, TypeScript, Vite, React Router, Framer Motion, Lucide React, CSS com variáveis, componentes reutilizáveis, hooks personalizados, LocalStorage, SPA, redirects do Netlify, SEO, sitemap, robots.txt, sistema de áudio, conquistas, pontuação própria e dados editoriais estruturados."
-          },
-          result: {
-            label: "Resultado",
-            title: "De canal de conteúdo a universo digital próprio",
-            description:
-              "O Doodverse transformou a 2Doods em uma experiência proprietária e expansível, conectando conteúdo editorial, audiovisual, branding, gamificação e desenvolvimento web em uma plataforma com identidade própria."
-          }
+        flyer: {
+          label: "Flyer",
+          title: "Estrutura semanal com leitura rápida e comercial",
+          description:
+            "O flyer semanal foi estruturado para facilitar leitura rápida, destacar o prato da semana, organizar preços de forma intuitiva e funcionar bem tanto no WhatsApp quanto no Instagram."
+        },
+        site: {
+          label: "Site",
+          title: "UX comercial orientada para conversão",
+          description:
+            "O site foi desenvolvido para simplificar pedidos, automatizar o contato via WhatsApp, identificar automaticamente o próximo sábado do mês, destacar o prato vigente e facilitar a navegação no mobile."
         }
       },
-      carousel: {
-        kicker: "vitrine em movimento",
-        title: "Um panorama dos projetos, marcas e frentes criativas",
-        label: "Carrossel animado de projetos",
-        items: [
-          {
-            title: "Patrícia Conti",
-            type: "Branding + Frontend",
-            alt: "Logo Patrícia Conti"
-          },
-          {
-            title: "Tempero da Sandra",
-            type: "Branding + UX Comercial",
-            alt: "Logo Tempero da Sandra"
-          },
-          {
-            title: "2Doods",
-            type: "Conteúdo Digital",
-            alt: "Logo da 2Doods"
-          },
-          {
-            title: "Substack",
-            type: "Escrita + Cultura Digital",
-            alt: "Logo do Substack"
-          },
-          {
-            title: "Portfólio Frontend",
-            type: "Frontend + UX",
-            alt: "Logo RB de Reinhold Berner"
-          },
-          {
-            title: "Entregas Criativas",
-            type: "Portfolio Geral",
-            alt: "Retrato de Reinhold Berner"
-          },
-          {
-            title: "Sussurros do Folclore",
-            type: "Pesquisa + UX + Frontend",
-            alt: "Imagem do projeto Sussurros do Folclore"
-          },
-          {
-            title: "2Doods — Doodverse",
-            type: "Produto Digital + Game UX",
-            alt: "Logo do projeto 2Doods Doodverse"
-          }
-        ]
+      result: {
+        label: "Resultado do projeto",
+        title: "Entrega validada com entusiasmo e uso imediato",
+        description:
+          "A cliente recebeu o projeto com entusiasmo e aprovação imediata, validando tanto a identidade visual quanto a praticidade do sistema digital criado para os pedidos semanais."
       },
       linksKicker: "projetos autorais & links",
       linksTitle: "Outras frentes criativas e editoriais",
       identityPanel: {
-        closeLabel: "Fechar direções do projeto",
-        kicker: "direções do projeto",
-        title: "Patrícia Conti",
+        closeLabel: "Fechar identidade visual",
+        kicker: "identidade visual",
+        title: "Tempero da Sandra",
         intro:
-          "Uma síntese das decisões de marca, conteúdo, UX e frontend que estruturaram a presença digital da cliente.",
-        flyerLabel: "Cartão de posicionamento",
-        flyerTitle: "Peça comercial com QR Code integrado ao site",
-        flyerAlt: "Cartão de posicionamento Patrícia Conti com QR Code integrado ao site",
-        strategy: ["Confiança", "Experiência", "Segurança", "Clareza", "Profissionalismo"],
-        logoLabel: "Logo",
-        logoTitle: "Marca idealizada para transmitir autoridade e sofisticação",
-        logoAlt: "Logo Patrícia Conti idealizada e construída para o projeto",
-        visual: ["Azul marinho", "Dourado", "Base institucional"],
+          "Uma apresentação concentrada dos elementos visuais que estruturaram a marca e a comunicação comercial do projeto.",
+        flyerLabel: "Flyer final",
+        flyerTitle: "Peça principal para divulgação semanal",
+        flyerAlt: "Flyer final do projeto Tempero da Sandra",
+        logoLabel: "Logo da marca",
+        logoTitle: "Símbolo pensado para proximidade e sabor caseiro",
+        logoAlt: "Logo da marca Tempero da Sandra",
         logoDescription:
-          "O objetivo visual não era parecer uma startup ou uma marca excessivamente informal, mas comunicar tradição, organização, estabilidade e credibilidade para o mercado moderno."
+          "A identidade visual foi desenvolvida para transmitir acolhimento, comida caseira e simplicidade."
       },
       twoDoods: {
         title: "2Doods",
@@ -762,403 +429,70 @@ const translations = {
       kicker: "creative cases",
       title: "Featured work in visual direction, UX and digital product thinking",
       intro:
-        "Projects combining content direction, branding, UX, information architecture, multimedia production and digital development for real clients and author-led initiatives.",
+        "A professional case created for a real client, combining branding, commercial UX and responsive frontend to turn digital presence into a sales tool.",
       featured: {
         eyebrow: "professional case",
-        title: "Patricia Conti",
-        subtitle: "Branding + Digital Positioning + UX + Frontend",
-        description: [
-          "Patricia Conti is a professional with more than 25 years of experience in business legalization and regularization.",
-          "The challenge was to turn an established professional trajectory into a digital presence capable of communicating credibility, organization and trust to new clients.",
-          "My work involved branding, positioning, content direction, UX, information architecture and frontend development, starting with an understanding of the professional before any interface decision."
-        ],
-        badgesLabel: "Skills highlighted in this case",
-        badges: ["Frontend", "UX", "Branding", "Information Architecture", "Content", "Email"],
-        actions: {
-          site: "View website",
-          identity: "View project directions"
-        },
-        previewLabel: "website preview",
-        previewDomain: "patriciacontilegalizacao.netlify.app",
-        previewTitle: "Patricia Conti website preview",
-        strategy: [
-          "Communication diagnosis",
-          "Professional positioning",
-          "Content hierarchy",
-          "Mobile-first UX",
-          "Responsive frontend",
-          "Direct email contact"
-        ],
-        flyerEyebrow: "branding and positioning",
-        flyerTitle:
-          "Logo, positioning card and QR Code connected to the website for a modern and professional presence",
-        logoAlt: "Patricia Conti logo conceived and built for the project",
-        flyerAlt: "Patricia Conti positioning card with QR Code integrated with the website",
-        visual: ["Navy blue / trust", "Gold / experience", "Executive language"]
-      },
-      details: {
-        challenge: {
-          label: "Challenge",
-          title: "Turning experience into digital authority",
-          description:
-            "The project started from the absence of a structured digital presence and the need to communicate experience, trust and clarity around business documentation services."
-        },
-        positioning: {
-          label: "Positioning",
-          title: "Specific, secure and professional communication",
-          description:
-            "The strategy positioned Patricia as an experienced, organized and reliable professional for business owners who need to deal with bureaucracy, public agencies and regularization processes. The positioning card also works as a commercial asset and connects the audience to the website through a QR Code."
-        },
-        branding: {
-          label: "Branding",
-          title: "Visual credibility without excessive informality",
-          description:
-            "The visual direction used navy blue to convey trust and stability, gold to reinforce experience and sophistication, and an institutional look aligned with an experienced professional. The logo was conceived and built to support this modern presence without losing the sobriety of the segment."
-        },
-        content: {
-          label: "Content",
-          title: "Communication organized for fast understanding",
-          description:
-            "I structured the information hierarchy, section order, tone of voice, service presentation and authority signals so visitors could quickly understand who Patricia is, what she does, her experience and how to contact her."
-        },
-        ux: {
-          label: "UX",
-          title: "A simple flow for less technical users",
-          description:
-            "The experience was designed with direct navigation, easy reading, a mobile-first approach and quick access to services, professional background, reference values and contact."
-        },
-        frontend: {
-          label: "Frontend",
-          title: "Responsive interface with low-friction contact",
-          description:
-            "I developed the responsive frontend, semantic structure, professional timeline, digital resume integration and email contact through mailto to make direct communication between visitor and client easier."
-        }
-      },
-      highlightsLabel: "Project highlights",
-      highlights: [
-        "Branding",
-        "Digital Positioning",
-        "Content Direction",
-        "UX Design",
-        "Frontend Development",
-        "Email Integration",
-        "Professional Timeline",
-        "Information Architecture"
-      ],
-      role: {
-        label: "My role",
-        title: "Multidisciplinary work from positioning to frontend",
-        description:
-          "In this project I worked from identity and positioning through to frontend development of the final solution, connecting branding, UX Design, information architecture, content direction, visual communication and digital positioning."
-      },
-      result: {
-        label: "Project outcome",
-        title: "More than a website: a coherent digital presence",
-        description:
-          "The final result turned more than 25 years of professional experience into a digital platform capable of communicating trust, experience and professionalism, with the project developed end to end by Reinhold Berner."
-      },
-      sandra: {
-        kicker: "professional case",
         title: "Tempero da Sandra",
-        eyebrow: "branding + commercial ux",
-        heading: "Tempero da Sandra",
         subtitle: "Branding + Flyer + Digital Menu + Commercial UX",
         description: [
           "A project created for a real client in the homemade food sector in Sao Bento, Caxias.",
           "The goal was to build a warm and functional visual identity, combining handcrafted branding, a weekly menu and a responsive website integrated with WhatsApp to streamline orders.",
           "The project involved visual identity creation, logo design, color palette definition, weekly flyer structure, UX focused on easier ordering, responsive website development, WhatsApp integration and an automated logic to identify the next Saturday dish."
         ],
-        badgesLabel: "Skills highlighted in the Tempero da Sandra case",
+        badgesLabel: "Skills highlighted in this case",
         badges: ["Frontend", "UX", "Branding", "Design", "WhatsApp Automation"],
         actions: {
-          site: "View live site"
+          site: "View live site",
+          identity: "View brand identity"
         },
         previewLabel: "live site preview",
         previewTitle: "Tempero da Sandra website preview",
         flyerEyebrow: "flyer mockup",
         flyerTitle: "Communication designed to work on WhatsApp and Instagram",
-        flyerAlt: "Final flyer for the Tempero da Sandra project",
-        details: {
-          branding: {
-            label: "Branding",
-            title: "A warm, functional and memorable identity",
-            description:
-              "The visual identity was designed to communicate homemade food, warmth, simplicity, Brazilian flavor and a sense of family closeness. The palette uses cream, terracotta and soft gold tones to create comfort and appetite."
-          },
-          flyer: {
-            label: "Flyer",
-            title: "Weekly structure with quick, commercial readability",
-            description:
-              "The weekly flyer was structured to enable fast reading, highlight the featured dish, organize prices intuitively and perform well on both WhatsApp and Instagram."
-          },
-          site: {
-            label: "Website",
-            title: "Commercial UX designed for conversion",
-            description:
-              "The website was built to simplify orders, automate contact through WhatsApp, automatically identify the next Saturday of the month, highlight the current dish and make mobile navigation effortless."
-          }
-        },
-        result: {
-          label: "Project outcome",
-          title: "Delivered with immediate approval and real-world value",
+        flyerAlt: "Final flyer for the Tempero da Sandra project"
+      },
+      details: {
+        branding: {
+          label: "Branding",
+          title: "A warm, functional and memorable identity",
           description:
-            "The client received the project with enthusiasm and immediate approval, validating both the visual identity and the practicality of the digital ordering system created for weekly sales."
-        }
-      },
-      authorCases: {
-        kicker: "featured author-led projects",
-        title: "Digital experiences built from content, research and interaction",
-        intro:
-          "Experiences where content, research, identity, interaction and technology work as parts of the same digital product.",
-        sussurros: {
-          eyebrow: "academic project and digital experience",
-          title: "Sussurros do Folclore",
-          subtitle: "Content Direction + UX + Interactive Documentation + Frontend",
-          description: [
-            "Sussurros do Folclore is an academic Game Design project about environmental storytelling, visual semiotics and Brazilian folklore. To present it beyond the university deliverable, I developed a bilingual web experience that brings together research, creative process, art direction, audio, documentation, pitch material and access to the playable build.",
-            "The challenge was to turn a long and conceptually dense thesis project into a clear, explorable digital narrative connected to the atmosphere of the game without reducing the rigor of the research."
-          ],
-          badgesLabel: "Work areas in Sussurros do Folclore",
-          badges: [
-            "Pre-production",
-            "Content Direction",
-            "Documentation",
-            "Thesis",
-            "Pitch",
-            "UX",
-            "Information Architecture",
-            "Frontend",
-            "Multimedia Production",
-            "Bilingual Presentation"
-          ],
-          actions: {
-            site: "Explore project"
-          },
-          previewLabel: "website preview",
-          previewTitle: "Sussurros do Folclore website preview",
-          visualEyebrow: "atmosphere and documentation",
-          visualTitle: "Research, myth, wind and interface as one narrative",
-          logoAlt: "Sussurros do Folclore project logo",
-          whirlAlt: "Whirlwind symbol inspired by Saci",
-          coverAlt: "Presentation image for the Sussurros do Folclore project",
-          cards: {
-            challenge: {
-              label: "Challenge",
-              title: "Turning academic research into a readable experience",
-              description:
-                "The project brought together theory, environmental storytelling, semiotics, Brazilian folklore, art direction, game design, documentation and team production. The challenge was to organize those materials for audiences with different levels of context."
-            },
-            content: {
-              label: "Content Direction",
-              title: "A progressive journey through the project",
-              description:
-                "I structured the content as a journey: atmosphere, pitch, concept, problem, environmental storytelling, player experience, process, art direction, audio, documents, Miro, itch.io, team and credits."
-            },
-            experience: {
-              label: "Content as experience",
-              title: "The website also tells the story of the project",
-              description:
-                "Wind, whirlwind motion, contrast between warm light and cold shadows, aged textures and subtle animations extend the game's atmosphere without relying on intrusive autoplay."
-            },
-            ux: {
-              label: "UX and information",
-              title: "Quick reading or deeper exploration",
-              description:
-                "The experience combines anchor navigation, clear hierarchy, PT/EN versions, local language preference, explicit audio controls, video loaded after interaction, documents and fallbacks for external integrations."
-            },
-            docs: {
-              label: "Documentation",
-              title: "Documentation turned into professional presentation",
-              description:
-                "The site centralizes thesis material, GDD, pitch, Miro, credits, art direction, process and game access, making documentation work as a demonstration of method, organization and communication."
-            },
-            credits: {
-              label: "Clear credits",
-              title: "My role without erasing the collective work",
-              description:
-                "The case separates my work in pre-production, thesis, documentation, content and website from the game production carried out by the team, preserving credits for modeling, animation, texturing, Unity, C# and in-game interface work."
-            }
-          },
-          tech: {
-            label: "Technical Implementation",
-            title: "Frontend supporting narrative and documentation",
-            description:
-              "The experience was developed with React 19, TypeScript, Vite, responsive CSS, Context API for audio, custom hooks, LocalStorage, dynamic metadata, Open Graph, Twitter Cards, canonical URL, YouTube, Miro and itch.io integrations, PDF viewing and static deployment on Netlify."
-          },
-          result: {
-            label: "Outcome",
-            title: "From academic deliverable to public interactive case",
-            description:
-              "The result is a bilingual platform that organizes the research, documents the process and keeps the project accessible beyond the academic evaluation, working as a game presentation, production archive and professional case."
-          }
+            "The visual identity was designed to communicate homemade food, warmth, simplicity, Brazilian flavor and a sense of family closeness. The palette uses cream, terracotta and soft gold tones to create comfort and appetite."
         },
-        doodverse: {
-          eyebrow: "author-led product and gamer content ecosystem",
-          title: "2Doods — Doodverse",
-          subtitle: "Content Direction + Digital Product + Gamified UX + Frontend",
-          description: [
-            "2Doods is an author-led digital communication and gamer culture project. Doodverse expands the brand beyond social platforms, bringing together videos, articles, curiosities, gamification, audio, community and interactive experiences in its own digital product.",
-            "More than a showcase for the channel, I developed an ecosystem where content and interaction share the same identity: visitors explore portals, collect points, unlock achievements, read articles and take part in a minigame."
-          ],
-          badgesLabel: "Work areas in 2Doods",
-          badges: [
-            "Author-led Project",
-            "Creative Direction",
-            "Content Direction",
-            "Editorial Planning",
-            "Branding",
-            "UX",
-            "Information Architecture",
-            "Frontend",
-            "Game Design",
-            "Digital Product"
-          ],
-          actions: {
-            site: "Enter the Doodverse",
-            youtube: "Watch on YouTube"
-          },
-          previewLabel: "website preview",
-          previewTitle: "2Doods Doodverse website preview",
-          visualEyebrow: "brand, editorial and gamification",
-          visualTitle: "A gamer universe with mascot, articles, portals and progression",
-          logoAlt: "2Doods project logo",
-          mascotAlt: "Smiling 2Doods mascot",
-          articleStackLabel: "Doodex editorial covers",
-          cards: {
-            challenge: {
-              label: "Challenge",
-              title: "Turning a channel into its own digital experience",
-              description:
-                "The project needed to move beyond a page of links. The challenge was to build a proprietary, recognizable and expandable environment capable of centralizing content, strengthening the brand and creating reasons for the audience to stay and return."
-            },
-            positioning: {
-              label: "Positioning",
-              title: "A checkpoint for people who love games",
-              description:
-                "The positioning balances depth and fun: gamer culture, curiosities, analysis, game design, humor and interactive experiences with accessible language. The guiding line is: “Your new checkpoint in the world of games.”"
-            },
-            content: {
-              label: "Content Direction",
-              title: "Content structured as an ecosystem",
-              description:
-                "The architecture connects hero, interactive hub, videos, Doodex, Arcade, missions, achievements, social portals and project presentation into a discovery loop."
-            },
-            doodex: {
-              label: "Doodex",
-              title: "Articles designed as an editorial product",
-              description:
-                "Doodex brings together full articles, categories, original covers, slugs, reading time, progress bar, search, filters, sources, related content, sharing, mascot comments and achievement integration."
-            },
-            brand: {
-              label: "Narrative branding",
-              title: "The brand identity inside the interface",
-              description:
-                "The mascot presents the universe, guides actions, comments on content and participates in the experience. Checkpoints, portals, missions, achievements, levels, alternate themes and soundtracks turn gamer identity into product behavior."
-            },
-            gamification: {
-              label: "Gamified UX",
-              title: "Gamification in service of discovery",
-              description:
-                "Dood Points, levels, achievements, weekly mission, exploration rewards, local progress, achievement toasts, a theme easter egg and interactions without mandatory signup encourage discovery and return visits."
-            },
-            dooddraft: {
-              label: "DoodDraft",
-              title: "Content converted into interaction",
-              description:
-                "The minigame turns gamer knowledge into a system: six rounds, Dood Coins, rerolls, type analysis, defensive synergy, roles, attack, defense, speed, budget efficiency, final score, classification and mascot commentary."
-            },
-            ux: {
-              label: "UX and accessibility",
-              title: "An expandable and responsive experience",
-              description:
-                "The product uses routes, responsive navigation, visual feedback, modals, loading states, custom 404, audio after interaction, music and effects controls, volume sliders, pause on hidden tab, persisted preferences and reduced-motion support."
-            },
-            role: {
-              label: "My role",
-              title: "Strategy and execution in the same product",
-              description:
-                "I work on positioning, creative direction, editorial planning, content production, branding, UX, information architecture, frontend, game design and ongoing evolution of the digital product."
-            }
-          },
-          tech: {
-            label: "Technical Implementation",
-            title: "Technical base for product, content and gamification",
-            description:
-              "Doodverse was built with React 19, TypeScript, Vite, React Router, Framer Motion, Lucide React, CSS variables, reusable components, custom hooks, LocalStorage, SPA routing, Netlify redirects, SEO, sitemap, robots.txt, audio system, achievements, custom scoring and structured editorial data."
-          },
-          result: {
-            label: "Outcome",
-            title: "From content channel to its own digital universe",
-            description:
-              "Doodverse turned 2Doods into a proprietary and expandable experience, connecting editorial content, audiovisual production, branding, gamification and web development in a platform with its own identity."
-          }
+        flyer: {
+          label: "Flyer",
+          title: "Weekly structure with quick, commercial readability",
+          description:
+            "The weekly flyer was structured to enable fast reading, highlight the featured dish, organize prices intuitively and perform well on both WhatsApp and Instagram."
+        },
+        site: {
+          label: "Website",
+          title: "Commercial UX designed for conversion",
+          description:
+            "The website was built to simplify orders, automate contact through WhatsApp, automatically identify the next Saturday of the month, highlight the current dish and make mobile navigation effortless."
         }
       },
-      carousel: {
-        kicker: "moving showcase",
-        title: "A panoramic view of projects, brands and creative directions",
-        label: "Animated project carousel",
-        items: [
-          {
-            title: "Patricia Conti",
-            type: "Branding + Frontend",
-            alt: "Patricia Conti logo"
-          },
-          {
-            title: "Tempero da Sandra",
-            type: "Branding + Commercial UX",
-            alt: "Tempero da Sandra logo"
-          },
-          {
-            title: "2Doods",
-            type: "Digital Content",
-            alt: "2Doods logo"
-          },
-          {
-            title: "Substack",
-            type: "Writing + Digital Culture",
-            alt: "Substack logo"
-          },
-          {
-            title: "Frontend Portfolio",
-            type: "Frontend + UX",
-            alt: "RB logo for Reinhold Berner"
-          },
-          {
-            title: "Creative Deliveries",
-            type: "General Portfolio",
-            alt: "Portrait of Reinhold Berner"
-          },
-          {
-            title: "Sussurros do Folclore",
-            type: "Research + UX + Frontend",
-            alt: "Sussurros do Folclore project image"
-          },
-          {
-            title: "2Doods — Doodverse",
-            type: "Digital Product + Game UX",
-            alt: "2Doods Doodverse project logo"
-          }
-        ]
+      result: {
+        label: "Project outcome",
+        title: "Delivered with immediate approval and real-world value",
+        description:
+          "The client received the project with enthusiasm and immediate approval, validating both the visual identity and the practicality of the digital ordering system created for weekly sales."
       },
       linksKicker: "author projects & links",
       linksTitle: "Other creative and editorial directions",
       identityPanel: {
-        closeLabel: "Close project directions",
-        kicker: "project directions",
-        title: "Patricia Conti",
+        closeLabel: "Close brand identity drawer",
+        kicker: "brand identity",
+        title: "Tempero da Sandra",
         intro:
-          "A synthesis of the brand, content, UX and frontend decisions that structured the client's digital presence.",
-        flyerLabel: "Positioning card",
-        flyerTitle: "Commercial asset with QR Code integrated with the website",
-        flyerAlt: "Patricia Conti positioning card with QR Code integrated with the website",
-        strategy: ["Trust", "Experience", "Security", "Clarity", "Professionalism"],
-        logoLabel: "Logo",
-        logoTitle: "A brand conceived to communicate authority and sophistication",
-        logoAlt: "Patricia Conti logo conceived and built for the project",
-        visual: ["Navy blue", "Gold", "Institutional base"],
+          "A focused presentation of the visual elements that shaped the brand and the project's commercial communication.",
+        flyerLabel: "Final flyer",
+        flyerTitle: "Main asset for weekly promotion",
+        flyerAlt: "Final flyer for the Tempero da Sandra project",
+        logoLabel: "Brand logo",
+        logoTitle: "A mark designed for warmth and homemade flavor",
+        logoAlt: "Tempero da Sandra brand logo",
         logoDescription:
-          "The visual goal was not to look like a startup or an overly informal brand, but to communicate tradition, organization, stability and credibility for the modern market."
+          "The visual identity was designed to convey warmth, homemade food and simplicity."
       },
       twoDoods: {
         title: "2Doods",
