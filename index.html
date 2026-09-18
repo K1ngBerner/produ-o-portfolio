@@ -914,6 +914,32 @@
           </p>
         </div>
 
+        <article class="reine-feature reveal" id="reine-exe" aria-labelledby="reine-feature-title">
+          <div class="reine-feature-copy">
+            <p class="case-eyebrow" data-i18n="reineCase.category">Projeto pessoal</p>
+            <h3 id="reine-feature-title">REINE<span>.EXE</span></h3>
+            <p class="reine-save-label">PERSONAL SAVE / 001</p>
+            <p class="case-subtitle" data-i18n="reineCase.subtitle">Identidade pessoal como experiência web.</p>
+            <p data-i18n="reineCase.summary">Um save pessoal navegável: React, TypeScript, UX e storytelling conectam games, livros, esportes e produção de conteúdo em uma interface com personalidade e propósito.</p>
+            <div class="case-badges">
+              <span>React</span><span>TypeScript</span><span>UX/UI</span>
+              <span>Creative Development</span><span data-i18n="reineCase.gamification">Gamificação</span><span>Frontend</span>
+            </div>
+            <div class="case-actions">
+              <a class="button button-primary" href="#reine-exe-case" data-open-reine-case aria-haspopup="dialog" aria-controls="reine-exe-case" data-i18n="reineCase.actions.case">Explorar case completo</a>
+              <a class="button button-secondary" href="https://reineexe.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="reineCase.actions.live">Abrir projeto ao vivo</a>
+            </div>
+          </div>
+          <figure class="reine-feature-visual">
+            <div class="reine-frame-bar"><span>REINE.EXE</span><span>PERSONAL SAVE</span></div>
+            <a href="#reine-exe-case" data-open-reine-case aria-haspopup="dialog" aria-controls="reine-exe-case" aria-label="Explorar o case REINE.EXE" data-i18n-attr="aria-label:reineCase.actions.preview">
+              <img src="assets/projects/reine-exe/home-desktop.jpg" alt="Home real do REINE.EXE: Trainer Card, atividades atuais e navegação lateral em tema noturno" width="1265" height="712" loading="lazy" decoding="async" data-i18n-attr="alt:reineCase.media.homeAlt">
+            </a>
+            <figcaption><span data-i18n="reineCase.media.homeCaption">Captura real do projeto publicado.</span> <a class="reine-credit" href="https://www.instagram.com/ped_joaquim?stkn=MWN1Z2xrZnRhaW53eA==" target="_blank" rel="noopener noreferrer" data-i18n="reineCase.media.credit">Arte Pokémon: Pedro Joaquim · @ped_joaquim</a></figcaption>
+            <div class="reine-feature-note"><span>70 / 30</span><p data-i18n="reineCase.rule">70% personal website. 30% videogame. Nenhuma informação importante exige jogar.</p></div>
+          </figure>
+        </article>
+
         <article class="case-showcase author-case-showcase reveal">
           <div class="case-overview">
             <div class="case-copy">
@@ -1336,6 +1362,10 @@
 
           <div class="projects-carousel" aria-label="Carrossel animado de projetos" data-i18n-attr="aria-label:projects.carousel.label">
             <div class="projects-carousel-track">
+              <a class="carousel-project-card" href="#reine-exe-case" data-open-reine-case aria-haspopup="dialog" aria-controls="reine-exe-case">
+                <img src="assets/projects/reine-exe/home-desktop.jpg" alt="" width="96" height="96" loading="lazy">
+                <div><span data-i18n="reineCase.carouselCategory">Projeto pessoal + Creative Development</span><strong>REINE.EXE · Personal Save</strong></div>
+              </a>
               <a class="carousel-project-card" href="https://patriciacontilegalizacao.netlify.app" target="_blank" rel="noopener noreferrer">
                 <img src="patricia-logo.png" alt="Logo Patrícia Conti" data-i18n-attr="alt:projects.carousel.items.0.alt">
                 <div>
@@ -1393,6 +1423,10 @@
                 </div>
               </a>
 
+              <a class="carousel-project-card" href="#reine-exe-case" data-open-reine-case aria-hidden="true" tabindex="-1">
+                <img src="assets/projects/reine-exe/home-desktop.jpg" alt="" width="96" height="96" loading="lazy">
+                <div><span data-i18n="reineCase.carouselCategory">Projeto pessoal + Creative Development</span><strong>REINE.EXE · Personal Save</strong></div>
+              </a>
               <a class="carousel-project-card" href="https://patriciacontilegalizacao.netlify.app" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
                 <img src="patricia-logo.png" alt="">
                 <div>
@@ -1837,6 +1871,142 @@
       </div>
     </aside>
   </div>
+
+  <dialog class="reine-case" id="reine-exe-case" aria-labelledby="reine-case-title">
+    <div class="reine-case-toolbar">
+      <span class="reine-save-label">CASE FILE / REINE.EXE</span>
+      <div class="reine-case-controls">
+        <div class="language-switch" role="group" aria-label="Seletor de idioma" data-i18n-attr="aria-label:header.languageGroupLabel">
+          <button class="language-option" type="button" data-language-option="pt" aria-pressed="true" aria-label="Mudar idioma para português">PT</button>
+          <button class="language-option" type="button" data-language-option="en" aria-pressed="false" aria-label="Mudar idioma para inglês">EN</button>
+        </div>
+        <button class="reine-close" type="button" data-close-reine-case aria-label="Fechar case REINE.EXE" data-i18n-attr="aria-label:reineCase.actions.close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+    <div class="reine-case-layout">
+      <nav class="reine-case-index" aria-label="Capítulos do case" data-i18n-attr="aria-label:reineCase.indexLabel">
+        <button type="button" data-case-jump="reine-context"><span>01</span><span data-i18n="reineCase.chapters.context">Contexto</span></button>
+        <button type="button" data-case-jump="reine-concept"><span>02</span><span data-i18n="reineCase.chapters.concept">Conceito</span></button>
+        <button type="button" data-case-jump="reine-role"><span>03</span><span data-i18n="reineCase.chapters.role">Minha atuação</span></button>
+        <button type="button" data-case-jump="reine-visual"><span>04</span><span data-i18n="reineCase.chapters.visual">Direção visual</span></button>
+        <button type="button" data-case-jump="reine-experience"><span>05</span><span data-i18n="reineCase.chapters.experience">Experiência</span></button>
+        <button type="button" data-case-jump="reine-stack"><span>06</span><span data-i18n="reineCase.chapters.stack">Stack</span></button>
+        <button type="button" data-case-jump="reine-architecture"><span>07</span><span data-i18n="reineCase.chapters.architecture">Arquitetura</span></button>
+        <button type="button" data-case-jump="reine-iterations"><span>08</span><span data-i18n="reineCase.chapters.iterations">Iterações</span></button>
+        <button type="button" data-case-jump="reine-production"><span>09</span><span data-i18n="reineCase.chapters.production">Produção</span></button>
+        <button type="button" data-case-jump="reine-result"><span>10</span><span data-i18n="reineCase.chapters.result">Resultado</span></button>
+        <button type="button" data-case-jump="reine-learnings"><span>11</span><span data-i18n="reineCase.chapters.learnings">Aprendizados</span></button>
+      </nav>
+      <div class="reine-case-content">
+        <header class="reine-case-hero">
+          <p class="case-eyebrow" data-i18n="reineCase.category">Projeto pessoal</p>
+          <h2 id="reine-case-title" tabindex="-1">REINE.EXE <span>Personal Save</span></h2>
+          <p class="reine-case-lead" data-i18n="reineCase.subtitle">Identidade pessoal como experiência web.</p>
+          <p data-i18n="reineCase.summary">Um save pessoal navegável: React, TypeScript, UX e storytelling conectam games, livros, esportes e produção de conteúdo em uma interface com personalidade e propósito.</p>
+          <a class="button button-primary" href="https://reineexe.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="reineCase.actions.live">Abrir projeto ao vivo</a>
+          <figure class="reine-screen">
+            <img src="assets/projects/reine-exe/home-desktop.jpg" alt="Home real do REINE.EXE: Trainer Card, atividades atuais e navegação lateral em tema noturno" width="1265" height="712" loading="lazy" decoding="async" data-i18n-attr="alt:reineCase.media.homeAlt">
+            <figcaption><span data-i18n="reineCase.media.homeCaption">Captura real do projeto publicado.</span> <a class="reine-credit" href="https://www.instagram.com/ped_joaquim?stkn=MWN1Z2xrZnRhaW53eA==" target="_blank" rel="noopener noreferrer" data-i18n="reineCase.media.credit">Arte Pokémon: Pedro Joaquim · @ped_joaquim</a></figcaption>
+          </figure>
+        </header>
+
+        <section class="reine-chapter" id="reine-context" aria-labelledby="reine-context-title">
+          <p class="case-detail-label" data-i18n="reineCase.labels.context">01 / Contexto</p>
+          <h3 id="reine-context-title" tabindex="-1" data-i18n="reineCase.context.title">Um canto da internet que parecesse meu.</h3>
+          <div class="reine-columns"><p data-i18n="reineCase.context.body">O REINE.EXE nasceu da vontade de reunir interesses que normalmente ficam espalhados: games, livros, esportes, Pokémon, criação de conteúdo e cultura digital. Queria um espaço pessoal com a mesma atenção que dedico a um produto web.</p><p data-i18n="reineCase.context.boundary">O portfólio profissional organiza meus trabalhos. Aqui, a proposta é outra: usar identidade e narrativa para experimentar frontend, UX e direção visual. Os dois espaços se conectam, mas cumprem papéis diferentes.</p></div>
+        </section>
+
+        <section class="reine-chapter" id="reine-concept" aria-labelledby="reine-concept-title">
+          <p class="case-detail-label" data-i18n="reineCase.labels.concept">02 / Conceito</p>
+          <h3 id="reine-concept-title" tabindex="-1" data-i18n="reineCase.concept.title">Um save pessoal navegável.</h3>
+          <p data-i18n="reineCase.concept.body">Personal websites dos anos 2000, menus de Nintendo DS e a maneira como Pokémon organiza perfis e saves deram o ponto de partida. O visitante encontra informações reais, apresentadas com a linguagem de um videogame.</p>
+          <div class="reine-ratio"><div><strong>70%</strong><span>personal website</span></div><div><strong>30%</strong><span data-i18n="reineCase.concept.game">videogame</span></div></div>
+          <p class="reine-callout" data-i18n="reineCase.concept.rule">A pessoa nunca precisa jogar para encontrar uma informação importante. Badges, diálogos e segredos recompensam a exploração; não bloqueiam o conteúdo.</p>
+        </section>
+
+        <section class="reine-chapter" id="reine-role" aria-labelledby="reine-role-title">
+          <p class="case-detail-label" data-i18n="reineCase.labels.role">03 / Minha atuação</p>
+          <h3 id="reine-role-title" tabindex="-1" data-i18n="reineCase.role.title">Da estrutura ao comportamento da interface.</h3>
+          <div class="reine-columns"><p data-i18n="reineCase.role.body">Desenvolvi o projeto em React e TypeScript, trabalhando diretamente na estrutura, no conteúdo, nos componentes e nas interações. Defini decisões de UX e direção visual, testei comportamentos, corrigi problemas e refinei a entrega em produção.</p><div class="reine-note"><h4 data-i18n="reineCase.role.aiTitle">Desenvolvimento assistido por IA</h4><p data-i18n="reineCase.role.ai">Utilizei ferramentas de IA, principalmente Codex, como apoio em revisão de código, debugging, QA e algumas iterações de implementação. As decisões de identidade, conteúdo, prioridades e o que manter ou refazer foram minhas.</p></div></div>
+        </section>
+
+        <section class="reine-chapter" id="reine-visual" aria-labelledby="reine-visual-title">
+          <p class="case-detail-label" data-i18n="reineCase.labels.visual">04 / Direção visual</p>
+          <h3 id="reine-visual-title" tabindex="-1" data-i18n="reineCase.visual.title">Pokémon DS depois da meia-noite.</h3>
+          <p data-i18n="reineCase.visual.body">A primeira direção dependia demais do azul, do amarelo e de referências reconhecíveis da franquia. Parecia um fansite. A identidade ganhou autonomia quando passei a trabalhar a partir das artes pessoais e das minhas próprias referências.</p>
+          <div class="reine-palette" aria-label="Paleta conceitual do projeto" data-i18n-attr="aria-label:reineCase.visual.paletteLabel"><span data-i18n="reineCase.visual.colors.0">Roxo profundo</span><span data-i18n="reineCase.visual.colors.1">Índigo</span><span data-i18n="reineCase.visual.colors.2">Vinho</span><span data-i18n="reineCase.visual.colors.3">Preto</span><span>Off-white</span></div>
+          <div class="reine-columns"><p data-i18n="reineCase.visual.references">Pixel UI, desktops antigos, dark fantasy e JRPG convivem em uma composição editorial, com hierarquia e alguma irregularidade. Pequenos acentos identificam ações sem competir com o conteúdo.</p><p data-i18n="reineCase.visual.restraint">Evitei o excesso de vidro, glow, gradientes e cards arredondados. O objetivo era dar personalidade por meio de decisões específicas, não pela quantidade de efeitos.</p></div>
+          <a class="reine-credit" href="https://www.instagram.com/ped_joaquim?stkn=MWN1Z2xrZnRhaW53eA==" target="_blank" rel="noopener noreferrer" data-i18n="reineCase.visual.credit">As artes pessoais de Pokémon são de Pedro Joaquim (@ped_joaquim), não de minha autoria.</a>
+        </section>
+
+        <section class="reine-chapter" id="reine-experience" aria-labelledby="reine-experience-title">
+          <p class="case-detail-label" data-i18n="reineCase.labels.experience">05 / Experiência</p>
+          <h3 id="reine-experience-title" tabindex="-1" data-i18n="reineCase.experience.title">Explorar é opcional. Encontrar é essencial.</h3>
+          <div class="reine-feature-grid">
+            <div><h4 data-i18n="reineCase.experience.groups.0.title">Exploração</h4><p data-i18n="reineCase.experience.groups.0.body">Save file, World Map, sete badges, easter eggs e caixas de diálogo. Navegação direta continua disponível em todas as áreas.</p></div>
+            <div><h4 data-i18n="reineCase.experience.groups.1.title">Interface</h4><p data-i18n="reineCase.experience.groups.1.body">Tema noturno padrão, opção diurna, PT/EN, microinterações e player que permanece montado durante a navegação.</p></div>
+            <div><h4 data-i18n="reineCase.experience.groups.2.title">Conteúdo</h4><p data-i18n="reineCase.experience.groups.2.body">Games, Pokémon, Sports, Books, 2Doods e Work; jogo e leitura atuais, Link Cable para redes e uma janela de créditos.</p></div>
+            <div><h4 data-i18n="reineCase.experience.groups.3.title">Cuidado técnico</h4><p data-i18n="reineCase.experience.groups.3.body">Menu adaptado ao mobile, suporte a movimento reduzido, teclado no World Map, imagens com lazy loading e carregamento adiado das áreas.</p></div>
+          </div>
+          <div class="reine-content-notes">
+            <h4 data-i18n="reineCase.experience.contentTitle">Conteúdo pessoal também é UX.</h4>
+            <p data-i18n="reineCase.experience.content">Persona 5 Royal está ligado a uma fase da minha vida; Pokémon White, à narrativa e estética que mais me marcaram na série. Conker me ajudou a enxergar conceitos de Game Design durante a graduação. Livros e esportes trazem memórias reais, não textos para preencher espaço.</p>
+            <p data-i18n="reineCase.experience.pokemon">Na área Pokémon, This Gym of Mine, Elysium e Unbound abrem espaço para discutir design, comunidade, ROM hacks e fan games. Handhelds e emulação entram como contexto de exploração e preservação, sem distribuição de ROMs.</p>
+            <p data-i18n="reineCase.experience.doods">A 2Doods aparece como uma Broadcast Station: uma ponte entre desenvolvimento, produção de conteúdo e cultura gamer.</p>
+          </div>
+          <div class="reine-note"><h4 data-i18n="reineCase.experience.audioTitle">Áudio sob controle do visitante.</h4><p data-i18n="reineCase.experience.audio">O player usa um arquivo local configurável, começa pausado e oferece reprodução, pausa, volume e mute. Continua durante a troca de área porque fica fora do conteúdo que muda. O código trata falhas de reprodução; a licença da faixa deve ser verificada separadamente antes da distribuição.</p></div>
+        </section>
+
+        <section class="reine-chapter" id="reine-stack" aria-labelledby="reine-stack-title">
+          <p class="case-detail-label" data-i18n="reineCase.labels.stack">06 / Stack</p>
+          <h3 id="reine-stack-title" tabindex="-1" data-i18n="reineCase.stack.title">Uma aplicação React, uma entrega estática.</h3>
+          <dl class="reine-tech-list"><div><dt>React + TypeScript</dt><dd data-i18n="reineCase.stack.app">Componentes, tipos, estado e interações.</dd></div><div><dt>CSS + Lucide React</dt><dd data-i18n="reineCase.stack.visual">Sistema visual próprio, responsividade e ícones.</dd></div><div><dt>Vite + Netlify</dt><dd data-i18n="reineCase.stack.delivery">Build de produção e publicação do site.</dd></div></dl>
+          <p data-i18n="reineCase.stack.routing">As áreas são selecionadas pelo hash da URL e pelo estado da aplicação. A navegação não depende de páginas duplicadas nem de uma biblioteca de rotas.</p>
+        </section>
+
+        <section class="reine-chapter" id="reine-architecture" aria-labelledby="reine-architecture-title">
+          <p class="case-detail-label" data-i18n="reineCase.labels.architecture">07 / Arquitetura</p>
+          <h3 id="reine-architecture-title" tabindex="-1" data-i18n="reineCase.architecture.title">Mudar conteúdo sem reconstruir a interface.</h3>
+          <p data-i18n="reineCase.architecture.body">Jogos, livros, esportes, hobbies, links, perfil e atividades atuais ficam em módulos de dados TypeScript. Tipos compartilhados organizam as fichas e os times. Componentes leem esses dados, facilitando atualização, consistência e manutenção.</p>
+          <ol class="reine-pipeline" aria-label="Fluxo de conteúdo e publicação" data-i18n-attr="aria-label:reineCase.architecture.diagramLabel"><li data-i18n="reineCase.architecture.flow.0">Conteúdo</li><li>src/data/*.ts</li><li data-i18n="reineCase.architecture.flow.2">Componentes React</li><li data-i18n="reineCase.architecture.flow.3">Interface interativa</li><li>Vite build</li><li>Netlify</li></ol>
+          <div class="reine-columns"><div class="reine-note"><h4 data-i18n="reineCase.architecture.languageTitle">PT / EN, sem duplicar páginas</h4><p data-i18n="reineCase.architecture.language">Os dicionários pt.ts e en.ts centralizam traduções. O sistema atualiza textos e nomes acessíveis, e mantém a escolha em localStorage. As atividades atuais já possuem versões PT/EN no próprio módulo de dados.</p></div><div class="reine-note"><h4 data-i18n="reineCase.architecture.storageTitle">Continuidade entre sessões</h4><p data-i18n="reineCase.architecture.storage">Idioma, tema, entrada inicial e save usam localStorage. O save guarda visitas, áreas, fichas abertas, segredos e badges. O volume usa sessionStorage; mute e posição da faixa ficam no estado da sessão em execução.</p></div></div>
+          <p class="reine-footnote" data-i18n="reineCase.architecture.limit">A separação é progressiva: o changelog ainda está em App.tsx. O save é local ao navegador, sem cadastro ou sincronização entre dispositivos.</p>
+        </section>
+
+        <section class="reine-chapter" id="reine-iterations" aria-labelledby="reine-iterations-title">
+          <p class="case-detail-label" data-i18n="reineCase.labels.iterations">08 / Iterações</p>
+          <h3 id="reine-iterations-title" tabindex="-1" data-i18n="reineCase.iterations.title">O mesmo videogame, quatro telas diferentes.</h3>
+          <div class="reine-columns reine-iteration-copy"><div><h4>ITERATION 01</h4><p data-i18n="reineCase.iterations.before">Na primeira tentativa de Sports, cada modalidade tinha um bloco de cor e uma identidade muito fortes. O resultado parecia quatro sites empilhados: espaços vazios, pouca informação visível e perda de unidade.</p></div><div><h4>ITERATION 02</h4><p data-i18n="reineCase.iterations.after">Redesenhei a página como uma interface 2×2 no desktop, empilhada no mobile. Football usa sinais de placar; Basketball, shot clock; Baseball, innings; F1, timing. Os detalhes mudam, mas a estrutura é a mesma.</p></div></div>
+          <figure class="reine-screen"><img src="assets/projects/reine-exe/sports-desktop.jpg" alt="Sports publicado: quatro modalidades organizadas em uma interface 2 por 2" width="1265" height="1653" loading="lazy" decoding="async" data-i18n-attr="alt:reineCase.media.sportsAlt"><figcaption data-i18n="reineCase.media.sportsCaption">ITERATION 02 / Captura real da versão publicada, incluindo as siglas de fallback das equipes.</figcaption></figure>
+          <div class="reine-asset-placeholder" data-asset-slot="sports-before"><span>ITERATION 01 / ARCHIVE</span><p data-i18n="reineCase.media.beforePending">Registro visual anterior ainda não disponível. A comparação acima descreve o processo; esta área está reservada para a captura original.</p></div>
+          <p class="reine-callout" data-i18n="reineCase.iterations.humor">A interface ficou mais consistente. E eu infelizmente torço pra Ferrari.</p>
+          <p class="reine-loop" data-i18n="reineCase.iterations.loop">Ideia → protótipo → implementação → avaliação → refinamento → testes → produção → nova avaliação.</p>
+          <p data-i18n="reineCase.iterations.decisions">A IA entrou nesse ciclo para apoiar análise e correção. As decisões sobre direção, conteúdo e prioridades continuaram sob minha responsabilidade.</p>
+        </section>
+
+        <section class="reine-chapter" id="reine-production" aria-labelledby="reine-production-title">
+          <p class="case-detail-label" data-i18n="reineCase.labels.production">09 / Do localhost à produção</p>
+          <h3 id="reine-production-title" tabindex="-1" data-i18n="reineCase.production.title">Uma imagem quebrada também é um problema de UX.</h3>
+          <p data-i18n="reineCase.production.problem">Logos esportivas que apareciam localmente falharam após o deploy. A investigação passou por caminhos de arquivos, public, URLs do Vite, inclusão no Git e diferenças de maiúsculas e minúsculas entre Windows e Linux.</p>
+          <div class="reine-columns"><p data-i18n="reineCase.production.solution">A implementação atual usa um script para obter assets de fontes registradas, validar tipo e conteúdo e exigir nomes normalizados. Os arquivos ficam em public/assets/sports/teams; a interface não depende das URLs externas dessas logos durante a navegação.</p><div class="reine-note"><h4 data-i18n="reineCase.production.fallbackTitle">Fallback faz parte da entrega</h4><div class="reine-fallback-marks" aria-hidden="true"><span>FLA</span><span>FCB</span><span>CHC</span><span>LAD</span><span>FER</span></div><p data-i18n="reineCase.production.fallback">TeamIdentity troca a imagem por uma sigla quando o carregamento falha. O nome da equipe continua visível. A ausência do asset não interrompe a leitura.</p></div></div>
+          <ol class="reine-pipeline reine-asset-pipeline" aria-label="Fluxo de assets" data-i18n-attr="aria-label:reineCase.production.diagramLabel"><li data-i18n="reineCase.production.flow.0">Fonte registrada</li><li data-i18n="reineCase.production.flow.1">Validação</li><li data-i18n="reineCase.production.flow.2">Nome normalizado</li><li>public/assets</li><li>Build</li></ol>
+          <p class="reine-footnote" data-i18n="reineCase.production.limit">O fallback também aparece no deploy capturado para este case. A estratégia está implementada; a disponibilidade de cada logo no ambiente publicado ainda precisa ser acompanhada.</p>
+        </section>
+
+        <section class="reine-chapter" id="reine-result" aria-labelledby="reine-result-title">
+          <p class="case-detail-label" data-i18n="reineCase.labels.result">10 / Resultado</p>
+          <div class="reine-result-grid"><div><h3 id="reine-result-title" tabindex="-1" data-i18n="reineCase.result.title">Um espaço pessoal com estrutura de produto.</h3><p data-i18n="reineCase.result.body">O resultado reúne conteúdo autoral, navegação direta e uma camada de exploração opcional. Demonstra frontend, UX/UI, direção visual, arquitetura de conteúdo e cuidado com a entrega, sem transformar a experiência em um currículo.</p><p data-i18n="reineCase.result.work">A área Work leva ao portfólio profissional. A 2Doods conecta o site à minha produção de conteúdo. Cada espaço mantém sua função dentro da mesma identidade.</p><div class="case-actions"><a class="button button-primary" href="https://reineexe.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="reineCase.actions.live">Abrir projeto ao vivo</a><a class="button button-secondary" href="https://www.youtube.com/@TwoDoods2" target="_blank" rel="noopener noreferrer" data-i18n="reineCase.actions.doods">Conhecer a 2Doods</a></div></div><figure class="reine-mobile-screen"><img src="assets/projects/reine-exe/home-mobile.jpg" alt="Home do REINE.EXE em tela de 375 pixels, com navegação e Trainer Card adaptados ao mobile" width="375" height="812" loading="lazy" decoding="async" data-i18n-attr="alt:reineCase.media.mobileAlt"><figcaption><span data-i18n="reineCase.media.mobileCaption">Captura mobile real / 375 px.</span> <a class="reine-credit" href="https://www.instagram.com/ped_joaquim?stkn=MWN1Z2xrZnRhaW53eA==" target="_blank" rel="noopener noreferrer" data-i18n="reineCase.media.credit">Arte Pokémon: Pedro Joaquim · @ped_joaquim</a></figcaption></figure></div>
+        </section>
+
+        <section class="reine-chapter" id="reine-learnings" aria-labelledby="reine-learnings-title">
+          <p class="case-detail-label" data-i18n="reineCase.labels.learnings">11 / Aprendizados</p>
+          <h3 id="reine-learnings-title" tabindex="-1" data-i18n="reineCase.learnings.title">O que fica para o próximo projeto.</h3>
+          <ul class="reine-learnings"><li data-i18n="reineCase.learnings.items.0">Funcionar localmente não basta: assets e caminhos precisam ser conferidos no ambiente publicado.</li><li data-i18n="reineCase.learnings.items.1">Conteúdo faz parte da UX. Uma memória específica comunica mais identidade do que um texto genérico.</li><li data-i18n="reineCase.learnings.items.2">Consistência permite variação. Uma boa estrutura suporta páginas diferentes sem perder unidade.</li><li data-i18n="reineCase.learnings.items.3">IA é mais útil dentro de um ciclo de revisão e decisão. Sugestões precisam ser avaliadas, testadas e ajustadas.</li><li data-i18n="reineCase.learnings.items.4">Um projeto pessoal permite testar soluções que nem sempre cabem em uma entrega comercial, mantendo o mesmo cuidado técnico.</li></ul>
+          <button class="button button-secondary" type="button" data-close-reine-case data-i18n="reineCase.actions.back">Voltar aos projetos</button>
+        </section>
+      </div>
+    </div>
+  </dialog>
 
   <footer class="site-footer">
     <div class="container footer-inner">

@@ -1853,6 +1853,237 @@ const mergeTranslationUpdate = (target, source) => {
 mergeTranslationUpdate(translations.pt, productionPortfolioUpdates.pt);
 mergeTranslationUpdate(translations.en, productionPortfolioUpdates.en);
 
+// Case copy has its own namespace so existing project indexes never shift.
+translations.pt.reineCase = {
+  category: "Projeto pessoal",
+  subtitle: "Identidade pessoal como experiência web.",
+  summary: "Um save pessoal navegável: React, TypeScript, UX e storytelling conectam games, livros, esportes e produção de conteúdo em uma interface com personalidade e propósito.",
+  gamification: "Gamificação",
+  carouselCategory: "Projeto pessoal + Creative Development",
+  rule: "70% personal website. 30% videogame. Nenhuma informação importante exige jogar.",
+  indexLabel: "Capítulos do case",
+  actions: { case: "Explorar case completo", live: "Abrir projeto ao vivo", preview: "Explorar o case REINE.EXE", close: "Fechar case REINE.EXE", back: "Voltar aos projetos", doods: "Conhecer a 2Doods" },
+  chapters: { context: "Contexto", concept: "Conceito", role: "Minha atuação", visual: "Direção visual", experience: "Experiência", stack: "Stack", architecture: "Arquitetura", iterations: "Iterações", production: "Produção", result: "Resultado", learnings: "Aprendizados" },
+  labels: { context: "01 / Contexto", concept: "02 / Conceito", role: "03 / Minha atuação", visual: "04 / Direção visual", experience: "05 / Experiência", stack: "06 / Stack", architecture: "07 / Arquitetura", iterations: "08 / Iterações", production: "09 / Do localhost à produção", result: "10 / Resultado", learnings: "11 / Aprendizados" },
+  media: {
+    homeAlt: "Home real do REINE.EXE: Trainer Card, atividades atuais e navegação lateral em tema noturno",
+    homeCaption: "Captura real do projeto publicado.",
+    credit: "Arte Pokémon: Pedro Joaquim · @ped_joaquim",
+    sportsAlt: "Sports publicado: quatro modalidades organizadas em uma interface 2 por 2",
+    sportsCaption: "ITERATION 02 / Captura real da versão publicada, incluindo as siglas de fallback das equipes.",
+    beforePending: "Registro visual anterior ainda não disponível. A comparação acima descreve o processo; esta área está reservada para a captura original.",
+    mobileAlt: "Home do REINE.EXE em tela de 375 pixels, com navegação e Trainer Card adaptados ao mobile",
+    mobileCaption: "Captura mobile real / 375 px."
+  },
+  context: {
+    title: "Um canto da internet que parecesse meu.",
+    body: "O REINE.EXE nasceu da vontade de reunir interesses que normalmente ficam espalhados: games, livros, esportes, Pokémon, criação de conteúdo e cultura digital. Queria um espaço pessoal com a mesma atenção que dedico a um produto web.",
+    boundary: "O portfólio profissional organiza meus trabalhos. Aqui, a proposta é outra: usar identidade e narrativa para experimentar frontend, UX e direção visual. Os dois espaços se conectam, mas cumprem papéis diferentes."
+  },
+  concept: {
+    title: "Um save pessoal navegável.",
+    body: "Personal websites dos anos 2000, menus de Nintendo DS e a maneira como Pokémon organiza perfis e saves deram o ponto de partida. O visitante encontra informações reais, apresentadas com a linguagem de um videogame.",
+    game: "videogame",
+    rule: "A pessoa nunca precisa jogar para encontrar uma informação importante. Badges, diálogos e segredos recompensam a exploração; não bloqueiam o conteúdo."
+  },
+  role: {
+    title: "Da estrutura ao comportamento da interface.",
+    body: "Desenvolvi o projeto em React e TypeScript, trabalhando diretamente na estrutura, no conteúdo, nos componentes e nas interações. Defini decisões de UX e direção visual, testei comportamentos, corrigi problemas e refinei a entrega em produção.",
+    aiTitle: "Desenvolvimento assistido por IA",
+    ai: "Utilizei ferramentas de IA, principalmente Codex, como apoio em revisão de código, debugging, QA e algumas iterações de implementação. As decisões de identidade, conteúdo, prioridades e o que manter ou refazer foram minhas."
+  },
+  visual: {
+    title: "Pokémon DS depois da meia-noite.",
+    body: "A primeira direção dependia demais do azul, do amarelo e de referências reconhecíveis da franquia. Parecia um fansite. A identidade ganhou autonomia quando passei a trabalhar a partir das artes pessoais e das minhas próprias referências.",
+    paletteLabel: "Paleta conceitual do projeto",
+    colors: ["Roxo profundo", "Índigo", "Vinho", "Preto"],
+    references: "Pixel UI, desktops antigos, dark fantasy e JRPG convivem em uma composição editorial, com hierarquia e alguma irregularidade. Pequenos acentos identificam ações sem competir com o conteúdo.",
+    restraint: "Evitei o excesso de vidro, glow, gradientes e cards arredondados. O objetivo era dar personalidade por meio de decisões específicas, não pela quantidade de efeitos.",
+    credit: "As artes pessoais de Pokémon são de Pedro Joaquim (@ped_joaquim), não de minha autoria."
+  },
+  experience: {
+    title: "Explorar é opcional. Encontrar é essencial.",
+    groups: [
+      { title: "Exploração", body: "Save file, World Map, sete badges, easter eggs e caixas de diálogo. Navegação direta continua disponível em todas as áreas." },
+      { title: "Interface", body: "Tema noturno padrão, opção diurna, PT/EN, microinterações e player que permanece montado durante a navegação." },
+      { title: "Conteúdo", body: "Games, Pokémon, Sports, Books, 2Doods e Work; jogo e leitura atuais, Link Cable para redes e uma janela de créditos." },
+      { title: "Cuidado técnico", body: "Menu adaptado ao mobile, suporte a movimento reduzido, teclado no World Map, imagens com lazy loading e carregamento adiado das áreas." }
+    ],
+    contentTitle: "Conteúdo pessoal também é UX.",
+    content: "Persona 5 Royal está ligado a uma fase da minha vida; Pokémon White, à narrativa e estética que mais me marcaram na série. Conker me ajudou a enxergar conceitos de Game Design durante a graduação. Livros e esportes trazem memórias reais, não textos para preencher espaço.",
+    pokemon: "Na área Pokémon, This Gym of Mine, Elysium e Unbound abrem espaço para discutir design, comunidade, ROM hacks e fan games. Handhelds e emulação entram como contexto de exploração e preservação, sem distribuição de ROMs.",
+    doods: "A 2Doods aparece como uma Broadcast Station: uma ponte entre desenvolvimento, produção de conteúdo e cultura gamer.",
+    audioTitle: "Áudio sob controle do visitante.",
+    audio: "O player usa um arquivo local configurável, começa pausado e oferece reprodução, pausa, volume e mute. Continua durante a troca de área porque fica fora do conteúdo que muda. O código trata falhas de reprodução; a licença da faixa deve ser verificada separadamente antes da distribuição."
+  },
+  stack: {
+    title: "Uma aplicação React, uma entrega estática.",
+    app: "Componentes, tipos, estado e interações.",
+    visual: "Sistema visual próprio, responsividade e ícones.",
+    delivery: "Build de produção e publicação do site.",
+    routing: "As áreas são selecionadas pelo hash da URL e pelo estado da aplicação. A navegação não depende de páginas duplicadas nem de uma biblioteca de rotas."
+  },
+  architecture: {
+    title: "Mudar conteúdo sem reconstruir a interface.",
+    body: "Jogos, livros, esportes, hobbies, links, perfil e atividades atuais ficam em módulos de dados TypeScript. Tipos compartilhados organizam as fichas e os times. Componentes leem esses dados, facilitando atualização, consistência e manutenção.",
+    diagramLabel: "Fluxo de conteúdo e publicação",
+    flow: ["Conteúdo", "src/data/*.ts", "Componentes React", "Interface interativa", "Vite build", "Netlify"],
+    languageTitle: "PT / EN, sem duplicar páginas",
+    language: "Os dicionários pt.ts e en.ts centralizam traduções. O sistema atualiza textos e nomes acessíveis, e mantém a escolha em localStorage. As atividades atuais já possuem versões PT/EN no próprio módulo de dados.",
+    storageTitle: "Continuidade entre sessões",
+    storage: "Idioma, tema, entrada inicial e save usam localStorage. O save guarda visitas, áreas, fichas abertas, segredos e badges. O volume usa sessionStorage; mute e posição da faixa ficam no estado da sessão em execução.",
+    limit: "A separação é progressiva: o changelog ainda está em App.tsx. O save é local ao navegador, sem cadastro ou sincronização entre dispositivos."
+  },
+  iterations: {
+    title: "O mesmo videogame, quatro telas diferentes.",
+    before: "Na primeira tentativa de Sports, cada modalidade tinha um bloco de cor e uma identidade muito fortes. O resultado parecia quatro sites empilhados: espaços vazios, pouca informação visível e perda de unidade.",
+    after: "Redesenhei a página como uma interface 2×2 no desktop, empilhada no mobile. Football usa sinais de placar; Basketball, shot clock; Baseball, innings; F1, timing. Os detalhes mudam, mas a estrutura é a mesma.",
+    humor: "A interface ficou mais consistente. E eu infelizmente torço pra Ferrari.",
+    loop: "Ideia → protótipo → implementação → avaliação → refinamento → testes → produção → nova avaliação.",
+    decisions: "A IA entrou nesse ciclo para apoiar análise e correção. As decisões sobre direção, conteúdo e prioridades continuaram sob minha responsabilidade."
+  },
+  production: {
+    title: "Uma imagem quebrada também é um problema de UX.",
+    problem: "Logos esportivas que apareciam localmente falharam após o deploy. A investigação passou por caminhos de arquivos, public, URLs do Vite, inclusão no Git e diferenças de maiúsculas e minúsculas entre Windows e Linux.",
+    solution: "A implementação atual usa um script para obter assets de fontes registradas, validar tipo e conteúdo e exigir nomes normalizados. Os arquivos ficam em public/assets/sports/teams; a interface não depende das URLs externas dessas logos durante a navegação.",
+    fallbackTitle: "Fallback faz parte da entrega",
+    fallback: "TeamIdentity troca a imagem por uma sigla quando o carregamento falha. O nome da equipe continua visível. A ausência do asset não interrompe a leitura.",
+    diagramLabel: "Fluxo de assets",
+    flow: ["Fonte registrada", "Validação", "Nome normalizado", "public/assets", "Build"],
+    limit: "O fallback também aparece no deploy capturado para este case. A estratégia está implementada; a disponibilidade de cada logo no ambiente publicado ainda precisa ser acompanhada."
+  },
+  result: {
+    title: "Um espaço pessoal com estrutura de produto.",
+    body: "O resultado reúne conteúdo autoral, navegação direta e uma camada de exploração opcional. Demonstra frontend, UX/UI, direção visual, arquitetura de conteúdo e cuidado com a entrega, sem transformar a experiência em um currículo.",
+    work: "A área Work leva ao portfólio profissional. A 2Doods conecta o site à minha produção de conteúdo. Cada espaço mantém sua função dentro da mesma identidade."
+  },
+  learnings: {
+    title: "O que fica para o próximo projeto.",
+    items: [
+      "Funcionar localmente não basta: assets e caminhos precisam ser conferidos no ambiente publicado.",
+      "Conteúdo faz parte da UX. Uma memória específica comunica mais identidade do que um texto genérico.",
+      "Consistência permite variação. Uma boa estrutura suporta páginas diferentes sem perder unidade.",
+      "IA é mais útil dentro de um ciclo de revisão e decisão. Sugestões precisam ser avaliadas, testadas e ajustadas.",
+      "Um projeto pessoal permite testar soluções que nem sempre cabem em uma entrega comercial, mantendo o mesmo cuidado técnico."
+    ]
+  }
+};
+
+translations.en.reineCase = {
+  category: "Personal project",
+  subtitle: "Personal identity, expressed through the web.",
+  summary: "A personal save file you can explore: React, TypeScript, UX and storytelling bring games, books, sports and content creation into an interface with a clear purpose and a personal voice.",
+  gamification: "Gamification",
+  carouselCategory: "Personal project + Creative Development",
+  rule: "70% personal website. 30% video game. No important information requires playing.",
+  indexLabel: "Case study chapters",
+  actions: { case: "View case study", live: "Open live project", preview: "Explore the REINE.EXE case study", close: "Close the REINE.EXE case study", back: "Back to projects", doods: "Discover 2Doods" },
+  chapters: { context: "Context", concept: "Concept", role: "My role", visual: "Visual direction", experience: "Experience", stack: "Tech stack", architecture: "Architecture", iterations: "Iterations", production: "Production", result: "Result", learnings: "Learnings" },
+  labels: { context: "01 / Context", concept: "02 / Concept", role: "03 / My role", visual: "04 / Visual direction", experience: "05 / Experience", stack: "06 / Tech stack", architecture: "07 / Architecture", iterations: "08 / Iterations", production: "09 / From localhost to production", result: "10 / Result", learnings: "11 / Learnings" },
+  media: {
+    homeAlt: "Actual REINE.EXE home screen: Trainer Card, current activities and sidebar navigation in night mode",
+    homeCaption: "Actual screenshot of the live project.",
+    credit: "Pokémon artwork: Pedro Joaquim · @ped_joaquim",
+    sportsAlt: "Published Sports page: four sports arranged in a shared two-by-two interface",
+    sportsCaption: "ITERATION 02 / Actual screenshot of the live version, including team initials used as fallbacks.",
+    beforePending: "The earlier screenshot is not available yet. The comparison above describes the process; this space is reserved for the original capture.",
+    mobileAlt: "REINE.EXE home at 375 pixels, with navigation and Trainer Card adapted for mobile",
+    mobileCaption: "Actual mobile screenshot / 375 px."
+  },
+  context: {
+    title: "A corner of the internet that felt like mine.",
+    body: "REINE.EXE started as a way to bring scattered interests together: games, books, sports, Pokémon, content creation and digital culture. I wanted a personal space built with the same care I would put into a web product.",
+    boundary: "My professional portfolio organizes my work. This project serves a different purpose: using identity and narrative to experiment with frontend, UX and visual direction. The two spaces connect while keeping distinct roles."
+  },
+  concept: {
+    title: "A personal save file you can explore.",
+    body: "Early-2000s personal websites, Nintendo DS menus and the way Pokémon presents profiles and saves were the starting point. Visitors find real information presented through the visual language of a video game.",
+    game: "video game",
+    rule: "Nobody should have to play to find important information. Badges, dialogue and secrets reward curiosity; they never gate the content."
+  },
+  role: {
+    title: "From structure to interface behavior.",
+    body: "I developed the project in React and TypeScript, working directly on structure, content, components and interactions. I made UX and visual decisions, tested behaviors, fixed issues and refined the production delivery.",
+    aiTitle: "AI-assisted development",
+    ai: "I used AI tools, mainly Codex, to support code review, debugging, QA and selected implementation iterations. Decisions about identity, content, priorities and what to keep or rework remained mine."
+  },
+  visual: {
+    title: "Pokémon DS after midnight.",
+    body: "The first direction leaned too heavily on blue, yellow and recognizable franchise references. It felt like a fan site. The identity became more independent when I built around personal artwork and my own references.",
+    paletteLabel: "Project concept palette",
+    colors: ["Deep purple", "Indigo", "Burgundy", "Black"],
+    references: "Pixel UI, old desktop interfaces, dark fantasy and JRPGs inform an editorial composition with clear hierarchy and some intentional irregularity. Small accents identify actions without competing with the content.",
+    restraint: "I avoided excessive glass effects, glow, gradients and rounded cards. The goal was to build character through specific decisions, rather than a long list of effects.",
+    credit: "The personal Pokémon illustrations are by Pedro Joaquim (@ped_joaquim), not by me."
+  },
+  experience: {
+    title: "Exploration is optional. Finding things is essential.",
+    groups: [
+      { title: "Exploration", body: "A save file, World Map, seven badges, easter eggs and dialogue boxes. Direct navigation remains available across all areas." },
+      { title: "Interface", body: "Night mode by default, optional day mode, PT/EN, microinteractions and a player that stays mounted during navigation." },
+      { title: "Content", body: "Games, Pokémon, Sports, Books, 2Doods and Work; current game and reading, a Link Cable for social links and a credits window." },
+      { title: "Technical care", body: "Mobile navigation, reduced-motion support, keyboard controls in the World Map, lazy-loaded images and deferred loading of the areas." }
+    ],
+    contentTitle: "Personal content is part of UX.",
+    content: "Persona 5 Royal connects to a particular chapter of my life; Pokémon White to the story and art direction that stayed with me most. Conker helped me recognize Game Design concepts during university. Books and sports carry real memories, rather than filler copy.",
+    pokemon: "The Pokémon area uses This Gym of Mine, Elysium and Unbound to discuss design, community, ROM hacks and fan games. Handhelds and emulation provide context for exploration and preservation, without distributing ROMs.",
+    doods: "2Doods becomes a Broadcast Station: a connection between development, content production and gaming culture.",
+    audioTitle: "The visitor controls the soundtrack.",
+    audio: "The player uses a configurable local file, starts paused and provides play, pause, volume and mute. It continues across areas because it sits outside the changing content. Playback failures are handled in code; the track's license must be checked separately before distribution."
+  },
+  stack: {
+    title: "A React application, delivered as a static site.",
+    app: "Components, types, state and interactions.",
+    visual: "A custom visual system, responsive layouts and icons.",
+    delivery: "Production build and site hosting.",
+    routing: "Areas are selected through the URL hash and application state. Navigation requires neither duplicated pages nor a routing library."
+  },
+  architecture: {
+    title: "Update the content without rebuilding the interface.",
+    body: "Games, books, sports, hobbies, links, profile information and current activities live in TypeScript data modules. Shared types organize entries and teams. Components read that data, making updates, consistency and maintenance easier.",
+    diagramLabel: "Content and publishing flow",
+    flow: ["Content", "src/data/*.ts", "React components", "Interactive UI", "Vite build", "Netlify"],
+    languageTitle: "PT / EN, without duplicating pages",
+    language: "The pt.ts and en.ts dictionaries centralize translations. The system updates copy and accessible names, and keeps the language choice in localStorage. Current activities already carry PT/EN versions in their data module.",
+    storageTitle: "Continuity between visits",
+    storage: "Language, theme, intro status and the save use localStorage. The save records visits, areas, opened entries, secrets and badges. Volume uses sessionStorage; mute and playback position stay in the running session's state.",
+    limit: "The separation is progressive: the changelog still lives in App.tsx. Saves stay in the visitor's browser, with no account or cross-device synchronization."
+  },
+  iterations: {
+    title: "The same video game, four different screens.",
+    before: "In the first Sports iteration, each sport had a strong color block and its own visual identity. It felt like four stacked websites: too much empty space, little visible content and no shared rhythm.",
+    after: "I redesigned it as a two-by-two desktop interface that stacks on mobile. Football borrows scoreboard cues; Basketball, a shot clock; Baseball, innings; F1, timing. The details vary while the structure stays consistent.",
+    humor: "The interface is more consistent now. And, unfortunately, I support Ferrari.",
+    loop: "Idea → prototype → implementation → evaluation → refinement → testing → production → another review.",
+    decisions: "AI supported analysis and fixes within this loop. Direction, content and priorities remained my responsibility."
+  },
+  production: {
+    title: "A broken image is a UX problem too.",
+    problem: "Sports logos worked locally but failed after deployment. The investigation covered file paths, public assets, Vite URLs, Git inclusion and case sensitivity differences between Windows and Linux.",
+    solution: "The current implementation uses a script to obtain assets from documented sources, validate their type and contents, and require normalized names. Files live in public/assets/sports/teams; the interface does not depend on their external source URLs at runtime.",
+    fallbackTitle: "Fallbacks are part of the delivery",
+    fallback: "TeamIdentity replaces a failed image with initials. The team name stays visible. A missing asset does not interrupt reading.",
+    diagramLabel: "Asset workflow",
+    flow: ["Documented source", "Validation", "Normalized name", "public/assets", "Build"],
+    limit: "The captured deployment also shows these fallbacks. The strategy is implemented; individual logo availability in production still needs monitoring."
+  },
+  result: {
+    title: "A personal space with the structure of a product.",
+    body: "The result brings together original content, direct navigation and an optional layer of exploration. It demonstrates frontend, UX/UI, visual direction, content architecture and attention to delivery, without turning the experience into a résumé.",
+    work: "Work leads to my professional portfolio. 2Doods connects the site to my content production. Each space keeps its purpose within a shared identity."
+  },
+  learnings: {
+    title: "What I will take into the next project.",
+    items: [
+      "Working locally is not enough: assets and paths must be checked in the published environment.",
+      "Content is part of UX. A specific memory communicates more identity than generic copy.",
+      "Consistency leaves room for variety. A good structure supports different pages without losing coherence.",
+      "AI works best within a cycle of review and decisions. Suggestions need evaluation, testing and adjustment.",
+      "Personal projects make room for experiments that may not fit a commercial brief, while still demanding the same technical care."
+    ]
+  }
+};
+
 const languageButtonLabels = {
   pt: {
     activePrefix: "Idioma atual: ",
@@ -2169,5 +2400,106 @@ if ("IntersectionObserver" in window) {
   revealElements.forEach((element) => element.classList.add("is-visible"));
 }
 
+const reineCase = document.querySelector("#reine-exe-case");
+const reineCaseLinks = document.querySelectorAll("[data-open-reine-case]");
+let reineReturnFocus = null;
+let reinePreviousHash = "#reine-exe";
+let reineReturnToEntry = false;
+let reineCloseTimeout;
+const reducedCaseMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+const openReineCase = (trigger = null, { direct = false } = {}) => {
+  if (!reineCase) return;
+  window.clearTimeout(reineCloseTimeout);
+  if (reineCase.open) {
+    reineCase.classList.add("is-open");
+    return;
+  }
+  closeMenu();
+  reineReturnFocus = trigger || document.querySelector("#reine-exe [data-open-reine-case]");
+  reineReturnToEntry = direct;
+  reineCase.showModal();
+  document.body.classList.add("has-reine-case-open");
+  reineCase.scrollTop = 0;
+  document.querySelector("#reine-case-title").focus({ preventScroll: true });
+  window.requestAnimationFrame(() => reineCase.classList.add("is-open"));
+};
+
+const closeReineCase = ({ updateHash = true } = {}) => {
+  if (!reineCase?.open) return;
+  reineCase.classList.remove("is-open");
+  window.clearTimeout(reineCloseTimeout);
+  reineCloseTimeout = window.setTimeout(() => {
+    reineCase.close();
+    document.body.classList.remove("has-reine-case-open");
+    // replaceState avoids a scroll jump and prevents Back from reopening a closed case.
+    if (updateHash && location.hash === "#reine-exe-case") {
+      history.replaceState(null, "", location.pathname + location.search + reinePreviousHash);
+    }
+    if (reineReturnToEntry) {
+      document.querySelector("#reine-exe")?.scrollIntoView({ behavior: "instant", block: "start" });
+    }
+    reineReturnFocus?.focus({ preventScroll: true });
+  }, reducedCaseMotion.matches ? 0 : 280);
+};
+
+reineCaseLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || event.button !== 0) return;
+    event.preventDefault();
+    reinePreviousHash = location.hash === "#reine-exe-case" ? "#reine-exe" : location.hash;
+    history.pushState(null, "", "#reine-exe-case");
+    openReineCase(link.getAttribute("aria-hidden") === "true" ? null : link);
+  });
+});
+
+if (reineCase) {
+  reineCase.querySelectorAll("[data-close-reine-case]").forEach((button) => {
+    button.addEventListener("click", () => closeReineCase());
+  });
+  reineCase.addEventListener("cancel", (event) => {
+    event.preventDefault();
+    closeReineCase();
+  });
+  reineCase.addEventListener("keydown", (event) => {
+    if (event.key !== "Tab") return;
+    const controls = Array.from(reineCase.querySelectorAll('a[href], button:not([disabled]), [tabindex="0"]'))
+      .filter((element) => element.getClientRects().length > 0);
+    const first = controls[0];
+    const last = controls[controls.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last?.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first?.focus();
+    }
+  });
+  let pointerStartedOutside = false;
+  const outsideReineCase = (event) => {
+    const rect = reineCase.getBoundingClientRect();
+    return event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
+  };
+  reineCase.addEventListener("pointerdown", (event) => {
+    pointerStartedOutside = event.target === reineCase && outsideReineCase(event);
+  });
+  reineCase.addEventListener("click", (event) => {
+    if (pointerStartedOutside && event.target === reineCase && outsideReineCase(event)) closeReineCase();
+    pointerStartedOutside = false;
+  });
+  reineCase.querySelectorAll("[data-case-jump]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const chapter = document.getElementById(button.dataset.caseJump);
+      chapter?.scrollIntoView({ behavior: reducedCaseMotion.matches ? "instant" : "smooth", block: "start" });
+      chapter?.querySelector("h3")?.focus({ preventScroll: true });
+    });
+  });
+  window.addEventListener("hashchange", () => {
+    if (location.hash === "#reine-exe-case") openReineCase();
+    else closeReineCase({ updateHash: false });
+  });
+}
+
 const initialLanguage = getStoredLanguage() || "pt";
 applyLanguage(initialLanguage, { animate: false });
+if (location.hash === "#reine-exe-case") openReineCase(null, { direct: true });
